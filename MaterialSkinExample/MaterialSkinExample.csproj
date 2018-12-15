@@ -105,6 +105,7 @@
     <None Include="Resources\minus.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MetroFramework.txt" />
     <Content Include="Resources\background.png" />
     <Content Include="Resources\icon.png" />
   </ItemGroup>

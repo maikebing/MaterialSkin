@@ -49,7 +49,6 @@
             // metroToolTip1
             // 
             this.metroToolTip1.Style = MetroFramework.MetroColorStyle.Default;
-            this.metroToolTip1.StyleManager = null;
             this.metroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // m_panelForm
