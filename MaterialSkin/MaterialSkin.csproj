@@ -33,8 +33,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animations\AnimationDirection.cs" />
@@ -55,6 +57,9 @@
     </Compile>
     <Compile Include="Controls\MaterialForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialIconButton.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MaterialLabel.cs">
       <SubType>Component</SubType>
@@ -78,6 +83,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DrawHelper.cs" />
+    <Compile Include="IIconControl.cs" />
     <Compile Include="IMaterialControl.cs" />
     <Compile Include="Controls\MaterialRaisedButton.cs">
       <SubType>Component</SubType>

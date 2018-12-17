@@ -21,14 +21,16 @@ namespace MaterialSkinExample
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme =
                 new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-
             this.m_panelContent.MouseDoubleClick += (sender, e) =>
                    {
                        this.Close();
                    };
             materialLabel1.ForeColorChanged += (sender, e) =>
             {
-                materialLabel1.ForeColor = Color.Red;
+                MaterialLabel control = sender as MaterialLabel;
+                if (control == null)
+                    return;
+                control.ForeColor = Color.White;
             };
         }
     }
