@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -124,8 +126,32 @@ namespace MaterialSkin.Controls
         }
         protected override void OnPaint(PaintEventArgs e)
         {
+            var g = e.Graphics;
             //在此处处理动画效果 to do pzy
+            g.TextRenderingHint = TextRenderingHint.AntiAlias;
+            //g.Clear(Parent.BackColor);
+            //Hover
+            Color c = BackColor;
+            using (Brush b = new SolidBrush(Color.FromArgb((int)(_hoverAnimationManager.GetProgress() * c.A), c.RemoveAlpha())))
+                g.FillRectangle(b, ClientRectangle);
 
+            //Ripple
+            if (_animationManager.IsAnimating())
+            {
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+                for (var i = 0; i < _animationManager.GetAnimationCount(); i++)
+                {
+                    var animationValue = _animationManager.GetProgress(i);
+                    var animationSource = _animationManager.GetSource(i);
+
+                    using (Brush rippleBrush = new SolidBrush(Color.FromArgb((int)(101 - (animationValue * 100)), BackColor)))
+                    {
+                        var rippleSize = (int)(animationValue * Width * 2);
+                        g.FillEllipse(rippleBrush, new Rectangle(animationSource.X - rippleSize / 2, animationSource.Y - rippleSize / 2, rippleSize, rippleSize));
+                    }
+                }
+                g.SmoothingMode = SmoothingMode.None;
+            }
             this.DrawIcon(e.Graphics);
             //绘制文本
             this.DrawText(e.Graphics);
