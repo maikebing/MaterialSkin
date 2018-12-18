@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,18 @@ namespace MaterialSkin.Controls
     {
         public MaterialIconButton()
         {
-
+            //初始化缺省配置
+            IconAlign = ContentAlignment.MiddleLeft;
+            IconSize = new Size(24, 24);
+            DisplayStyle = ToolStripItemDisplayStyle.None;
         }
+        [Browsable(false)]
         public int Depth { get; set; }
-
+        [Browsable(false)]
         public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
-
+        [Browsable(false)]
         public MouseState MouseState { get; set; }
-        public ContentAlignment IconAlign { get; set; } = ContentAlignment.MiddleLeft;
+        public ContentAlignment IconAlign { get; set; }
         public Size IconSize { get; set; }
         public ToolStripItemDisplayStyle DisplayStyle { get; set; }
         public Padding IconMargin { get; set; }
@@ -33,8 +38,7 @@ namespace MaterialSkin.Controls
             set
             {
                 _icon = value;
-                if (AutoSize)
-                    Size = GetPreferredSize();
+                Size = GetPreferredSize();
                 Invalidate();
             }
         }
@@ -45,53 +49,15 @@ namespace MaterialSkin.Controls
             {
                 base.Text = value;
                 _textSize = CreateGraphics().MeasureString(value.ToUpper(), SkinManager.ROBOTO_MEDIUM_10);
-                if (AutoSize)
-                    Size = GetPreferredSize();
+                Size = GetPreferredSize();
                 Invalidate();
             }
         }
-
-
         protected override void OnPaint(PaintEventArgs e)
         {
-            var g = e.Graphics;
-            //Icon
-            var iconRect = new Rectangle(8, 6, 24, 24);
-
-            if (string.IsNullOrEmpty(Text))
-                // Center Icon
-                iconRect.X += 2;
-            if (Icon != null)
-                g.DrawImage(Icon, iconRect);
-            //Text
-            var textRect = ClientRectangle;
-
-            if (Icon != null)
-            {
-                //
-                // Resize and move Text container
-                //
-
-                // First 8: left padding
-                // 24: icon width
-                // Second 4: space between Icon and Text
-                // Third 8: right padding
-                textRect.Width -= 8 + 24 + 4 + 8;
-
-                // First 8: left padding
-                // 24: icon width
-                // Second 4: space between Icon and Text
-                textRect.X += 8 + 24 + 4;
-            }
-
-            g.DrawString(
-                Text.ToUpper(),
-                SkinManager.ROBOTO_MEDIUM_10,
-                Enabled ? (false ? SkinManager.ColorScheme.PrimaryBrush : SkinManager.GetPrimaryTextBrush()) : SkinManager.GetFlatButtonDisabledTextBrush(),
-                textRect,
-                new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center }
-                );
-            //base.OnPaint(e);
+            this.DrawIcon(e.Graphics);
+            //绘制文本
+            this.DrawText(e.Graphics);
         }
         protected override void OnCreateControl()
         {
@@ -100,34 +66,124 @@ namespace MaterialSkin.Controls
             Font = SkinManager.ROBOTO_REGULAR_11;
             BackColorChanged += (sender, args) => ForeColor = SkinManager.GetPrimaryTextColor();
         }
-        protected void OnDrawIcon(Graphics g)
-        {
-            if (Icon == null)
-                return;
-            if (DisplayStyle == ToolStripItemDisplayStyle.None || DisplayStyle == ToolStripItemDisplayStyle.Text)
-                return;
-
-        }
-        protected void OnDrawText(Graphics g)
-        {
-
-        }
         private Size GetPreferredSize()
         {
-            return GetPreferredSize(new Size(0, 0));
+            if (AutoSize)
+                return GetPreferredSize(new Size(0, 0));
+            else
+                return Size;
         }
-
+        /// <summary>
+        /// 计算适合控件的矩形区域
+        /// </summary>
+        /// <param name="proposedSize"></param>
+        /// <returns></returns>
         public override Size GetPreferredSize(Size proposedSize)
         {
-            // Provides extra space for proper padding for content
-            var extra = 16;
-
-            if (Icon != null)
-                // 24 is for icon size
-                // 4 is for the space between icon & text
-                extra += 24 + 4;
-
-            return new Size((int)Math.Ceiling(_textSize.Width) + extra, 36);
+            int tempWidth = 0,
+                tempHeight = 0;
+            switch (DisplayStyle)
+            {
+                case ToolStripItemDisplayStyle.ImageAndText:
+                    if (Icon != null && !string.IsNullOrEmpty(Text))
+                    {
+                        switch (IconAlign)
+                        {
+                            case ContentAlignment.TopCenter:
+                            case ContentAlignment.BottomCenter:
+                                tempWidth += Math.Max((IconSize.Width + IconMargin.Left + IconMargin.Right), (int)_textSize.Width+16);
+                                tempHeight += IconSize.Height + IconMargin.Top + IconMargin.Bottom + (int)_textSize.Height;
+                                break;
+                            case ContentAlignment.TopLeft:
+                            case ContentAlignment.TopRight:
+                            case ContentAlignment.BottomRight:
+                            case ContentAlignment.BottomLeft:
+                                tempWidth += ((IconSize.Width + IconMargin.Left + IconMargin.Right) + (int)_textSize.Width+16);
+                                tempHeight += IconSize.Height + IconMargin.Top + IconMargin.Bottom + (int)_textSize.Height;
+                                break;
+                            case ContentAlignment.MiddleCenter:
+                                tempWidth += Math.Max((IconSize.Width + IconMargin.Left + IconMargin.Right), (int)_textSize.Width+16);
+                                tempHeight += Math.Max(IconSize.Height + IconMargin.Top + IconMargin.Bottom, (int)_textSize.Height);
+                                break;
+                            default:
+                            case ContentAlignment.MiddleRight:
+                            case ContentAlignment.MiddleLeft:
+                                tempWidth += ((IconSize.Width + IconMargin.Left + IconMargin.Right) + (int)_textSize.Width+16);
+                                tempHeight += Math.Max(IconSize.Height + IconMargin.Top + IconMargin.Bottom, (int)_textSize.Height);
+                                break;
+                        }
+                    }
+                    break;
+                default:
+                case ToolStripItemDisplayStyle.None:
+                    break;
+                case ToolStripItemDisplayStyle.Image:
+                    tempWidth += IconSize.Width + IconMargin.Left + IconMargin.Right;
+                    tempHeight += IconSize.Height + IconMargin.Top + IconMargin.Bottom;
+                    break;
+                case ToolStripItemDisplayStyle.Text:
+                    tempWidth += (int)_textSize.Width;
+                    tempHeight += (int)_textSize.Height;
+                    break;
+            }
+            //附加Padding
+            tempWidth += Padding.Left + Padding.Right;
+            tempHeight += Padding.Top + Padding.Bottom;
+            return new Size(tempWidth, tempHeight);
+        }
+        /// <summary>
+        /// 根据配置绘制文字, to do pzy
+        /// </summary>
+        /// <param name="g"></param>
+        private void DrawText(Graphics g)
+        {
+            int tempX = ClientRectangle.X,
+                tempY = ClientRectangle.Y,
+                tempWidth = ClientRectangle.Width,
+                tempHeight = ClientRectangle.Height;
+            switch (DisplayStyle)
+            {
+                default:
+                case ToolStripItemDisplayStyle.None:
+                case ToolStripItemDisplayStyle.Image:
+                    //无需绘制文本，直接退出
+                    return;
+                case ToolStripItemDisplayStyle.Text:
+                case ToolStripItemDisplayStyle.ImageAndText:
+                    if (string.IsNullOrEmpty(Text))
+                        return;
+                    switch (IconAlign)
+                    {
+                        default:
+                        case ContentAlignment.MiddleCenter:
+                        case ContentAlignment.TopLeft:
+                        case ContentAlignment.TopRight:
+                        case ContentAlignment.BottomRight:
+                        case ContentAlignment.BottomLeft:
+                            break;
+                        case ContentAlignment.TopCenter:
+                            tempY = IconSize.Height + IconMargin.Top + IconMargin.Bottom;
+                            tempHeight -= tempY;
+                            break;
+                        case ContentAlignment.BottomCenter:
+                            tempHeight -= (IconSize.Height + IconMargin.Top + IconMargin.Bottom);
+                            break;
+                        case ContentAlignment.MiddleRight:
+                            tempWidth -= (IconSize.Width + IconMargin.Left + IconMargin.Right);
+                            break;
+                        case ContentAlignment.MiddleLeft:
+                            tempX = (IconSize.Width + IconMargin.Left + IconMargin.Right);
+                            tempWidth -= tempX;
+                            break;
+                    }
+                    break;
+            }
+            g.DrawString(
+                Text.ToUpper(),
+                SkinManager.ROBOTO_MEDIUM_10,
+                Enabled ? (false ? SkinManager.ColorScheme.PrimaryBrush : SkinManager.GetPrimaryTextBrush()) : SkinManager.GetFlatButtonDisabledTextBrush(), new Rectangle(tempX, tempY, tempWidth, tempHeight),
+                new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center }
+                );
         }
     }
 }

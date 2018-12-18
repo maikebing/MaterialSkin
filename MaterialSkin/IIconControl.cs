@@ -24,14 +24,53 @@ namespace MaterialSkin
                 return;
             if (control.DisplayStyle == ToolStripItemDisplayStyle.None || control.DisplayStyle == ToolStripItemDisplayStyle.Text)
                 return;
+            var iconMargin = control.IconMargin;
+            var iconSize = control.IconSize;
             var controlRange = g.VisibleClipBounds;
             int PointX = 0;
             int PointY = 0;
-            //switch (control.IconAlign)
-            //{
-            //    case ContentAlignment.BottomCenter
-            //}
-            var iconRect = new Rectangle(PointX, PointY, control.Icon.Width, control.Icon.Height);
+            switch (control.IconAlign)
+            {
+                case ContentAlignment.BottomCenter:
+                    PointX = (int)Math.Ceiling((controlRange.Width - iconSize.Width) / 2);
+                    PointY = (int)Math.Ceiling(controlRange.Height - iconMargin.Bottom - iconSize.Height);
+                    break;
+                case ContentAlignment.BottomLeft:
+                    PointX = iconMargin.Left;
+                    PointY = (int)Math.Ceiling(controlRange.Height - iconMargin.Bottom - iconSize.Height);
+                    break;
+                case ContentAlignment.BottomRight:
+                    PointX = (int)Math.Ceiling(controlRange.Width - iconSize.Width - iconMargin.Right);
+                    PointY = (int)Math.Ceiling(controlRange.Height - iconMargin.Bottom - iconSize.Height);
+                    break;
+                case ContentAlignment.MiddleCenter:
+                    PointX = (int)Math.Ceiling((controlRange.Width - iconSize.Width) / 2);
+                    PointY = (int)Math.Ceiling((controlRange.Height - iconSize.Height) / 2);
+                    break;
+                default:
+                case ContentAlignment.MiddleLeft:
+                    PointX = iconMargin.Left;
+                    PointY = (int)Math.Ceiling((controlRange.Height - iconSize.Height) / 2);
+                    break;
+                case ContentAlignment.MiddleRight:
+                    PointX = (int)Math.Ceiling(controlRange.Width - iconSize.Width - iconMargin.Right);
+                    PointY = (int)Math.Ceiling((controlRange.Height - iconSize.Height) / 2);
+                    break;
+                case ContentAlignment.TopCenter:
+                    PointX = (int)Math.Ceiling((controlRange.Width - iconSize.Width) / 2);
+                    PointY = iconMargin.Top;
+                    break;
+                case ContentAlignment.TopLeft:
+                    PointX = iconMargin.Left;
+                    PointY = iconMargin.Top;
+                    break;
+                case ContentAlignment.TopRight:
+                    PointX = (int)Math.Ceiling(controlRange.Width - iconSize.Width - iconMargin.Right);
+                    PointY = iconMargin.Top;
+                    break;
+
+            }
+            var iconRect = new Rectangle(PointX, PointY, iconSize.Width, iconSize.Height);
             g.DrawImage(control.Icon, iconRect);
         }
     }
