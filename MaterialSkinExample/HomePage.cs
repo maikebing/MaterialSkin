@@ -25,13 +25,11 @@ namespace MaterialSkinExample
                    {
                        this.Close();
                    };
-            materialLabel1.ForeColorChanged += (sender, e) =>
-            {
-                MaterialLabel control = sender as MaterialLabel;
-                if (control == null)
-                    return;
-                control.ForeColor = Color.White;
-            };
+        }
+
+        private void materialIconButton10_Click(object sender, EventArgs e)
+        {
+             this.Close();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Animations;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -17,18 +18,86 @@ namespace MaterialSkin.Controls
             IconAlign = ContentAlignment.MiddleLeft;
             IconSize = new Size(24, 24);
             DisplayStyle = ToolStripItemDisplayStyle.None;
+            Primary = true;
+            _animationManager = new AnimationManager(false)
+            {
+                Increment = 0.03,
+                AnimationType = AnimationType.EaseOut
+            };
+            _hoverAnimationManager = new AnimationManager
+            {
+                Increment = 0.07,
+                AnimationType = AnimationType.Linear
+            };
+
+            _hoverAnimationManager.OnAnimationProgress += sender => Invalidate();
+            _animationManager.OnAnimationProgress += sender => Invalidate();
         }
+        private readonly AnimationManager _animationManager;
+        private readonly AnimationManager _hoverAnimationManager;
         [Browsable(false)]
         public int Depth { get; set; }
         [Browsable(false)]
         public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
         [Browsable(false)]
         public MouseState MouseState { get; set; }
-        public ContentAlignment IconAlign { get; set; }
-        public Size IconSize { get; set; }
-        public ToolStripItemDisplayStyle DisplayStyle { get; set; }
-        public Padding IconMargin { get; set; }
-        public bool Primary { get; set; }
+        private ContentAlignment m_IconAlign;
+
+        public ContentAlignment IconAlign
+        {
+            get { return m_IconAlign; }
+            set
+            {
+                m_IconAlign = value;
+                Invalidate();
+            }
+        }
+        private Size m_IconSize;
+
+        public Size IconSize
+        {
+            get { return m_IconSize; }
+            set
+            {
+                m_IconSize = value;
+                Invalidate();
+            }
+        }
+        private ToolStripItemDisplayStyle m_DisplayStyle;
+
+        public ToolStripItemDisplayStyle DisplayStyle
+        {
+            get { return m_DisplayStyle; }
+            set
+            {
+                m_DisplayStyle = value;
+                Invalidate();
+            }
+        }
+        private Padding m_IconMargin;
+
+        public Padding IconMargin
+        {
+            get { return m_IconMargin; }
+            set
+            {
+                m_IconMargin = value;
+                Invalidate();
+            }
+        }
+        private bool m_Primary;
+
+        public bool Primary
+        {
+            get { return m_Primary; }
+            set
+            {
+                m_Primary = value;
+                Invalidate();
+            }
+        }
+
+
         private SizeF _textSize;
 
         private Image _icon;
@@ -55,6 +124,8 @@ namespace MaterialSkin.Controls
         }
         protected override void OnPaint(PaintEventArgs e)
         {
+            //在此处处理动画效果 to do pzy
+
             this.DrawIcon(e.Graphics);
             //绘制文本
             this.DrawText(e.Graphics);
@@ -62,9 +133,36 @@ namespace MaterialSkin.Controls
         protected override void OnCreateControl()
         {
             base.OnCreateControl();
-            ForeColor = SkinManager.GetPrimaryTextColor();
-            Font = SkinManager.ROBOTO_REGULAR_11;
-            BackColorChanged += (sender, args) => ForeColor = SkinManager.GetPrimaryTextColor();
+            if (DesignMode) return;
+            MouseState = MouseState.OUT;
+            MouseEnter += (sender, args) =>
+            {
+                MouseState = MouseState.HOVER;
+                _hoverAnimationManager.StartNewAnimation(AnimationDirection.In);
+                Invalidate();
+            };
+            MouseLeave += (sender, args) =>
+            {
+                MouseState = MouseState.OUT;
+                _hoverAnimationManager.StartNewAnimation(AnimationDirection.Out);
+                Invalidate();
+            };
+            MouseDown += (sender, args) =>
+            {
+                if (args.Button == MouseButtons.Left)
+                {
+                    MouseState = MouseState.DOWN;
+
+                    _animationManager.StartNewAnimation(AnimationDirection.In, args.Location);
+                    Invalidate();
+                }
+            };
+            MouseUp += (sender, args) =>
+            {
+                MouseState = MouseState.HOVER;
+
+                Invalidate();
+            };
         }
         private Size GetPreferredSize()
         {
@@ -91,24 +189,24 @@ namespace MaterialSkin.Controls
                         {
                             case ContentAlignment.TopCenter:
                             case ContentAlignment.BottomCenter:
-                                tempWidth += Math.Max((IconSize.Width + IconMargin.Left + IconMargin.Right), (int)_textSize.Width+16);
+                                tempWidth += Math.Max((IconSize.Width + IconMargin.Left + IconMargin.Right), (int)_textSize.Width + 16);
                                 tempHeight += IconSize.Height + IconMargin.Top + IconMargin.Bottom + (int)_textSize.Height;
                                 break;
                             case ContentAlignment.TopLeft:
                             case ContentAlignment.TopRight:
                             case ContentAlignment.BottomRight:
                             case ContentAlignment.BottomLeft:
-                                tempWidth += ((IconSize.Width + IconMargin.Left + IconMargin.Right) + (int)_textSize.Width+16);
+                                tempWidth += ((IconSize.Width + IconMargin.Left + IconMargin.Right) + (int)_textSize.Width + 16);
                                 tempHeight += IconSize.Height + IconMargin.Top + IconMargin.Bottom + (int)_textSize.Height;
                                 break;
                             case ContentAlignment.MiddleCenter:
-                                tempWidth += Math.Max((IconSize.Width + IconMargin.Left + IconMargin.Right), (int)_textSize.Width+16);
+                                tempWidth += Math.Max((IconSize.Width + IconMargin.Left + IconMargin.Right), (int)_textSize.Width + 16);
                                 tempHeight += Math.Max(IconSize.Height + IconMargin.Top + IconMargin.Bottom, (int)_textSize.Height);
                                 break;
                             default:
                             case ContentAlignment.MiddleRight:
                             case ContentAlignment.MiddleLeft:
-                                tempWidth += ((IconSize.Width + IconMargin.Left + IconMargin.Right) + (int)_textSize.Width+16);
+                                tempWidth += ((IconSize.Width + IconMargin.Left + IconMargin.Right) + (int)_textSize.Width + 16);
                                 tempHeight += Math.Max(IconSize.Height + IconMargin.Top + IconMargin.Bottom, (int)_textSize.Height);
                                 break;
                         }
@@ -178,12 +276,24 @@ namespace MaterialSkin.Controls
                     }
                     break;
             }
-            g.DrawString(
+            if (Primary)
+            {
+                g.DrawString(
                 Text.ToUpper(),
                 SkinManager.ROBOTO_MEDIUM_10,
                 Enabled ? (false ? SkinManager.ColorScheme.PrimaryBrush : SkinManager.GetPrimaryTextBrush()) : SkinManager.GetFlatButtonDisabledTextBrush(), new Rectangle(tempX, tempY, tempWidth, tempHeight),
                 new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center }
                 );
+            }
+            else
+            {
+                g.DrawString(
+                Text.ToUpper(),
+                Font,
+               new SolidBrush(ForeColor), new Rectangle(tempX, tempY, tempWidth, tempHeight),
+                new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center }
+                );
+            }
         }
     }
 }

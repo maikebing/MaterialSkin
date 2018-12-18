@@ -11,14 +11,26 @@ namespace MaterialSkin.Controls
         public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
         [Browsable(false)]
         public MouseState MouseState { get; set; }
+        private bool m_Primary = true;
+
+        public bool Primary
+        {
+            get { return m_Primary; }
+            set
+            {
+                m_Primary = value;
+                Invalidate();
+            }
+        }
         protected override void OnCreateControl()
         {
             base.OnCreateControl();
-
-            ForeColor = SkinManager.GetPrimaryTextColor();
-            Font = SkinManager.ROBOTO_REGULAR_11;
-
-            BackColorChanged += (sender, args) => ForeColor = SkinManager.GetPrimaryTextColor();
+            if (Primary)
+            {
+                ForeColor = SkinManager.GetPrimaryTextColor();
+                Font = SkinManager.ROBOTO_REGULAR_11;
+                BackColorChanged += (sender, args) => ForeColor = SkinManager.GetPrimaryTextColor();
+            }
         }
     }
 }
