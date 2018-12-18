@@ -30,7 +30,6 @@
         {
             this.m_panelForm = new System.Windows.Forms.Panel();
             this.m_panelContent = new System.Windows.Forms.Panel();
-            this.materialFlatButton1 = new MaterialSkin.Controls.MaterialFlatButton();
             this.m_panelLeft = new System.Windows.Forms.Panel();
             this.m_flowPanelLeftMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.materialIconButton1 = new MaterialSkin.Controls.MaterialIconButton();
@@ -50,7 +49,6 @@
             this.materialIconButton5 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton6 = new MaterialSkin.Controls.MaterialIconButton();
             this.m_panelForm.SuspendLayout();
-            this.m_panelContent.SuspendLayout();
             this.m_panelLeft.SuspendLayout();
             this.m_flowPanelLeftMenu.SuspendLayout();
             this.m_panelTop.SuspendLayout();
@@ -75,31 +73,12 @@
             // m_panelContent
             // 
             this.m_panelContent.BackColor = System.Drawing.Color.White;
-            this.m_panelContent.Controls.Add(this.materialFlatButton1);
             this.m_panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_panelContent.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.m_panelContent.Location = new System.Drawing.Point(26, 64);
             this.m_panelContent.Name = "m_panelContent";
             this.m_panelContent.Size = new System.Drawing.Size(954, 616);
             this.m_panelContent.TabIndex = 2;
-            // 
-            // materialFlatButton1
-            // 
-            this.materialFlatButton1.AutoSize = true;
-            this.materialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialFlatButton1.BackColor = System.Drawing.Color.Transparent;
-            this.materialFlatButton1.Depth = 0;
-            this.materialFlatButton1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialFlatButton1.Icon = null;
-            this.materialFlatButton1.Location = new System.Drawing.Point(329, 82);
-            this.materialFlatButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialFlatButton1.Name = "materialFlatButton1";
-            this.materialFlatButton1.Primary = false;
-            this.materialFlatButton1.Size = new System.Drawing.Size(222, 36);
-            this.materialFlatButton1.TabIndex = 0;
-            this.materialFlatButton1.Text = "materialFlatButton1";
-            this.materialFlatButton1.UseVisualStyleBackColor = false;
             // 
             // m_panelLeft
             // 
@@ -134,14 +113,14 @@
             this.materialIconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialIconButton1.Icon = global::MaterialSkinExample.Properties.Resources.home_fill;
             this.materialIconButton1.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton1.IconMargin = new System.Windows.Forms.Padding(0);
+            this.materialIconButton1.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton1.IconSize = new System.Drawing.Size(16, 16);
-            this.materialIconButton1.Location = new System.Drawing.Point(5, 10);
-            this.materialIconButton1.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
+            this.materialIconButton1.Location = new System.Drawing.Point(0, 10);
+            this.materialIconButton1.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.materialIconButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton1.Name = "materialIconButton1";
             this.materialIconButton1.Primary = false;
-            this.materialIconButton1.Size = new System.Drawing.Size(16, 16);
+            this.materialIconButton1.Size = new System.Drawing.Size(26, 26);
             this.materialIconButton1.TabIndex = 9;
             this.materialIconButton1.Text = "主页";
             // 
@@ -155,14 +134,14 @@
             this.materialIconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialIconButton7.Icon = global::MaterialSkinExample.Properties.Resources.peoples;
             this.materialIconButton7.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton7.IconMargin = new System.Windows.Forms.Padding(0);
+            this.materialIconButton7.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton7.IconSize = new System.Drawing.Size(16, 16);
-            this.materialIconButton7.Location = new System.Drawing.Point(5, 46);
-            this.materialIconButton7.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
+            this.materialIconButton7.Location = new System.Drawing.Point(0, 46);
+            this.materialIconButton7.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.materialIconButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton7.Name = "materialIconButton7";
             this.materialIconButton7.Primary = false;
-            this.materialIconButton7.Size = new System.Drawing.Size(16, 16);
+            this.materialIconButton7.Size = new System.Drawing.Size(26, 26);
             this.materialIconButton7.TabIndex = 10;
             this.materialIconButton7.Text = "主页";
             // 
@@ -176,14 +155,14 @@
             this.materialIconButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialIconButton8.Icon = global::MaterialSkinExample.Properties.Resources.chaxun;
             this.materialIconButton8.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton8.IconMargin = new System.Windows.Forms.Padding(0);
+            this.materialIconButton8.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton8.IconSize = new System.Drawing.Size(16, 16);
-            this.materialIconButton8.Location = new System.Drawing.Point(5, 82);
-            this.materialIconButton8.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
+            this.materialIconButton8.Location = new System.Drawing.Point(0, 82);
+            this.materialIconButton8.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.materialIconButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton8.Name = "materialIconButton8";
             this.materialIconButton8.Primary = false;
-            this.materialIconButton8.Size = new System.Drawing.Size(16, 16);
+            this.materialIconButton8.Size = new System.Drawing.Size(26, 26);
             this.materialIconButton8.TabIndex = 11;
             this.materialIconButton8.Text = "主页";
             // 
@@ -197,14 +176,14 @@
             this.materialIconButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialIconButton9.Icon = global::MaterialSkinExample.Properties.Resources.setting;
             this.materialIconButton9.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton9.IconMargin = new System.Windows.Forms.Padding(0);
+            this.materialIconButton9.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton9.IconSize = new System.Drawing.Size(16, 16);
-            this.materialIconButton9.Location = new System.Drawing.Point(5, 118);
-            this.materialIconButton9.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
+            this.materialIconButton9.Location = new System.Drawing.Point(0, 118);
+            this.materialIconButton9.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.materialIconButton9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton9.Name = "materialIconButton9";
             this.materialIconButton9.Primary = false;
-            this.materialIconButton9.Size = new System.Drawing.Size(16, 16);
+            this.materialIconButton9.Size = new System.Drawing.Size(26, 26);
             this.materialIconButton9.TabIndex = 12;
             this.materialIconButton9.Text = "主页";
             // 
@@ -218,14 +197,14 @@
             this.materialIconButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialIconButton10.Icon = global::MaterialSkinExample.Properties.Resources.guanji;
             this.materialIconButton10.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton10.IconMargin = new System.Windows.Forms.Padding(0);
+            this.materialIconButton10.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton10.IconSize = new System.Drawing.Size(16, 16);
-            this.materialIconButton10.Location = new System.Drawing.Point(5, 154);
-            this.materialIconButton10.Margin = new System.Windows.Forms.Padding(5, 10, 5, 10);
+            this.materialIconButton10.Location = new System.Drawing.Point(0, 154);
+            this.materialIconButton10.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.materialIconButton10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton10.Name = "materialIconButton10";
             this.materialIconButton10.Primary = false;
-            this.materialIconButton10.Size = new System.Drawing.Size(16, 16);
+            this.materialIconButton10.Size = new System.Drawing.Size(26, 26);
             this.materialIconButton10.TabIndex = 13;
             this.materialIconButton10.Text = "主页";
             this.materialIconButton10.Click += new System.EventHandler(this.materialIconButton10_Click);
@@ -424,8 +403,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "窗口";
             this.m_panelForm.ResumeLayout(false);
-            this.m_panelContent.ResumeLayout(false);
-            this.m_panelContent.PerformLayout();
             this.m_panelLeft.ResumeLayout(false);
             this.m_flowPanelLeftMenu.ResumeLayout(false);
             this.m_flowPanelLeftMenu.PerformLayout();
@@ -461,7 +438,6 @@
         private MaterialSkin.Controls.MaterialIconButton materialIconButton8;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton9;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton10;
-        private MaterialSkin.Controls.MaterialFlatButton materialFlatButton1;
     }
 }
 
