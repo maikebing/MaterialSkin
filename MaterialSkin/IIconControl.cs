@@ -18,18 +18,70 @@ namespace MaterialSkin
     }
     public static class IIconControlExtensions
     {
-        public static void DrawIcon(this IIconControl control, Graphics g)
+        public static void DrawIcon(this IIconControl ctrl, Graphics g)
         {
-            if (control.Icon == null)
+            if (ctrl.Icon == null)
                 return;
-            if (control.DisplayStyle == ToolStripItemDisplayStyle.None || control.DisplayStyle == ToolStripItemDisplayStyle.Text)
+            if (ctrl.DisplayStyle == ToolStripItemDisplayStyle.None || ctrl.DisplayStyle == ToolStripItemDisplayStyle.Text)
                 return;
-            var iconMargin = control.IconMargin;
-            var iconSize = control.IconSize;
+            var iconRect = GetUsedRectangle(ctrl, g);
+            g.DrawImage(ctrl.Icon, iconRect);
+        }
+
+        public static Rectangle GetRestRectangle(this IIconControl ctrl, Graphics g)
+        {
+            var ClientRectangle = g.VisibleClipBounds;
+            int tempX = (int)ClientRectangle.X,
+                tempY = (int)ClientRectangle.Y,
+                tempWidth = (int)ClientRectangle.Width,
+                tempHeight = (int)ClientRectangle.Height;
+            var usedSize = GetUsedSize(ctrl);
+            switch (ctrl.DisplayStyle)
+            {
+                default:
+                case ToolStripItemDisplayStyle.None:
+                case ToolStripItemDisplayStyle.Image:
+                    //无需绘制其他元素
+                    tempX = tempY = tempWidth = tempHeight = 0;
+                    break;
+                case ToolStripItemDisplayStyle.Text:
+                case ToolStripItemDisplayStyle.ImageAndText:
+                    switch (ctrl.IconAlign)
+                    {
+                        default:
+                        case ContentAlignment.MiddleCenter:
+                        case ContentAlignment.TopLeft:
+                        case ContentAlignment.TopRight:
+                        case ContentAlignment.BottomRight:
+                        case ContentAlignment.BottomLeft:
+                            break;
+                        case ContentAlignment.TopCenter:
+                            tempY = usedSize.Height;
+                            tempHeight -= tempY;
+                            break;
+                        case ContentAlignment.BottomCenter:
+                            tempHeight -= usedSize.Height;
+                            break;
+                        case ContentAlignment.MiddleRight:
+                            tempWidth -= usedSize.Width;
+                            break;
+                        case ContentAlignment.MiddleLeft:
+                            tempX = usedSize.Width;
+                            tempWidth -= tempX;
+                            break;
+                    }
+                    break;
+            }
+            return new Rectangle(tempX, tempY, tempWidth, tempHeight);
+        }
+        public static Rectangle GetUsedRectangle(this IIconControl ctrl, Graphics g)
+        {
+            var iconMargin = ctrl.IconMargin;
+            var iconSize = ctrl.IconSize;
             var controlRange = g.VisibleClipBounds;
             int PointX = 0;
             int PointY = 0;
-            switch (control.IconAlign)
+            switch (ctrl.IconAlign)
             {
                 case ContentAlignment.BottomCenter:
                     PointX = (int)Math.Ceiling((controlRange.Width - iconSize.Width) / 2);
@@ -70,8 +122,11 @@ namespace MaterialSkin
                     break;
 
             }
-            var iconRect = new Rectangle(PointX, PointY, iconSize.Width, iconSize.Height);
-            g.DrawImage(control.Icon, iconRect);
+            return new Rectangle(PointX, PointY, iconSize.Width, iconSize.Height);
+        }
+        public static Size GetUsedSize(this IIconControl ctrl)
+        {
+            return new Size(ctrl.IconSize.Width + ctrl.IconMargin.Left + ctrl.IconMargin.Right, ctrl.IconSize.Height + ctrl.IconMargin.Top + ctrl.IconMargin.Bottom);
         }
     }
 }

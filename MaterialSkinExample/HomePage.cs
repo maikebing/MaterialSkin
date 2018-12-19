@@ -21,15 +21,11 @@ namespace MaterialSkinExample
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme =
                 new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
-            this.m_panelContent.MouseDoubleClick += (sender, e) =>
-                   {
-                       this.Close();
-                   };
         }
 
         private void materialIconButton10_Click(object sender, EventArgs e)
         {
-             this.Close();
+            this.Close();
         }
     }
 }
