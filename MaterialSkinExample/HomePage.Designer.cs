@@ -32,6 +32,7 @@
             this.m_panelContent = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
+            this.materialGroupBox1 = new MaterialSkin.Controls.MaterialGroupBox();
             this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
             this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
@@ -54,9 +55,12 @@
             this.materialIconButton4 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton5 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton6 = new MaterialSkin.Controls.MaterialIconButton();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.m_panelForm.SuspendLayout();
             this.m_panelContent.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
+            this.metroTabPage1.SuspendLayout();
+            this.materialGroupBox1.SuspendLayout();
             this.m_panelLeft.SuspendLayout();
             this.m_flowPanelLeftMenu.SuspendLayout();
             this.m_panelTop.SuspendLayout();
@@ -107,6 +111,7 @@
             // metroTabPage1
             // 
             this.metroTabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.metroTabPage1.Controls.Add(this.materialGroupBox1);
             this.metroTabPage1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
@@ -119,6 +124,21 @@
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
+            // 
+            // materialGroupBox1
+            // 
+            this.materialGroupBox1.Controls.Add(this.metroLabel1);
+            this.materialGroupBox1.Depth = 0;
+            this.materialGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialGroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.materialGroupBox1.Location = new System.Drawing.Point(0, 0);
+            this.materialGroupBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.materialGroupBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialGroupBox1.Name = "materialGroupBox1";
+            this.materialGroupBox1.Size = new System.Drawing.Size(946, 574);
+            this.materialGroupBox1.TabIndex = 2;
+            this.materialGroupBox1.TabStop = false;
+            this.materialGroupBox1.Text = "重要提醒";
             // 
             // metroTabPage2
             // 
@@ -486,6 +506,15 @@
             this.materialIconButton6.TabIndex = 6;
             this.materialIconButton6.Text = "首页";
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(137, 171);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(84, 20);
+            this.metroLabel1.TabIndex = 0;
+            this.metroLabel1.Text = "metroLabel1";
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -504,6 +533,9 @@
             this.m_panelForm.ResumeLayout(false);
             this.m_panelContent.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
+            this.metroTabPage1.ResumeLayout(false);
+            this.materialGroupBox1.ResumeLayout(false);
+            this.materialGroupBox1.PerformLayout();
             this.m_panelLeft.ResumeLayout(false);
             this.m_flowPanelLeftMenu.ResumeLayout(false);
             this.m_flowPanelLeftMenu.PerformLayout();
@@ -545,6 +577,8 @@
         private MetroFramework.Controls.MetroTabPage metroTabPage3;
         private MetroFramework.Controls.MetroTabPage metroTabPage4;
         private MetroFramework.Controls.MetroTabPage metroTabPage5;
+        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox1;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }
 
