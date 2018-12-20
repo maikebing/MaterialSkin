@@ -261,7 +261,7 @@ namespace MaterialSkin.Controls
         /// 根据配置绘制文字
         /// </summary>
         /// <param name="g"></param>
-        private void DrawText(Graphics g)
+        private  void DrawText(Graphics g)
         {
             if (string.IsNullOrEmpty(Text) || DisplayStyle == ToolStripItemDisplayStyle.None || DisplayStyle == ToolStripItemDisplayStyle.Image)
                 return;

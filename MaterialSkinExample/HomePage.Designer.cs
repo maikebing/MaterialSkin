@@ -80,7 +80,7 @@
             // 
             // m_panelContent
             // 
-            this.m_panelContent.BackColor = System.Drawing.Color.White;
+            this.m_panelContent.BackColor = System.Drawing.SystemColors.Control;
             this.m_panelContent.Controls.Add(this.metroTabControl1);
             this.m_panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
             this.m_panelContent.ForeColor = System.Drawing.Color.CornflowerBlue;
@@ -106,6 +106,7 @@
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.BackColor = System.Drawing.Color.Transparent;
             this.metroTabPage1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;

@@ -58,6 +58,9 @@
     <Compile Include="Controls\MaterialForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Controls\MaterialGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MaterialIconButton.cs">
       <SubType>Component</SubType>
     </Compile>
