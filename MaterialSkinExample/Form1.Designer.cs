@@ -35,6 +35,7 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.materialGroupBox1 = new MaterialSkin.Controls.MaterialGroupBox();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,11 +98,23 @@
             this.toolStripButton5.Size = new System.Drawing.Size(156, 24);
             this.toolStripButton5.Text = "toolStripButton5";
             // 
+            // materialGroupBox1
+            // 
+            this.materialGroupBox1.Depth = 0;
+            this.materialGroupBox1.Location = new System.Drawing.Point(43, 72);
+            this.materialGroupBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialGroupBox1.Name = "materialGroupBox1";
+            this.materialGroupBox1.Size = new System.Drawing.Size(459, 223);
+            this.materialGroupBox1.TabIndex = 1;
+            this.materialGroupBox1.TabStop = false;
+            this.materialGroupBox1.Text = "materialGroupBox1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.materialGroupBox1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -120,5 +133,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox1;
     }
 }

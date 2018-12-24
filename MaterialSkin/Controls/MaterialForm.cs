@@ -161,7 +161,6 @@ namespace MaterialSkin.Controls
             Sizable = true;
             DoubleBuffered = true;
             SetStyle(ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw, true);
-
             // This enables the form to trigger the MouseMove event even when mouse is over another control
             Application.AddMessageFilter(new MouseMessageFilter());
             MouseMessageFilter.MouseMove += OnGlobalMouseMove;
@@ -260,7 +259,8 @@ namespace MaterialSkin.Controls
                 return par;
             }
         }
-
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
         protected override void OnMouseDown(MouseEventArgs e)
         {
             if (DesignMode) return;
@@ -269,6 +269,8 @@ namespace MaterialSkin.Controls
             if (e.Button == MouseButtons.Left && !_maximized)
                 ResizeForm(_resizeDir);
             base.OnMouseDown(e);
+            //ReleaseCapture();
+            //SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
 
         protected override void OnMouseLeave(EventArgs e)
@@ -338,7 +340,6 @@ namespace MaterialSkin.Controls
             var newE = new MouseEventArgs(MouseButtons.None, 0, clientCursorPos.X, clientCursorPos.Y, 0);
             OnMouseMove(newE);
         }
-
         private void UpdateButtons(MouseEventArgs e, bool up = false)
         {
             if (DesignMode) return;
@@ -574,14 +575,12 @@ namespace MaterialSkin.Controls
 
         public bool PreFilterMessage(ref Message m)
         {
-
             if (m.Msg == WM_MOUSEMOVE)
             {
                 if (MouseMove != null)
                 {
                     int x = Control.MousePosition.X, y = Control.MousePosition.Y;
-
-                    MouseMove(null, new MouseEventArgs(MouseButtons.None, 0, x, y, 0));
+                    MouseMove(null, new MouseEventArgs(Control.MouseButtons, 0, x, y, 0));
                 }
             }
             return false;

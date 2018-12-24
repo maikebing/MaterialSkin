@@ -286,9 +286,5 @@ namespace MaterialSkin.Controls
                 );
             }
         }
-        #region 冒泡事件
-
-
-        #endregion
     }
 }

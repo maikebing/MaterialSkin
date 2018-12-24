@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -76,6 +77,9 @@
     <Compile Include="Controls\MaterialSingleLineTextField.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\MaterialSplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MaterialTabControl.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -85,6 +89,7 @@
     <Compile Include="Controls\MaterialProgressBar.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Designer\GroupBoxDesigner.cs" />
     <Compile Include="DrawHelper.cs" />
     <Compile Include="IIconControl.cs" />
     <Compile Include="IMaterialControl.cs" />

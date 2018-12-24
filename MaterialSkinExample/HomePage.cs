@@ -39,8 +39,24 @@ namespace MaterialSkinExample
             {
                 OnMouseMove(e);
             };
+            seedListView();
         }
-
+         private void seedListView()
+	    {
+			//Define
+			var data = new[]
+	        {
+		        new []{"【网办】这是一条测试消息！"},
+				new []{"【网办】这是一条测试消息！"},
+				new []{"【网办】这是一条测试消息！"},
+	        };
+			//Add
+			foreach (string[] version in data)
+			{
+				var item = new ListViewItem(version);
+				//materialListView1.Items.Add(item);
+			}
+	    }
         private void materialIconButton10_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -56,9 +72,5 @@ namespace MaterialSkinExample
             }
         }
 
-        [DllImport("user32.dll")]
-        public static extern bool ReleaseCapture();
-        [DllImport("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
     }
 }

@@ -32,11 +32,10 @@
             this.m_panelContent = new System.Windows.Forms.Panel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.materialGroupBox1 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage3 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage4 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.m_panelLeft = new System.Windows.Forms.Panel();
             this.m_flowPanelLeftMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.materialIconButton1 = new MaterialSkin.Controls.MaterialIconButton();
@@ -55,12 +54,12 @@
             this.materialIconButton4 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton5 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton6 = new MaterialSkin.Controls.MaterialIconButton();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.m_panelForm.SuspendLayout();
             this.m_panelContent.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            this.materialGroupBox1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
             this.m_panelLeft.SuspendLayout();
             this.m_flowPanelLeftMenu.SuspendLayout();
             this.m_panelTop.SuspendLayout();
@@ -96,10 +95,6 @@
             // metroTabControl1
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
-            this.metroTabControl1.Controls.Add(this.metroTabPage2);
-            this.metroTabControl1.Controls.Add(this.metroTabPage3);
-            this.metroTabControl1.Controls.Add(this.metroTabPage4);
-            this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
@@ -111,7 +106,7 @@
             // metroTabPage1
             // 
             this.metroTabPage1.BackColor = System.Drawing.Color.Transparent;
-            this.metroTabPage1.Controls.Add(this.materialGroupBox1);
+            this.metroTabPage1.Controls.Add(this.tableLayoutPanel2);
             this.metroTabPage1.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
@@ -125,77 +120,49 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
-            // materialGroupBox1
+            // tableLayoutPanel2
             // 
-            this.materialGroupBox1.Controls.Add(this.metroLabel1);
-            this.materialGroupBox1.Depth = 0;
-            this.materialGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialGroupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.materialGroupBox1.Location = new System.Drawing.Point(0, 0);
-            this.materialGroupBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.materialGroupBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox1.Name = "materialGroupBox1";
-            this.materialGroupBox1.Size = new System.Drawing.Size(946, 574);
-            this.materialGroupBox1.TabIndex = 2;
-            this.materialGroupBox1.TabStop = false;
-            this.materialGroupBox1.Text = "重要提醒";
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67F));
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel2, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(946, 574);
+            this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // metroTabPage2
+            // flowLayoutPanel1
             // 
-            this.metroTabPage2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(946, 574);
-            this.metroTabPage2.TabIndex = 1;
-            this.metroTabPage2.Text = "页签";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(320, 3);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(623, 568);
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
-            // metroTabPage3
+            // panel1
             // 
-            this.metroTabPage3.HorizontalScrollbarBarColor = true;
-            this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 10;
-            this.metroTabPage3.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage3.Name = "metroTabPage3";
-            this.metroTabPage3.Size = new System.Drawing.Size(946, 574);
-            this.metroTabPage3.TabIndex = 2;
-            this.metroTabPage3.Text = "页签";
-            this.metroTabPage3.VerticalScrollbarBarColor = true;
-            this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 10;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(228)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(312, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(2, 568);
+            this.panel1.TabIndex = 2;
             // 
-            // metroTabPage4
+            // flowLayoutPanel2
             // 
-            this.metroTabPage4.HorizontalScrollbarBarColor = true;
-            this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 10;
-            this.metroTabPage4.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage4.Name = "metroTabPage4";
-            this.metroTabPage4.Size = new System.Drawing.Size(946, 574);
-            this.metroTabPage4.TabIndex = 3;
-            this.metroTabPage4.Text = "页签";
-            this.metroTabPage4.VerticalScrollbarBarColor = true;
-            this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 10;
-            // 
-            // metroTabPage5
-            // 
-            this.metroTabPage5.HorizontalScrollbarBarColor = true;
-            this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage5.HorizontalScrollbarSize = 10;
-            this.metroTabPage5.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage5.Name = "metroTabPage5";
-            this.metroTabPage5.Size = new System.Drawing.Size(946, 574);
-            this.metroTabPage5.TabIndex = 4;
-            this.metroTabPage5.Text = "页签";
-            this.metroTabPage5.VerticalScrollbarBarColor = true;
-            this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage5.VerticalScrollbarSize = 10;
+            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(303, 568);
+            this.flowLayoutPanel2.TabIndex = 4;
             // 
             // m_panelLeft
             // 
@@ -506,15 +473,6 @@
             this.materialIconButton6.TabIndex = 6;
             this.materialIconButton6.Text = "首页";
             // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(137, 171);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(84, 20);
-            this.metroLabel1.TabIndex = 0;
-            this.metroLabel1.Text = "metroLabel1";
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -529,13 +487,12 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "窗口";
-            this.TopMost = true;
             this.m_panelForm.ResumeLayout(false);
             this.m_panelContent.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
-            this.materialGroupBox1.ResumeLayout(false);
-            this.materialGroupBox1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.ResumeLayout(false);
             this.m_panelLeft.ResumeLayout(false);
             this.m_flowPanelLeftMenu.ResumeLayout(false);
             this.m_flowPanelLeftMenu.PerformLayout();
@@ -573,12 +530,10 @@
         private MaterialSkin.Controls.MaterialIconButton materialIconButton10;
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private MetroFramework.Controls.MetroTabPage metroTabPage2;
-        private MetroFramework.Controls.MetroTabPage metroTabPage3;
-        private MetroFramework.Controls.MetroTabPage metroTabPage4;
-        private MetroFramework.Controls.MetroTabPage metroTabPage5;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox1;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
     }
 }
 
