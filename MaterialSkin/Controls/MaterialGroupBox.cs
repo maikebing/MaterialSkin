@@ -16,9 +16,12 @@ namespace MaterialSkin.Controls
     {
         public MaterialGroupBox()
         {
+            //default size
+            this.Size = new Size(200, 200);
+            SplitLineWeight = 2;
+            SplitLineColor = Color.AliceBlue;
             TitlePanel1 = new FlowLayoutPanel
             {
-                AutoSize = true,
                 FlowDirection = FlowDirection.LeftToRight,
                 Location = new Point(0, 0),
                 Width = 100,
@@ -31,8 +34,9 @@ namespace MaterialSkin.Controls
             };
             TitlePanel2 = new FlowLayoutPanel
             {
-                AutoSize = true,
                 FlowDirection = FlowDirection.RightToLeft,
+                Padding = new Padding(0),
+                Margin = new Padding(0),
             };
             TitlePanel2.SizeChanged += (sender, e) =>
             {
@@ -41,18 +45,19 @@ namespace MaterialSkin.Controls
             };
             ContentPanel = new FlowLayoutPanel
             {
-                AutoSize = true,
                 FlowDirection = FlowDirection.TopDown,
+                Padding = new Padding(0),
+                Margin = new Padding(0),
             };
             ContentPanel.SizeChanged += (sender, e) =>
             {
                 ContentPanel.Width = this.Width;
                 ContentPanel.Height = this.Height - this.TitleHeight - SplitLineWeight;
             };
-            splitterRect = new Rectangle();
-            SplitLineWeight = 2;
-            //default size
-            this.Size = new Size(200, 200);
+            this.SizeChanged += (sender, e) =>
+             {
+                 Invalidate();
+             };
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
@@ -84,17 +89,9 @@ namespace MaterialSkin.Controls
         }
 
         #region SplitRectangle 
-        private Rectangle splitterRect;
         public int SplitLineWeight { get; set; }
         public Color SplitLineColor { get; set; }
-        /// <summary>
-        /// 初始化分割条
-        /// </summary>
-        void InitSplitLine()
-        {
-            SplitLineWeight = 4;
 
-        }
         #endregion
         #region Content
         public FlowLayoutPanel ContentPanel { get; set; }
@@ -108,7 +105,7 @@ namespace MaterialSkin.Controls
 
         protected override void OnPaint(PaintEventArgs e)
         {
-            base.OnPaint(e);
+            //base.OnPaint(e);
             //更新布局
             UpdateLayout();
             //绘制文本
@@ -163,7 +160,7 @@ namespace MaterialSkin.Controls
         private void DrawSplitLine(Graphics g)
         {
             //获取文本绘制的区域
-            splitterRect = new Rectangle(0, TitleHeight, this.Width, SplitLineWeight);
+            var splitterRect = new Rectangle(0, TitleHeight, this.Width, SplitLineWeight);
             Pen vPen = new Pen(SplitLineColor, SplitLineWeight);
             g.DrawRectangle(vPen, splitterRect);
         }
@@ -185,22 +182,8 @@ namespace MaterialSkin.Controls
         /// </summary>
         void UpdateLayout()
         {
-            if (this.Width >= TitleWidth + TitlePanel2.Width)
-            {
-                TitlePanel2.Width = this.Width - TitleWidth;
-            }
-            else
-            {
-                this.Width = TitleWidth + TitlePanel2.Width;
-            }
-            if (this.Height >= TitleHeight + this.ContentPanel.Height + SplitLineWeight)
-            {
-                this.ContentPanel.Height = this.Height - TitleHeight - SplitLineWeight;
-            }
-            else
-            {
-                this.Height = TitleHeight + this.ContentPanel.Height + SplitLineWeight;
-            }
+            this.TitlePanel2.Width = this.Width - TitleWidth;
+            this.ContentPanel.Height = this.Height - TitleHeight - SplitLineWeight;
             //更新标题栏的布局
             this.TitlePanel2.Location = new Point(this.TitleWidth, 0);
             //更新内容布局

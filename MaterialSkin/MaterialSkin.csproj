@@ -62,6 +62,9 @@
     <Compile Include="Controls\MaterialGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\MaterialHeadGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MaterialIconButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -90,6 +93,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Designer\GroupBoxDesigner.cs" />
+    <Compile Include="Designer\HeadGroupDesigner.cs" />
     <Compile Include="DrawHelper.cs" />
     <Compile Include="IIconControl.cs" />
     <Compile Include="IMaterialControl.cs" />
