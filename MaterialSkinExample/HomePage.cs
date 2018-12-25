@@ -41,22 +41,30 @@ namespace MaterialSkinExample
             };
             seedListView();
         }
-         private void seedListView()
-	    {
-			//Define
-			var data = new[]
-	        {
-		        new []{"【网办】这是一条测试消息！"},
-				new []{"【网办】这是一条测试消息！"},
-				new []{"【网办】这是一条测试消息！"},
-	        };
-			//Add
-			foreach (string[] version in data)
-			{
-				var item = new ListViewItem(version);
-				//materialListView1.Items.Add(item);
-			}
-	    }
+        private void seedListView()
+        {
+            materialListView1.Columns.Add(new ColumnHeader() { Text = "内容", Name = "Col1", Width = materialListView1.Width - 95 });
+            materialListView1.Columns.Add(new ColumnHeader() { Text = "详情", Name = "Col2", Width = 80 });
+            //Define
+            var data = new[]
+            {
+                new []{"【网办】这是测试消息1！","详情"},
+                new []{"【网办】这是测试消息2！","详情"},
+                new []{"【网办】这是测试消息3！","详情"},
+                new []{"【网办】这是测试消息4！","详情"},
+                new []{"【网办】这是测试消息5！","详情"},
+                new []{"【网办】这是测试消息6！","详情"},
+                new []{"【网办】这是测试消息7！","详情"},
+                new []{"【网办】这是测试消息8！","详情"},
+                new []{"【网办】这是测试消息9！","详情"},
+            };
+            //Add
+            foreach (string[] version in data)
+            {
+                var item = new ListViewItem(version);
+                materialListView1.Items.Add(item);
+            }
+        }
         private void materialIconButton10_Click(object sender, EventArgs e)
         {
             this.Close();

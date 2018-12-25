@@ -35,10 +35,14 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.materialGroupBox1 = new MaterialSkin.Controls.MaterialGroupBox();
+            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
             this.materialGroupBox2 = new MaterialSkin.Controls.MaterialGroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.materialGroupBox4 = new MaterialSkin.Controls.MaterialGroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.materialGroupBox5 = new MaterialSkin.Controls.MaterialGroupBox();
+            this.materialGroupBox3 = new MaterialSkin.Controls.MaterialGroupBox();
             this.m_panelLeft = new System.Windows.Forms.Panel();
             this.m_flowPanelLeftMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.materialIconButton1 = new MaterialSkin.Controls.MaterialIconButton();
@@ -65,16 +69,15 @@
             this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.materialGroupBox3 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.materialGroupBox5 = new MaterialSkin.Controls.MaterialGroupBox();
             this.m_panelForm.SuspendLayout();
             this.m_panelContent.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.materialGroupBox1.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.m_panelLeft.SuspendLayout();
             this.m_flowPanelLeftMenu.SuspendLayout();
             this.m_panelTop.SuspendLayout();
@@ -82,7 +85,6 @@
             this.m_flowPanelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.m_flowPanelTopMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // m_panelForm
@@ -139,9 +141,9 @@
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 2, 0);
@@ -165,42 +167,78 @@
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(303, 568);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(369, 568);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // materialGroupBox1
             // 
+            this.materialGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
+            this.materialGroupBox1.Controls.Add(this.materialListView1);
             this.materialGroupBox1.Depth = 0;
+            this.materialGroupBox1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialGroupBox1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(165)))), ((int)(((byte)(31)))));
+            this.materialGroupBox1.Icon = null;
+            this.materialGroupBox1.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialGroupBox1.IconMargin = new System.Windows.Forms.Padding(3);
+            this.materialGroupBox1.IconSize = new System.Drawing.Size(24, 24);
             this.materialGroupBox1.Location = new System.Drawing.Point(3, 3);
             this.materialGroupBox1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialGroupBox1.Name = "materialGroupBox1";
-            this.materialGroupBox1.Size = new System.Drawing.Size(297, 278);
-            this.materialGroupBox1.SplitLineWeight = 4;
+            this.materialGroupBox1.Size = new System.Drawing.Size(363, 278);
+            this.materialGroupBox1.SplitLineWeight = 2;
             this.materialGroupBox1.TabIndex = 1;
             this.materialGroupBox1.TabStop = false;
-            this.materialGroupBox1.Text = "materialGroupBox1";
-            this.materialGroupBox1.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialGroupBox1.Text = "重要提醒";
+            this.materialGroupBox1.TextRectangle = new System.Drawing.Rectangle(24, 0, 97, 24);
+            // 
+            // materialListView1
+            // 
+            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
+            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.materialListView1.Depth = 0;
+            this.materialListView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.materialListView1.FullRowSelect = true;
+            this.materialListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
+            this.materialListView1.Location = new System.Drawing.Point(3, 26);
+            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialListView1.Name = "materialListView1";
+            this.materialListView1.OwnerDraw = true;
+            this.materialListView1.Size = new System.Drawing.Size(357, 249);
+            this.materialListView1.TabIndex = 0;
+            this.materialListView1.UseCompatibleStateImageBehavior = false;
+            this.materialListView1.View = System.Windows.Forms.View.Details;
             // 
             // materialGroupBox2
             // 
+            this.materialGroupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
             this.materialGroupBox2.Depth = 0;
+            this.materialGroupBox2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialGroupBox2.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialGroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.materialGroupBox2.Icon = null;
+            this.materialGroupBox2.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialGroupBox2.IconMargin = new System.Windows.Forms.Padding(3);
+            this.materialGroupBox2.IconSize = new System.Drawing.Size(24, 24);
             this.materialGroupBox2.Location = new System.Drawing.Point(3, 287);
             this.materialGroupBox2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialGroupBox2.Name = "materialGroupBox2";
-            this.materialGroupBox2.Size = new System.Drawing.Size(297, 278);
-            this.materialGroupBox2.SplitLineWeight = 4;
+            this.materialGroupBox2.Size = new System.Drawing.Size(363, 278);
+            this.materialGroupBox2.SplitLineWeight = 2;
             this.materialGroupBox2.TabIndex = 1;
             this.materialGroupBox2.TabStop = false;
-            this.materialGroupBox2.Text = "materialGroupBox2";
-            this.materialGroupBox2.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialGroupBox2.Text = "我的任务";
+            this.materialGroupBox2.TextRectangle = new System.Drawing.Rectangle(24, 0, 97, 24);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(228)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(312, 3);
+            this.panel1.Location = new System.Drawing.Point(378, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(2, 568);
             this.panel1.TabIndex = 2;
@@ -213,28 +251,90 @@
             this.tableLayoutPanel4.Controls.Add(this.materialGroupBox4, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(320, 3);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(386, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(623, 568);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(557, 568);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
             // materialGroupBox4
             // 
+            this.materialGroupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
             this.materialGroupBox4.Depth = 0;
+            this.materialGroupBox4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialGroupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialGroupBox4.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialGroupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(165)))), ((int)(((byte)(31)))));
+            this.materialGroupBox4.Icon = null;
+            this.materialGroupBox4.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialGroupBox4.IconMargin = new System.Windows.Forms.Padding(3);
+            this.materialGroupBox4.IconSize = new System.Drawing.Size(24, 24);
             this.materialGroupBox4.Location = new System.Drawing.Point(3, 287);
             this.materialGroupBox4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialGroupBox4.Name = "materialGroupBox4";
-            this.materialGroupBox4.Size = new System.Drawing.Size(617, 278);
-            this.materialGroupBox4.SplitLineWeight = 4;
+            this.materialGroupBox4.Size = new System.Drawing.Size(551, 278);
+            this.materialGroupBox4.SplitLineWeight = 2;
             this.materialGroupBox4.TabIndex = 3;
             this.materialGroupBox4.TabStop = false;
-            this.materialGroupBox4.Text = "materialGroupBox4";
-            this.materialGroupBox4.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialGroupBox4.Text = "在办事项状态跟踪";
+            this.materialGroupBox4.TextRectangle = new System.Drawing.Rectangle(24, 0, 172, 24);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.materialGroupBox5);
+            this.panel2.Controls.Add(this.materialGroupBox3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(551, 278);
+            this.panel2.TabIndex = 4;
+            // 
+            // materialGroupBox5
+            // 
+            this.materialGroupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
+            this.materialGroupBox5.Depth = 0;
+            this.materialGroupBox5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.materialGroupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.materialGroupBox5.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialGroupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(144)))), ((int)(((byte)(226)))));
+            this.materialGroupBox5.Icon = null;
+            this.materialGroupBox5.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialGroupBox5.IconMargin = new System.Windows.Forms.Padding(3);
+            this.materialGroupBox5.IconSize = new System.Drawing.Size(24, 24);
+            this.materialGroupBox5.Location = new System.Drawing.Point(0, 114);
+            this.materialGroupBox5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialGroupBox5.Name = "materialGroupBox5";
+            this.materialGroupBox5.Size = new System.Drawing.Size(551, 164);
+            this.materialGroupBox5.SplitLineWeight = 2;
+            this.materialGroupBox5.TabIndex = 3;
+            this.materialGroupBox5.TabStop = false;
+            this.materialGroupBox5.Text = "业务办理";
+            this.materialGroupBox5.TextRectangle = new System.Drawing.Rectangle(24, 0, 97, 24);
+            // 
+            // materialGroupBox3
+            // 
+            this.materialGroupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(254)))), ((int)(((byte)(244)))));
+            this.materialGroupBox3.Depth = 0;
+            this.materialGroupBox3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.materialGroupBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.materialGroupBox3.Font = new System.Drawing.Font("Roboto", 10F);
+            this.materialGroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(193)))), ((int)(((byte)(72)))));
+            this.materialGroupBox3.Icon = null;
+            this.materialGroupBox3.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialGroupBox3.IconMargin = new System.Windows.Forms.Padding(3);
+            this.materialGroupBox3.IconSize = new System.Drawing.Size(24, 24);
+            this.materialGroupBox3.Location = new System.Drawing.Point(0, 0);
+            this.materialGroupBox3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialGroupBox3.Name = "materialGroupBox3";
+            this.materialGroupBox3.Size = new System.Drawing.Size(551, 114);
+            this.materialGroupBox3.SplitLineWeight = 2;
+            this.materialGroupBox3.TabIndex = 2;
+            this.materialGroupBox3.TabStop = false;
+            this.materialGroupBox3.Text = "单位基本信息";
+            this.materialGroupBox3.TextRectangle = new System.Drawing.Rectangle(24, 0, 134, 24);
             // 
             // m_panelLeft
             // 
@@ -657,44 +757,6 @@
             this.materialLabel9.TabIndex = 1;
             this.materialLabel9.Text = "materialLabel9";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.materialGroupBox5);
-            this.panel2.Controls.Add(this.materialGroupBox3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(617, 278);
-            this.panel2.TabIndex = 4;
-            // 
-            // materialGroupBox3
-            // 
-            this.materialGroupBox3.Depth = 0;
-            this.materialGroupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialGroupBox3.Location = new System.Drawing.Point(0, 0);
-            this.materialGroupBox3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox3.Name = "materialGroupBox3";
-            this.materialGroupBox3.Size = new System.Drawing.Size(617, 114);
-            this.materialGroupBox3.SplitLineWeight = 4;
-            this.materialGroupBox3.TabIndex = 2;
-            this.materialGroupBox3.TabStop = false;
-            this.materialGroupBox3.Text = "materialGroupBox3";
-            this.materialGroupBox3.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            // 
-            // materialGroupBox5
-            // 
-            this.materialGroupBox5.Depth = 0;
-            this.materialGroupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialGroupBox5.Location = new System.Drawing.Point(0, 114);
-            this.materialGroupBox5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox5.Name = "materialGroupBox5";
-            this.materialGroupBox5.Size = new System.Drawing.Size(617, 164);
-            this.materialGroupBox5.SplitLineWeight = 4;
-            this.materialGroupBox5.TabIndex = 3;
-            this.materialGroupBox5.TabStop = false;
-            this.materialGroupBox5.Text = "materialGroupBox5";
-            this.materialGroupBox5.TitleColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -715,7 +777,9 @@
             this.metroTabPage1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
+            this.materialGroupBox1.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.m_panelLeft.ResumeLayout(false);
             this.m_flowPanelLeftMenu.ResumeLayout(false);
             this.m_flowPanelLeftMenu.PerformLayout();
@@ -725,7 +789,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.m_flowPanelTopMenu.ResumeLayout(false);
             this.m_flowPanelTopMenu.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -772,6 +835,7 @@
         private System.Windows.Forms.Panel panel2;
         private MaterialSkin.Controls.MaterialGroupBox materialGroupBox5;
         private MaterialSkin.Controls.MaterialGroupBox materialGroupBox3;
+        private MaterialSkin.Controls.MaterialListView materialListView1;
     }
 }
 
