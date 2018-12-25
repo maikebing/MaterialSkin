@@ -103,16 +103,6 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap bianji_lightBlue {
-            get {
-                object obj = ResourceManager.GetObject("bianji_lightBlue", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
-        /// </summary>
         internal static System.Drawing.Bitmap bianji1 {
             get {
                 object obj = ResourceManager.GetObject("bianji1", resourceCulture);
@@ -126,6 +116,46 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap bianji2 {
             get {
                 object obj = ResourceManager.GetObject("bianji2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap bianji3 {
+            get {
+                object obj = ResourceManager.GetObject("bianji3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap bianji4 {
+            get {
+                object obj = ResourceManager.GetObject("bianji4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap bianji5 {
+            get {
+                object obj = ResourceManager.GetObject("bianji5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap bianji6 {
+            get {
+                object obj = ResourceManager.GetObject("bianji6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,6 +283,46 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap icon_AR_jingtoushuaxin4 {
+            get {
+                object obj = ResourceManager.GetObject("icon_AR_jingtoushuaxin4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_AR_jingtoushuaxin5 {
+            get {
+                object obj = ResourceManager.GetObject("icon_AR_jingtoushuaxin5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_AR_jingtoushuaxin6 {
+            get {
+                object obj = ResourceManager.GetObject("icon_AR_jingtoushuaxin6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_AR_jingtoushuaxin7 {
+            get {
+                object obj = ResourceManager.GetObject("icon_AR_jingtoushuaxin7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap Idea {
             get {
                 object obj = ResourceManager.GetObject("Idea", resourceCulture);
@@ -313,6 +383,46 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap IE4 {
+            get {
+                object obj = ResourceManager.GetObject("IE4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap IE5 {
+            get {
+                object obj = ResourceManager.GetObject("IE5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap IE6 {
+            get {
+                object obj = ResourceManager.GetObject("IE6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap IE7 {
+            get {
+                object obj = ResourceManager.GetObject("IE7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap kuanjiantou {
             get {
                 object obj = ResourceManager.GetObject("kuanjiantou", resourceCulture);
@@ -346,6 +456,46 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap kuanjiantou3 {
             get {
                 object obj = ResourceManager.GetObject("kuanjiantou3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap kuanjiantou4 {
+            get {
+                object obj = ResourceManager.GetObject("kuanjiantou4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap kuanjiantou5 {
+            get {
+                object obj = ResourceManager.GetObject("kuanjiantou5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap kuanjiantou6 {
+            get {
+                object obj = ResourceManager.GetObject("kuanjiantou6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap kuanjiantou7 {
+            get {
+                object obj = ResourceManager.GetObject("kuanjiantou7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,6 +663,46 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap shigongdanweisel4 {
+            get {
+                object obj = ResourceManager.GetObject("shigongdanweisel4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap shigongdanweisel5 {
+            get {
+                object obj = ResourceManager.GetObject("shigongdanweisel5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap shigongdanweisel6 {
+            get {
+                object obj = ResourceManager.GetObject("shigongdanweisel6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap shigongdanweisel7 {
+            get {
+                object obj = ResourceManager.GetObject("shigongdanweisel7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap wancheng {
             get {
                 object obj = ResourceManager.GetObject("wancheng", resourceCulture);
@@ -553,6 +743,46 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap wancheng4 {
+            get {
+                object obj = ResourceManager.GetObject("wancheng4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wancheng5 {
+            get {
+                object obj = ResourceManager.GetObject("wancheng5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wancheng6 {
+            get {
+                object obj = ResourceManager.GetObject("wancheng6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wancheng7 {
+            get {
+                object obj = ResourceManager.GetObject("wancheng7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap weixiuguanli {
             get {
                 object obj = ResourceManager.GetObject("weixiuguanli", resourceCulture);
@@ -586,6 +816,46 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap weixiuguanli3 {
             get {
                 object obj = ResourceManager.GetObject("weixiuguanli3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap weixiuguanli4 {
+            get {
+                object obj = ResourceManager.GetObject("weixiuguanli4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap weixiuguanli5 {
+            get {
+                object obj = ResourceManager.GetObject("weixiuguanli5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap weixiuguanli6 {
+            get {
+                object obj = ResourceManager.GetObject("weixiuguanli6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap weixiuguanli7 {
+            get {
+                object obj = ResourceManager.GetObject("weixiuguanli7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -643,6 +913,46 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap woderenwu_14 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu_14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu_15 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu_15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu_16 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu_17 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu_17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap woderenwu1 {
             get {
                 object obj = ResourceManager.GetObject("woderenwu1", resourceCulture);
@@ -666,6 +976,46 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap woderenwu3 {
             get {
                 object obj = ResourceManager.GetObject("woderenwu3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu4 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu5 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu6 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap woderenwu7 {
+            get {
+                object obj = ResourceManager.GetObject("woderenwu7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -706,6 +1056,46 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap zhongyaotixing3 {
             get {
                 object obj = ResourceManager.GetObject("zhongyaotixing3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zhongyaotixing4 {
+            get {
+                object obj = ResourceManager.GetObject("zhongyaotixing4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zhongyaotixing5 {
+            get {
+                object obj = ResourceManager.GetObject("zhongyaotixing5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zhongyaotixing6 {
+            get {
+                object obj = ResourceManager.GetObject("zhongyaotixing6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zhongyaotixing7 {
+            get {
+                object obj = ResourceManager.GetObject("zhongyaotixing7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -793,6 +1183,46 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap zuji_copy4 {
+            get {
+                object obj = ResourceManager.GetObject("zuji_copy4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuji_copy5 {
+            get {
+                object obj = ResourceManager.GetObject("zuji_copy5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuji_copy6 {
+            get {
+                object obj = ResourceManager.GetObject("zuji_copy6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuji_copy7 {
+            get {
+                object obj = ResourceManager.GetObject("zuji_copy7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap zuoyedanwei {
             get {
                 object obj = ResourceManager.GetObject("zuoyedanwei", resourceCulture);
@@ -826,6 +1256,46 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap zuoyedanwei3 {
             get {
                 object obj = ResourceManager.GetObject("zuoyedanwei3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuoyedanwei4 {
+            get {
+                object obj = ResourceManager.GetObject("zuoyedanwei4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuoyedanwei5 {
+            get {
+                object obj = ResourceManager.GetObject("zuoyedanwei5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuoyedanwei6 {
+            get {
+                object obj = ResourceManager.GetObject("zuoyedanwei6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zuoyedanwei7 {
+            get {
+                object obj = ResourceManager.GetObject("zuoyedanwei7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

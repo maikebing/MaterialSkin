@@ -211,9 +211,6 @@
   <data name="bianji1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icons\16x16\lightGreen\bianji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bianji_lightBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icons\16x16\lightOrange\bianji_lightBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icon_AR_jingtoushuaxin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icons\16x16\lightBlue\icon_AR_jingtoushuaxin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -348,5 +345,149 @@
   </data>
   <data name="zuoyedanwei3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icons\16x16\White\zuoyedanwei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bianji3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\bianji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_AR_jingtoushuaxin4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\icon_AR_jingtoushuaxin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IE4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\IE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kuanjiantou4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\kuanjiantou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shigongdanweisel4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\shigongdanweisel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wancheng4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\wancheng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weixiuguanli4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\weixiuguanli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\woderenwu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\woderenwu_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zhongyaotixing4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\zhongyaotixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuji_copy4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\zuji-copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuoyedanwei4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightBlue\zuoyedanwei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bianji4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\bianji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bianji5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\bianji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bianji6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\bianji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_AR_jingtoushuaxin5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\icon_AR_jingtoushuaxin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_AR_jingtoushuaxin6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\icon_AR_jingtoushuaxin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_AR_jingtoushuaxin7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\icon_AR_jingtoushuaxin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IE5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\IE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IE6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\IE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IE7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\IE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kuanjiantou5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\kuanjiantou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kuanjiantou6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\kuanjiantou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kuanjiantou7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\kuanjiantou.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shigongdanweisel5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\shigongdanweisel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shigongdanweisel6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\shigongdanweisel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shigongdanweisel7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\shigongdanweisel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wancheng5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\wancheng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wancheng6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\wancheng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wancheng7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\wancheng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weixiuguanli5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\weixiuguanli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weixiuguanli6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\weixiuguanli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="weixiuguanli7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\weixiuguanli.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\woderenwu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\woderenwu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\woderenwu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\woderenwu_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\woderenwu_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woderenwu_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\woderenwu_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zhongyaotixing5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\zhongyaotixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zhongyaotixing6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\zhongyaotixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zhongyaotixing7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\zhongyaotixing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuji_copy5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\zuji-copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuji_copy6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\zuji-copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuji_copy7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\zuji-copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuoyedanwei5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightGreen\zuoyedanwei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuoyedanwei6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\lightOrange\zuoyedanwei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zuoyedanwei7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\32x32\White\zuoyedanwei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
