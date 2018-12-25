@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            MetroFramework.Controls.MetroTabPage metroTabPage2;
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
@@ -52,7 +53,6 @@
             this.materialGroupBox4 = new MaterialSkin.Controls.MaterialGroupBox();
             this.materialIconButton13 = new MaterialSkin.Controls.MaterialIconButton();
             this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.materialListView2 = new MaterialSkin.Controls.MaterialListView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.materialGroupBox5 = new MaterialSkin.Controls.MaterialGroupBox();
@@ -84,6 +84,7 @@
             this.materialIconButton4 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton5 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton6 = new MaterialSkin.Controls.MaterialIconButton();
+            metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.m_panelForm.SuspendLayout();
             this.m_panelContent.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -95,7 +96,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.materialGroupBox4.SuspendLayout();
             this.metroTabControl2.SuspendLayout();
-            this.metroTabPage2.SuspendLayout();
+            metroTabPage2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.materialGroupBox5.SuspendLayout();
             this.materialGroupBox3.SuspendLayout();
@@ -473,7 +474,7 @@
             // 
             // metroTabControl2
             // 
-            this.metroTabControl2.Controls.Add(this.metroTabPage2);
+            this.metroTabControl2.Controls.Add(metroTabPage2);
             this.metroTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl2.Location = new System.Drawing.Point(0, 27);
             this.metroTabControl2.Name = "metroTabControl2";
@@ -484,19 +485,21 @@
             // 
             // metroTabPage2
             // 
-            this.metroTabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
-            this.metroTabPage2.Controls.Add(this.materialListView2);
-            this.metroTabPage2.HorizontalScrollbarBarColor = true;
-            this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 10;
-            this.metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            this.metroTabPage2.Name = "metroTabPage2";
-            this.metroTabPage2.Size = new System.Drawing.Size(771, 262);
-            this.metroTabPage2.TabIndex = 0;
-            this.metroTabPage2.Text = "预算录入";
-            this.metroTabPage2.VerticalScrollbarBarColor = true;
-            this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 10;
+            metroTabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
+            metroTabPage2.Controls.Add(this.materialListView2);
+            metroTabPage2.HorizontalScrollbarBarColor = true;
+            metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
+            metroTabPage2.HorizontalScrollbarSize = 10;
+            metroTabPage2.Location = new System.Drawing.Point(4, 38);
+            metroTabPage2.Margin = new System.Windows.Forms.Padding(0);
+            metroTabPage2.Name = "metroTabPage2";
+            metroTabPage2.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
+            metroTabPage2.Size = new System.Drawing.Size(771, 262);
+            metroTabPage2.TabIndex = 0;
+            metroTabPage2.Text = "预算录入";
+            metroTabPage2.VerticalScrollbarBarColor = true;
+            metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
+            metroTabPage2.VerticalScrollbarSize = 10;
             // 
             // materialListView2
             // 
@@ -507,12 +510,13 @@
             this.materialListView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
             this.materialListView2.FullRowSelect = true;
             this.materialListView2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.materialListView2.Location = new System.Drawing.Point(0, 0);
+            this.materialListView2.Location = new System.Drawing.Point(1, 0);
+            this.materialListView2.Margin = new System.Windows.Forms.Padding(0);
             this.materialListView2.MouseLocation = new System.Drawing.Point(-1, -1);
             this.materialListView2.MouseState = MaterialSkin.MouseState.OUT;
             this.materialListView2.Name = "materialListView2";
             this.materialListView2.OwnerDraw = true;
-            this.materialListView2.Size = new System.Drawing.Size(771, 262);
+            this.materialListView2.Size = new System.Drawing.Size(770, 262);
             this.materialListView2.TabIndex = 2;
             this.materialListView2.UseCompatibleStateImageBehavior = false;
             this.materialListView2.View = System.Windows.Forms.View.Details;
@@ -608,7 +612,7 @@
             this.materialIconButton14.Primary = false;
             this.materialIconButton14.Size = new System.Drawing.Size(79, 22);
             this.materialIconButton14.TabIndex = 4;
-            this.materialIconButton14.Text = "维修";
+            this.materialIconButton14.Text = "修改";
             // 
             // tableLayoutPanel5
             // 
@@ -1058,7 +1062,7 @@
             this.materialGroupBox4.ResumeLayout(false);
             this.materialGroupBox4.PerformLayout();
             this.metroTabControl2.ResumeLayout(false);
-            this.metroTabPage2.ResumeLayout(false);
+            metroTabPage2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.materialGroupBox5.ResumeLayout(false);
             this.materialGroupBox5.PerformLayout();
@@ -1123,7 +1127,6 @@
         private MaterialSkin.Controls.MaterialGroupBox materialGroupBox3;
         private MaterialSkin.Controls.MaterialListView materialListView1;
         private MetroFramework.Controls.MetroTabControl metroTabControl2;
-        private MetroFramework.Controls.MetroTabPage metroTabPage2;
         private MaterialSkin.Controls.MaterialListView materialListView2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private MaterialSkin.Controls.MaterialLabel materialLabel10;

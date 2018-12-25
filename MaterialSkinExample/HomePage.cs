@@ -65,12 +65,12 @@ namespace MaterialSkinExample
                 materialListView1.Items.Add(item);
             }
             //Columns
-            int width = (int)((materialListView2.Width - 20) / 5);
-            materialListView2.Columns.Add(new ColumnHeader() { Text = "申报类型", Name = "Col1", Width = width });
-            materialListView2.Columns.Add(new ColumnHeader() { Text = "申报日期", Name = "Col2", Width = width });
-            materialListView2.Columns.Add(new ColumnHeader() { Text = "所属日期", Name = "Col1", Width = width });
-            materialListView2.Columns.Add(new ColumnHeader() { Text = "金额", Name = "Col2", Width = width });
-            materialListView2.Columns.Add(new ColumnHeader() { Text = "状态", Name = "Col1", Width = width });
+            int width = (int)((materialListView2.Width - 25) / 5);
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "申报类型", Name = "Col11", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "申报日期", Name = "Col12", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "所属日期", Name = "Col13", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "金额", Name = "Col14", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "状态", Name = "Col15", Width = width });
             //Define
             var data2 = new[]
             {
@@ -87,6 +87,7 @@ namespace MaterialSkinExample
                 var item = new ListViewItem(version);
                 materialListView2.Items.Add(item);
             }
+            //materialListView2.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
         private void materialIconButton10_Click(object sender, EventArgs e)
         {

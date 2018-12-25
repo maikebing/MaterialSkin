@@ -29,7 +29,6 @@ namespace MaterialSkin.Controls
             ResizeRedraw = true;
             BorderStyle = BorderStyle.None;
             SetStyle(ControlStyles.DoubleBuffer | ControlStyles.OptimizedDoubleBuffer, true);
-
             //Fix for hovers, by default it doesn't redraw
             //TODO: should only redraw when the hovered line changed, this to reduce unnecessary redraws
             MouseLocation = new Point(-1, -1);
