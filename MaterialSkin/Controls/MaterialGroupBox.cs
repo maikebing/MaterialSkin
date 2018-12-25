@@ -19,7 +19,6 @@ namespace MaterialSkin.Controls
         public MouseState MouseState { get; set; }
         public MaterialGroupBox()
         {
-
             //获取全局字体样式
             this.Font = SkinManager.ROBOTO_MEDIUM_10;
             //获取颜色样式
@@ -52,7 +51,7 @@ namespace MaterialSkin.Controls
         protected override void OnPaint(PaintEventArgs e)
         {
             //绘制图标
-            this.DrawIcon(e.Graphics);
+            this.DrawIcon(e.Graphics, new Rectangle(0, 0, IconSize.Width, IconSize.Height));
             //绘制文本
             this.DrawText(e.Graphics);
             //绘制分割线（根据theme）

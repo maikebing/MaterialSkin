@@ -18,23 +18,22 @@ namespace MaterialSkin
     }
     public static class IIconControlExtensions
     {
-        public static void DrawIcon(this IIconControl ctrl, Graphics g)
+        public static void DrawIcon(this IIconControl ctrl, Graphics g, Rectangle rect)
         {
             if (ctrl.Icon == null)
                 return;
             if (ctrl.DisplayStyle == ToolStripItemDisplayStyle.None || ctrl.DisplayStyle == ToolStripItemDisplayStyle.Text)
                 return;
-            var iconRect = GetUsedRectangle(ctrl, g);
+            var iconRect = GetUsedRectangle(ctrl, g, rect);
             g.DrawImage(ctrl.Icon, iconRect);
         }
 
-        public static Rectangle GetRestRectangle(this IIconControl ctrl, Graphics g)
+        public static Rectangle GetRestRectangle(this IIconControl ctrl, Graphics g, Rectangle rect)
         {
-            var ClientRectangle = g.VisibleClipBounds;
-            int tempX = (int)ClientRectangle.X,
-                tempY = (int)ClientRectangle.Y,
-                tempWidth = (int)ClientRectangle.Width,
-                tempHeight = (int)ClientRectangle.Height;
+            int tempX = (int)rect.X,
+                tempY = (int)rect.Y,
+                tempWidth = (int)rect.Width,
+                tempHeight = (int)rect.Height;
             var usedSize = GetUsedSize(ctrl);
             switch (ctrl.DisplayStyle)
             {
@@ -74,11 +73,11 @@ namespace MaterialSkin
             }
             return new Rectangle(tempX, tempY, tempWidth, tempHeight);
         }
-        public static Rectangle GetUsedRectangle(this IIconControl ctrl, Graphics g)
+        public static Rectangle GetUsedRectangle(this IIconControl ctrl, Graphics g, Rectangle rect)
         {
             var iconMargin = ctrl.IconMargin;
             var iconSize = ctrl.IconSize;
-            var controlRange = g.VisibleClipBounds;
+            RectangleF controlRange = new RectangleF(rect.X, rect.Y, rect.Width, rect.Height);
             int PointX = 0;
             int PointY = 0;
             switch (ctrl.IconAlign)

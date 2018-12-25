@@ -43,7 +43,7 @@ namespace MaterialSkinExample
         }
         private void seedListView()
         {
-            materialListView1.Columns.Add(new ColumnHeader() { Text = "内容", Name = "Col1", Width = materialListView1.Width - 95 });
+            materialListView1.Columns.Add(new ColumnHeader() { Text = "内容", Name = "Col1", Width = materialListView1.Width - 110 });
             materialListView1.Columns.Add(new ColumnHeader() { Text = "详情", Name = "Col2", Width = 80 });
             //Define
             var data = new[]
@@ -65,7 +65,7 @@ namespace MaterialSkinExample
                 materialListView1.Items.Add(item);
             }
             //Columns
-            int width = (int)((materialListView2.Width - 15) / 5);
+            int width = (int)((materialListView2.Width - 20) / 5);
             materialListView2.Columns.Add(new ColumnHeader() { Text = "申报类型", Name = "Col1", Width = width });
             materialListView2.Columns.Add(new ColumnHeader() { Text = "申报日期", Name = "Col2", Width = width });
             materialListView2.Columns.Add(new ColumnHeader() { Text = "所属日期", Name = "Col1", Width = width });

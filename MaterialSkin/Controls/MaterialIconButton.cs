@@ -18,8 +18,9 @@ namespace MaterialSkin.Controls
         {
             //初始化缺省配置
             IconAlign = ContentAlignment.MiddleLeft;
-            IconSize = new Size(24, 24);
-            DisplayStyle = ToolStripItemDisplayStyle.None;
+            IconSize = new Size(16, 16);
+            Icon=global::MaterialSkin.Properties.Resources.Icon1;
+            DisplayStyle = ToolStripItemDisplayStyle.ImageAndText;
             Primary = true;
             _animationManager = new AnimationManager(false)
             {
@@ -153,9 +154,9 @@ namespace MaterialSkin.Controls
                 }
                 g.SmoothingMode = SmoothingMode.None;
             }
-            this.DrawIcon(e.Graphics);
+            this.DrawIcon(e.Graphics, e.ClipRectangle);
             //绘制文本
-            this.DrawText(e.Graphics);
+            this.DrawText(e.Graphics,e.ClipRectangle);
         }
         protected override void OnCreateControl()
         {
@@ -261,12 +262,12 @@ namespace MaterialSkin.Controls
         /// 根据配置绘制文字
         /// </summary>
         /// <param name="g"></param>
-        private void DrawText(Graphics g)
+        private void DrawText(Graphics g,Rectangle rect)
         {
             if (string.IsNullOrEmpty(Text) || DisplayStyle == ToolStripItemDisplayStyle.None || DisplayStyle == ToolStripItemDisplayStyle.Image)
                 return;
             //获取文本绘制的区域
-            Rectangle textRectangle = this.GetRestRectangle(g);
+            Rectangle textRectangle = this.GetRestRectangle(g,rect);
             if (Primary)
             {
                 g.DrawString(
