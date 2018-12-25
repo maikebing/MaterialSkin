@@ -71,6 +71,5 @@ namespace MaterialSkinExample
                 SendMessage(Handle, 0x00A1, 2, 0);
             }
         }
-
     }
 }
