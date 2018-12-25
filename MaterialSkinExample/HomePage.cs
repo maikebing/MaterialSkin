@@ -48,21 +48,44 @@ namespace MaterialSkinExample
             //Define
             var data = new[]
             {
-                new []{"【网办】这是测试消息1！","详情"},
-                new []{"【网办】这是测试消息2！","详情"},
-                new []{"【网办】这是测试消息3！","详情"},
-                new []{"【网办】这是测试消息4！","详情"},
-                new []{"【网办】这是测试消息5！","详情"},
-                new []{"【网办】这是测试消息6！","详情"},
-                new []{"【网办】这是测试消息7！","详情"},
-                new []{"【网办】这是测试消息8！","详情"},
-                new []{"【网办】这是测试消息9！","详情"},
+                new []{"[网办]这是测试消息1！","详情"},
+                new []{"[网办]这是测试消息2！","详情"},
+                new []{"[网办]这是测试消息3！","详情"},
+                new []{"[网办]这是测试消息4！","详情"},
+                new []{"[网办]这是测试消息5！","详情"},
+                new []{"[网办]这是测试消息6！","详情"},
+                new []{"[网办]这是测试消息7！","详情"},
+                new []{"[网办]这是测试消息8！","详情"},
+                new []{"[网办]这是测试消息9！","详情"},
             };
             //Add
             foreach (string[] version in data)
             {
                 var item = new ListViewItem(version);
                 materialListView1.Items.Add(item);
+            }
+            //Columns
+            int width = (int)((materialListView2.Width - 15) / 5);
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "申报类型", Name = "Col1", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "申报日期", Name = "Col2", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "所属日期", Name = "Col1", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "金额", Name = "Col2", Width = width });
+            materialListView2.Columns.Add(new ColumnHeader() { Text = "状态", Name = "Col1", Width = width });
+            //Define
+            var data2 = new[]
+            {
+                new []{"日常项目录入","2018-01-07","2018-01至2018-12","54321.00","申请成功"},
+                new []{"基础信息录入","2018-01-07","2018-01至2018-12","54321.00","申请成功"},
+                new []{"日常项目录入","2018-01-07","2018-01至2018-12","54321.00","申请成功"},
+                new []{"基础信息录入","2018-01-07","2018-01至2018-12","54321.00","申请成功"},
+                new []{"日常项目录入","2018-01-07","2018-01至2018-12","54321.00","申请成功"},
+                new []{"基础信息录入","2018-01-07","2018-01至2018-12","54321.00","申请成功"},
+            };
+            //Add
+            foreach (string[] version in data2)
+            {
+                var item = new ListViewItem(version);
+                materialListView2.Items.Add(item);
             }
         }
         private void materialIconButton10_Click(object sender, EventArgs e)
