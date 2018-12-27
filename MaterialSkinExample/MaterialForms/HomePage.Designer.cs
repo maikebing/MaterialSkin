@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            MetroFramework.Controls.MetroTabPage metroTabPage2;
-            this.materialListView2 = new MaterialSkin.Controls.MaterialListView();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
@@ -44,36 +42,9 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialGroupBox1 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.materialIconButton11 = new MaterialSkin.Controls.MaterialIconButton();
-            this.materialListView1 = new MaterialSkin.Controls.MaterialListView();
-            this.materialGroupBox2 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.materialIconButton12 = new MaterialSkin.Controls.MaterialIconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialGroupBox4 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.materialIconButton13 = new MaterialSkin.Controls.MaterialIconButton();
-            this.metroTabControl2 = new MetroFramework.Controls.MetroTabControl();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.materialGroupBox5 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.materialGroupBox6 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.materialIconButton16 = new MaterialSkin.Controls.MaterialIconButton();
-            this.materialIconButton17 = new MaterialSkin.Controls.MaterialIconButton();
-            this.materialIconButton18 = new MaterialSkin.Controls.MaterialIconButton();
-            this.materialGroupBox7 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.materialIconButton15 = new MaterialSkin.Controls.MaterialIconButton();
-            this.materialGroupBox3 = new MaterialSkin.Controls.MaterialGroupBox();
-            this.materialIconButton14 = new MaterialSkin.Controls.MaterialIconButton();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
             this.m_panelLeft = new System.Windows.Forms.Panel();
             this.m_flowPanelLeftMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.materialIconButton1 = new MaterialSkin.Controls.MaterialIconButton();
@@ -111,27 +82,19 @@
             this.materialIconButton35 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton36 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton37 = new MaterialSkin.Controls.MaterialIconButton();
-            metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
-            metroTabPage2.SuspendLayout();
+            this.uCtrlNoticeRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlNoticeRegion();
+            this.uCtrlTasksRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlTasksRegion();
+            this.uCtrlBasicInfoRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlBasicInfoRegion();
+            this.uCtrlBusinessTrackingRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlBusinessTrackingRegion();
+            this.uCtrlBusinessRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlBusinessRegion();
             this.m_panelForm.SuspendLayout();
             this.m_panelContent.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.materialGroupBox1.SuspendLayout();
-            this.materialGroupBox2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
-            this.materialGroupBox4.SuspendLayout();
-            this.metroTabControl2.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.materialGroupBox5.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.materialGroupBox6.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.materialGroupBox7.SuspendLayout();
-            this.materialGroupBox3.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
             this.m_panelLeft.SuspendLayout();
             this.m_flowPanelLeftMenu.SuspendLayout();
             this.m_panelTop.SuspendLayout();
@@ -140,44 +103,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.m_flowPanelTopMenu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // metroTabPage2
-            // 
-            metroTabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
-            metroTabPage2.Controls.Add(this.materialListView2);
-            metroTabPage2.HorizontalScrollbarBarColor = true;
-            metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            metroTabPage2.HorizontalScrollbarSize = 10;
-            metroTabPage2.Location = new System.Drawing.Point(4, 38);
-            metroTabPage2.Margin = new System.Windows.Forms.Padding(0);
-            metroTabPage2.Name = "metroTabPage2";
-            metroTabPage2.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
-            metroTabPage2.Size = new System.Drawing.Size(771, 303);
-            metroTabPage2.TabIndex = 0;
-            metroTabPage2.Text = "预算录入";
-            metroTabPage2.VerticalScrollbarBarColor = true;
-            metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            metroTabPage2.VerticalScrollbarSize = 10;
-            // 
-            // materialListView2
-            // 
-            this.materialListView2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
-            this.materialListView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView2.Depth = 0;
-            this.materialListView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialListView2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.materialListView2.FullRowSelect = true;
-            this.materialListView2.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.materialListView2.Location = new System.Drawing.Point(1, 0);
-            this.materialListView2.Margin = new System.Windows.Forms.Padding(0);
-            this.materialListView2.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView2.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView2.Name = "materialListView2";
-            this.materialListView2.OwnerDraw = true;
-            this.materialListView2.Size = new System.Drawing.Size(770, 303);
-            this.materialListView2.TabIndex = 2;
-            this.materialListView2.UseCompatibleStateImageBehavior = false;
-            this.materialListView2.View = System.Windows.Forms.View.Details;
             // 
             // materialLabel2
             // 
@@ -363,8 +288,8 @@
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.materialGroupBox1, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.materialGroupBox2, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.uCtrlNoticeRegion1, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.uCtrlTasksRegion1, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -373,106 +298,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(521, 748);
             this.tableLayoutPanel3.TabIndex = 3;
-            // 
-            // materialGroupBox1
-            // 
-            this.materialGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
-            this.materialGroupBox1.Controls.Add(this.materialIconButton11);
-            this.materialGroupBox1.Controls.Add(this.materialListView1);
-            this.materialGroupBox1.Depth = 0;
-            this.materialGroupBox1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(165)))), ((int)(((byte)(31)))));
-            this.materialGroupBox1.Icon = global::MaterialSkinExample.Properties.Resources.zhongyaotixing6;
-            this.materialGroupBox1.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox1.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox1.IconSize = new System.Drawing.Size(20, 20);
-            this.materialGroupBox1.Location = new System.Drawing.Point(3, 3);
-            this.materialGroupBox1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox1.Name = "materialGroupBox1";
-            this.materialGroupBox1.Size = new System.Drawing.Size(515, 368);
-            this.materialGroupBox1.SplitLineWeight = 2;
-            this.materialGroupBox1.TabIndex = 1;
-            this.materialGroupBox1.TabStop = false;
-            this.materialGroupBox1.Text = "重要提醒";
-            this.materialGroupBox1.TextRectangle = new System.Drawing.Rectangle(20, 0, 97, 20);
-            // 
-            // materialIconButton11
-            // 
-            this.materialIconButton11.AutoSize = true;
-            this.materialIconButton11.Depth = 0;
-            this.materialIconButton11.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton11.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton11.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton11.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton11.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton11.Location = new System.Drawing.Point(492, -2);
-            this.materialIconButton11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton11.Name = "materialIconButton11";
-            this.materialIconButton11.Primary = true;
-            this.materialIconButton11.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton11.TabIndex = 1;
-            this.materialIconButton11.Text = "materialIconButton11";
-            // 
-            // materialListView1
-            // 
-            this.materialListView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
-            this.materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.materialListView1.Depth = 0;
-            this.materialListView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialListView1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.materialListView1.FullRowSelect = true;
-            this.materialListView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.None;
-            this.materialListView1.Location = new System.Drawing.Point(0, 23);
-            this.materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.materialListView1.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialListView1.Name = "materialListView1";
-            this.materialListView1.OwnerDraw = true;
-            this.materialListView1.Size = new System.Drawing.Size(515, 345);
-            this.materialListView1.TabIndex = 0;
-            this.materialListView1.UseCompatibleStateImageBehavior = false;
-            this.materialListView1.View = System.Windows.Forms.View.Details;
-            // 
-            // materialGroupBox2
-            // 
-            this.materialGroupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.materialGroupBox2.Controls.Add(this.materialIconButton12);
-            this.materialGroupBox2.Depth = 0;
-            this.materialGroupBox2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
-            this.materialGroupBox2.Icon = global::MaterialSkinExample.Properties.Resources.woderenwu_14;
-            this.materialGroupBox2.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox2.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox2.IconSize = new System.Drawing.Size(20, 20);
-            this.materialGroupBox2.Location = new System.Drawing.Point(3, 377);
-            this.materialGroupBox2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox2.Name = "materialGroupBox2";
-            this.materialGroupBox2.Size = new System.Drawing.Size(515, 368);
-            this.materialGroupBox2.SplitLineWeight = 2;
-            this.materialGroupBox2.TabIndex = 1;
-            this.materialGroupBox2.TabStop = false;
-            this.materialGroupBox2.Text = "我的任务";
-            this.materialGroupBox2.TextRectangle = new System.Drawing.Rectangle(20, 0, 97, 20);
-            // 
-            // materialIconButton12
-            // 
-            this.materialIconButton12.AutoSize = true;
-            this.materialIconButton12.Depth = 0;
-            this.materialIconButton12.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton12.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin4;
-            this.materialIconButton12.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton12.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton12.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton12.Location = new System.Drawing.Point(492, -2);
-            this.materialIconButton12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton12.Name = "materialIconButton12";
-            this.materialIconButton12.Primary = true;
-            this.materialIconButton12.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton12.TabIndex = 2;
-            this.materialIconButton12.Text = "materialIconButton12";
             // 
             // panel1
             // 
@@ -488,8 +313,8 @@
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Controls.Add(this.materialGroupBox4, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel2, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.uCtrlBusinessTrackingRegion1, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(538, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
@@ -500,398 +325,15 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(785, 748);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
-            // materialGroupBox4
-            // 
-            this.materialGroupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(246)))));
-            this.materialGroupBox4.Controls.Add(this.materialIconButton13);
-            this.materialGroupBox4.Controls.Add(this.metroTabControl2);
-            this.materialGroupBox4.Depth = 0;
-            this.materialGroupBox4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialGroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(165)))), ((int)(((byte)(31)))));
-            this.materialGroupBox4.Icon = global::MaterialSkinExample.Properties.Resources.zuji_copy6;
-            this.materialGroupBox4.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox4.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox4.IconSize = new System.Drawing.Size(20, 20);
-            this.materialGroupBox4.Location = new System.Drawing.Point(3, 377);
-            this.materialGroupBox4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox4.Name = "materialGroupBox4";
-            this.materialGroupBox4.Size = new System.Drawing.Size(779, 368);
-            this.materialGroupBox4.SplitLineWeight = 2;
-            this.materialGroupBox4.TabIndex = 3;
-            this.materialGroupBox4.TabStop = false;
-            this.materialGroupBox4.Text = "在办事项状态跟踪";
-            this.materialGroupBox4.TextRectangle = new System.Drawing.Rectangle(20, 0, 172, 20);
-            // 
-            // materialIconButton13
-            // 
-            this.materialIconButton13.AutoSize = true;
-            this.materialIconButton13.Depth = 0;
-            this.materialIconButton13.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton13.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton13.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton13.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton13.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton13.Location = new System.Drawing.Point(755, -2);
-            this.materialIconButton13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton13.Name = "materialIconButton13";
-            this.materialIconButton13.Primary = true;
-            this.materialIconButton13.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton13.TabIndex = 3;
-            this.materialIconButton13.Text = "materialIconButton13";
-            // 
-            // metroTabControl2
-            // 
-            this.metroTabControl2.Controls.Add(metroTabPage2);
-            this.metroTabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.metroTabControl2.Location = new System.Drawing.Point(0, 23);
-            this.metroTabControl2.Name = "metroTabControl2";
-            this.metroTabControl2.SelectedIndex = 0;
-            this.metroTabControl2.Size = new System.Drawing.Size(779, 345);
-            this.metroTabControl2.TabIndex = 0;
-            this.metroTabControl2.UseSelectable = true;
-            // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.materialGroupBox5);
-            this.panel2.Controls.Add(this.materialGroupBox3);
+            this.panel2.Controls.Add(this.uCtrlBusinessRegion1);
+            this.panel2.Controls.Add(this.uCtrlBasicInfoRegion1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(779, 368);
             this.panel2.TabIndex = 4;
-            // 
-            // materialGroupBox5
-            // 
-            this.materialGroupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.materialGroupBox5.Controls.Add(this.flowLayoutPanel1);
-            this.materialGroupBox5.Controls.Add(this.materialIconButton15);
-            this.materialGroupBox5.Depth = 0;
-            this.materialGroupBox5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.materialGroupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
-            this.materialGroupBox5.Icon = global::MaterialSkinExample.Properties.Resources.IE4;
-            this.materialGroupBox5.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox5.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox5.IconSize = new System.Drawing.Size(20, 20);
-            this.materialGroupBox5.Location = new System.Drawing.Point(0, 114);
-            this.materialGroupBox5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox5.Name = "materialGroupBox5";
-            this.materialGroupBox5.Size = new System.Drawing.Size(779, 254);
-            this.materialGroupBox5.SplitLineWeight = 2;
-            this.materialGroupBox5.TabIndex = 3;
-            this.materialGroupBox5.TabStop = false;
-            this.materialGroupBox5.Text = "业务办理";
-            this.materialGroupBox5.TextRectangle = new System.Drawing.Rectangle(20, 0, 97, 20);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.materialGroupBox6);
-            this.flowLayoutPanel1.Controls.Add(this.materialGroupBox7);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 23);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(779, 231);
-            this.flowLayoutPanel1.TabIndex = 6;
-            // 
-            // materialGroupBox6
-            // 
-            this.materialGroupBox6.Controls.Add(this.flowLayoutPanel2);
-            this.materialGroupBox6.Depth = 0;
-            this.materialGroupBox6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
-            this.materialGroupBox6.Icon = null;
-            this.materialGroupBox6.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox6.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox6.IconSize = new System.Drawing.Size(24, 24);
-            this.materialGroupBox6.Location = new System.Drawing.Point(3, 3);
-            this.materialGroupBox6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox6.Name = "materialGroupBox6";
-            this.materialGroupBox6.Size = new System.Drawing.Size(757, 115);
-            this.materialGroupBox6.SplitLineWeight = 2;
-            this.materialGroupBox6.TabIndex = 0;
-            this.materialGroupBox6.TabStop = false;
-            this.materialGroupBox6.Text = "预算";
-            this.materialGroupBox6.TextRectangle = new System.Drawing.Rectangle(24, 0, 59, 24);
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.flowLayoutPanel2.Controls.Add(this.materialIconButton16);
-            this.flowLayoutPanel2.Controls.Add(this.materialIconButton17);
-            this.flowLayoutPanel2.Controls.Add(this.materialIconButton18);
-            this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 27);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(757, 88);
-            this.flowLayoutPanel2.TabIndex = 0;
-            // 
-            // materialIconButton16
-            // 
-            this.materialIconButton16.AutoSize = true;
-            this.materialIconButton16.BackColor = System.Drawing.Color.Transparent;
-            this.materialIconButton16.Depth = 0;
-            this.materialIconButton16.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton16.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialIconButton16.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton16.Icon = global::MaterialSkinExample.Properties.Resources.bianji5;
-            this.materialIconButton16.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton16.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.materialIconButton16.IconSize = new System.Drawing.Size(32, 32);
-            this.materialIconButton16.Location = new System.Drawing.Point(10, 5);
-            this.materialIconButton16.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.materialIconButton16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton16.Name = "materialIconButton16";
-            this.materialIconButton16.Primary = true;
-            this.materialIconButton16.Size = new System.Drawing.Size(134, 59);
-            this.materialIconButton16.TabIndex = 7;
-            this.materialIconButton16.Text = "日常项目录入";
-            // 
-            // materialIconButton17
-            // 
-            this.materialIconButton17.AutoSize = true;
-            this.materialIconButton17.BackColor = System.Drawing.Color.Transparent;
-            this.materialIconButton17.Depth = 0;
-            this.materialIconButton17.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton17.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialIconButton17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton17.Icon = global::MaterialSkinExample.Properties.Resources.bianji3;
-            this.materialIconButton17.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton17.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.materialIconButton17.IconSize = new System.Drawing.Size(32, 32);
-            this.materialIconButton17.Location = new System.Drawing.Point(164, 5);
-            this.materialIconButton17.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.materialIconButton17.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton17.Name = "materialIconButton17";
-            this.materialIconButton17.Primary = true;
-            this.materialIconButton17.Size = new System.Drawing.Size(134, 59);
-            this.materialIconButton17.TabIndex = 8;
-            this.materialIconButton17.Text = "基础信息录入";
-            // 
-            // materialIconButton18
-            // 
-            this.materialIconButton18.AutoSize = true;
-            this.materialIconButton18.BackColor = System.Drawing.Color.Transparent;
-            this.materialIconButton18.Depth = 0;
-            this.materialIconButton18.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton18.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialIconButton18.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton18.Icon = global::MaterialSkinExample.Properties.Resources.bianji4;
-            this.materialIconButton18.IconAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.materialIconButton18.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.materialIconButton18.IconSize = new System.Drawing.Size(32, 32);
-            this.materialIconButton18.Location = new System.Drawing.Point(318, 5);
-            this.materialIconButton18.Margin = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.materialIconButton18.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton18.Name = "materialIconButton18";
-            this.materialIconButton18.Primary = true;
-            this.materialIconButton18.Size = new System.Drawing.Size(134, 59);
-            this.materialIconButton18.TabIndex = 9;
-            this.materialIconButton18.Text = "预算编审录入";
-            // 
-            // materialGroupBox7
-            // 
-            this.materialGroupBox7.Controls.Add(this.flowLayoutPanel3);
-            this.materialGroupBox7.Depth = 0;
-            this.materialGroupBox7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
-            this.materialGroupBox7.Icon = null;
-            this.materialGroupBox7.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox7.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox7.IconSize = new System.Drawing.Size(24, 24);
-            this.materialGroupBox7.Location = new System.Drawing.Point(3, 124);
-            this.materialGroupBox7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox7.Name = "materialGroupBox7";
-            this.materialGroupBox7.Size = new System.Drawing.Size(757, 100);
-            this.materialGroupBox7.SplitLineWeight = 2;
-            this.materialGroupBox7.TabIndex = 1;
-            this.materialGroupBox7.TabStop = false;
-            this.materialGroupBox7.Text = "支出";
-            this.materialGroupBox7.TextRectangle = new System.Drawing.Rectangle(24, 0, 59, 24);
-            // 
-            // flowLayoutPanel3
-            // 
-            this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 27);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(757, 73);
-            this.flowLayoutPanel3.TabIndex = 0;
-            // 
-            // materialIconButton15
-            // 
-            this.materialIconButton15.AutoSize = true;
-            this.materialIconButton15.Depth = 0;
-            this.materialIconButton15.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton15.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin4;
-            this.materialIconButton15.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton15.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton15.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton15.Location = new System.Drawing.Point(755, -2);
-            this.materialIconButton15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton15.Name = "materialIconButton15";
-            this.materialIconButton15.Primary = true;
-            this.materialIconButton15.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton15.TabIndex = 5;
-            this.materialIconButton15.Text = "materialIconButton15";
-            // 
-            // materialGroupBox3
-            // 
-            this.materialGroupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(254)))), ((int)(((byte)(244)))));
-            this.materialGroupBox3.Controls.Add(this.materialIconButton14);
-            this.materialGroupBox3.Controls.Add(this.tableLayoutPanel5);
-            this.materialGroupBox3.Depth = 0;
-            this.materialGroupBox3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialGroupBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.materialGroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.materialGroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(193)))), ((int)(((byte)(72)))));
-            this.materialGroupBox3.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel5;
-            this.materialGroupBox3.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox3.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialGroupBox3.IconSize = new System.Drawing.Size(20, 20);
-            this.materialGroupBox3.Location = new System.Drawing.Point(0, 0);
-            this.materialGroupBox3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialGroupBox3.Name = "materialGroupBox3";
-            this.materialGroupBox3.Size = new System.Drawing.Size(779, 114);
-            this.materialGroupBox3.SplitLineWeight = 2;
-            this.materialGroupBox3.TabIndex = 2;
-            this.materialGroupBox3.TabStop = false;
-            this.materialGroupBox3.Text = "单位基本信息";
-            this.materialGroupBox3.TextRectangle = new System.Drawing.Rectangle(20, 0, 134, 20);
-            // 
-            // materialIconButton14
-            // 
-            this.materialIconButton14.AutoSize = true;
-            this.materialIconButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(193)))), ((int)(((byte)(72)))));
-            this.materialIconButton14.Depth = 0;
-            this.materialIconButton14.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton14.ForeColor = System.Drawing.Color.White;
-            this.materialIconButton14.Icon = global::MaterialSkinExample.Properties.Resources.weixiuguanli7;
-            this.materialIconButton14.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialIconButton14.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton14.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton14.Location = new System.Drawing.Point(696, -2);
-            this.materialIconButton14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialIconButton14.Name = "materialIconButton14";
-            this.materialIconButton14.Primary = false;
-            this.materialIconButton14.Size = new System.Drawing.Size(79, 22);
-            this.materialIconButton14.TabIndex = 4;
-            this.materialIconButton14.Text = "修改";
-            // 
-            // tableLayoutPanel5
-            // 
-            this.tableLayoutPanel5.ColumnCount = 3;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel5.Controls.Add(this.materialLabel15, 2, 1);
-            this.tableLayoutPanel5.Controls.Add(this.materialLabel14, 1, 1);
-            this.tableLayoutPanel5.Controls.Add(this.materialLabel13, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.materialLabel12, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.materialLabel11, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.materialLabel10, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 23);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(779, 91);
-            this.tableLayoutPanel5.TabIndex = 0;
-            // 
-            // materialLabel15
-            // 
-            this.materialLabel15.AutoSize = true;
-            this.materialLabel15.Depth = 0;
-            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel15.Location = new System.Drawing.Point(471, 50);
-            this.materialLabel15.Margin = new System.Windows.Forms.Padding(5);
-            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel15.Name = "materialLabel15";
-            this.materialLabel15.Primary = true;
-            this.materialLabel15.Size = new System.Drawing.Size(262, 24);
-            this.materialLabel15.TabIndex = 5;
-            this.materialLabel15.Text = "联系人电话：XXXXXXXXXXX";
-            // 
-            // materialLabel14
-            // 
-            this.materialLabel14.AutoSize = true;
-            this.materialLabel14.Depth = 0;
-            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel14.Location = new System.Drawing.Point(238, 50);
-            this.materialLabel14.Margin = new System.Windows.Forms.Padding(5);
-            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel14.Name = "materialLabel14";
-            this.materialLabel14.Primary = true;
-            this.materialLabel14.Size = new System.Drawing.Size(166, 24);
-            this.materialLabel14.TabIndex = 4;
-            this.materialLabel14.Text = "单位联系人：XXX";
-            // 
-            // materialLabel13
-            // 
-            this.materialLabel13.AutoSize = true;
-            this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel13.Location = new System.Drawing.Point(5, 50);
-            this.materialLabel13.Margin = new System.Windows.Forms.Padding(5);
-            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel13.Name = "materialLabel13";
-            this.materialLabel13.Primary = true;
-            this.materialLabel13.Size = new System.Drawing.Size(146, 24);
-            this.materialLabel13.TabIndex = 3;
-            this.materialLabel13.Text = "单位法人：XXX";
-            // 
-            // materialLabel12
-            // 
-            this.materialLabel12.AutoSize = true;
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel12.Location = new System.Drawing.Point(471, 5);
-            this.materialLabel12.Margin = new System.Windows.Forms.Padding(5);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Primary = true;
-            this.materialLabel12.Size = new System.Drawing.Size(262, 24);
-            this.materialLabel12.TabIndex = 2;
-            this.materialLabel12.Text = "单位地址：XX市XX路XX街道";
-            // 
-            // materialLabel11
-            // 
-            this.materialLabel11.AutoSize = true;
-            this.materialLabel11.Depth = 0;
-            this.materialLabel11.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel11.Location = new System.Drawing.Point(238, 5);
-            this.materialLabel11.Margin = new System.Windows.Forms.Padding(5);
-            this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel11.Name = "materialLabel11";
-            this.materialLabel11.Primary = true;
-            this.materialLabel11.Size = new System.Drawing.Size(194, 24);
-            this.materialLabel11.TabIndex = 1;
-            this.materialLabel11.Text = "单位名称：XX省法院";
-            // 
-            // materialLabel10
-            // 
-            this.materialLabel10.AutoSize = true;
-            this.materialLabel10.Depth = 0;
-            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel10.Location = new System.Drawing.Point(5, 5);
-            this.materialLabel10.Margin = new System.Windows.Forms.Padding(5);
-            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel10.Name = "materialLabel10";
-            this.materialLabel10.Primary = true;
-            this.materialLabel10.Size = new System.Drawing.Size(176, 24);
-            this.materialLabel10.TabIndex = 0;
-            this.materialLabel10.Text = "预算编码：803571";
             // 
             // m_panelLeft
             // 
@@ -1529,6 +971,61 @@
             this.materialIconButton37.TabIndex = 7;
             this.materialIconButton37.Text = "materialIconButton37";
             // 
+            // uCtrlNoticeRegion1
+            // 
+            this.uCtrlNoticeRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlNoticeRegion1.Depth = 0;
+            this.uCtrlNoticeRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlNoticeRegion1.Location = new System.Drawing.Point(3, 3);
+            this.uCtrlNoticeRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlNoticeRegion1.Name = "uCtrlNoticeRegion1";
+            this.uCtrlNoticeRegion1.Size = new System.Drawing.Size(515, 368);
+            this.uCtrlNoticeRegion1.TabIndex = 2;
+            // 
+            // uCtrlTasksRegion1
+            // 
+            this.uCtrlTasksRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlTasksRegion1.Depth = 0;
+            this.uCtrlTasksRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlTasksRegion1.Location = new System.Drawing.Point(3, 377);
+            this.uCtrlTasksRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlTasksRegion1.Name = "uCtrlTasksRegion1";
+            this.uCtrlTasksRegion1.Size = new System.Drawing.Size(515, 368);
+            this.uCtrlTasksRegion1.TabIndex = 3;
+            // 
+            // uCtrlBasicInfoRegion1
+            // 
+            this.uCtrlBasicInfoRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlBasicInfoRegion1.Depth = 0;
+            this.uCtrlBasicInfoRegion1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uCtrlBasicInfoRegion1.Location = new System.Drawing.Point(0, 0);
+            this.uCtrlBasicInfoRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlBasicInfoRegion1.Name = "uCtrlBasicInfoRegion1";
+            this.uCtrlBasicInfoRegion1.Size = new System.Drawing.Size(779, 115);
+            this.uCtrlBasicInfoRegion1.TabIndex = 0;
+            // 
+            // uCtrlBusinessTrackingRegion1
+            // 
+            this.uCtrlBusinessTrackingRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlBusinessTrackingRegion1.Depth = 0;
+            this.uCtrlBusinessTrackingRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlBusinessTrackingRegion1.Location = new System.Drawing.Point(3, 377);
+            this.uCtrlBusinessTrackingRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlBusinessTrackingRegion1.Name = "uCtrlBusinessTrackingRegion1";
+            this.uCtrlBusinessTrackingRegion1.Size = new System.Drawing.Size(779, 368);
+            this.uCtrlBusinessTrackingRegion1.TabIndex = 5;
+            // 
+            // uCtrlBusinessRegion1
+            // 
+            this.uCtrlBusinessRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlBusinessRegion1.Depth = 0;
+            this.uCtrlBusinessRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlBusinessRegion1.Location = new System.Drawing.Point(0, 115);
+            this.uCtrlBusinessRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlBusinessRegion1.Name = "uCtrlBusinessRegion1";
+            this.uCtrlBusinessRegion1.Size = new System.Drawing.Size(779, 253);
+            this.uCtrlBusinessRegion1.TabIndex = 1;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -1543,33 +1040,14 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "窗口";
-            metroTabPage2.ResumeLayout(false);
             this.m_panelForm.ResumeLayout(false);
             this.m_panelContent.ResumeLayout(false);
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.materialGroupBox1.ResumeLayout(false);
-            this.materialGroupBox1.PerformLayout();
-            this.materialGroupBox2.ResumeLayout(false);
-            this.materialGroupBox2.PerformLayout();
             this.tableLayoutPanel4.ResumeLayout(false);
-            this.materialGroupBox4.ResumeLayout(false);
-            this.materialGroupBox4.PerformLayout();
-            this.metroTabControl2.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.materialGroupBox5.ResumeLayout(false);
-            this.materialGroupBox5.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.materialGroupBox6.ResumeLayout(false);
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.materialGroupBox7.ResumeLayout(false);
-            this.materialGroupBox3.ResumeLayout(false);
-            this.materialGroupBox3.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
             this.m_panelLeft.ResumeLayout(false);
             this.m_flowPanelLeftMenu.ResumeLayout(false);
             this.m_flowPanelLeftMenu.PerformLayout();
@@ -1618,36 +1096,8 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel8;
         private MaterialSkin.Controls.MaterialLabel materialLabel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox1;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox4;
         private System.Windows.Forms.Panel panel2;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox5;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox3;
-        private MaterialSkin.Controls.MaterialListView materialListView1;
-        private MetroFramework.Controls.MetroTabControl metroTabControl2;
-        private MaterialSkin.Controls.MaterialListView materialListView2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private MaterialSkin.Controls.MaterialLabel materialLabel10;
-        private MaterialSkin.Controls.MaterialLabel materialLabel15;
-        private MaterialSkin.Controls.MaterialLabel materialLabel14;
-        private MaterialSkin.Controls.MaterialLabel materialLabel13;
-        private MaterialSkin.Controls.MaterialLabel materialLabel12;
-        private MaterialSkin.Controls.MaterialLabel materialLabel11;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton11;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton12;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton13;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton14;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton15;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox6;
-        private MaterialSkin.Controls.MaterialGroupBox materialGroupBox7;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton16;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton17;
-        private MaterialSkin.Controls.MaterialIconButton materialIconButton18;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton19;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton20;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton21;
@@ -1667,6 +1117,11 @@
         private MaterialSkin.Controls.MaterialIconButton materialIconButton35;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton36;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton37;
+        private MaterialForms.UserControls.UCtrlNoticeRegion uCtrlNoticeRegion1;
+        private MaterialForms.UserControls.UCtrlTasksRegion uCtrlTasksRegion1;
+        private MaterialForms.UserControls.UCtrlBasicInfoRegion uCtrlBasicInfoRegion1;
+        private MaterialForms.UserControls.UCtrlBusinessTrackingRegion uCtrlBusinessTrackingRegion1;
+        private MaterialForms.UserControls.UCtrlBusinessRegion uCtrlBusinessRegion1;
     }
 }
 

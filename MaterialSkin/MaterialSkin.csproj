@@ -49,6 +49,9 @@
     <Compile Include="Controls\MaterialCheckBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\MaterialComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\MaterialContextMenuStrip.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -93,6 +96,9 @@
     </Compile>
     <Compile Include="Controls\MaterialProgressBar.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialUserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Designer\GroupBoxDesigner.cs" />
     <Compile Include="Designer\HeadGroupDesigner.cs" />

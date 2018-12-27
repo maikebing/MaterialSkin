@@ -1,4 +1,7 @@
-﻿using System;
+﻿using MaterialSkin;
+using MaterialSkin.Controls;
+using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +13,9 @@ using System.Windows.Forms;
 
 namespace MaterialSkinExample
 {
-    public partial class Form1 : Form
+    public partial class LoginForm : MaterialForm
     {
-        public Form1()
+        public LoginForm()
         {
             InitializeComponent();
         }

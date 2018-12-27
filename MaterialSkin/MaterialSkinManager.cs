@@ -226,11 +226,17 @@ namespace MaterialSkin
         }
 
         //Roboto font
-        public Font ROBOTO_MEDIUM_12;
+        public Font ROBOTO_REGULAR_12;
         public Font ROBOTO_REGULAR_11;
+        public Font ROBOTO_REGULAR_10;
+        public Font ROBOTO_REGULAR_08;
+        public Font ROBOTO_REGULAR_06;
+
+        public Font ROBOTO_MEDIUM_12;
         public Font ROBOTO_MEDIUM_11;
         public Font ROBOTO_MEDIUM_10;
-
+        public Font ROBOTO_MEDIUM_08;
+        public Font ROBOTO_MEDIUM_06;
         //Other constants
         public int FORM_PADDING = 14;
 
@@ -240,9 +246,16 @@ namespace MaterialSkin
         private MaterialSkinManager()
         {
             ROBOTO_MEDIUM_12 = new Font(LoadFont(Resources.Roboto_Medium), 12f);
-            ROBOTO_MEDIUM_10 = new Font(LoadFont(Resources.Roboto_Medium), 10f);
-            ROBOTO_REGULAR_11 = new Font(LoadFont(Resources.Roboto_Regular), 11f);
             ROBOTO_MEDIUM_11 = new Font(LoadFont(Resources.Roboto_Medium), 11f);
+            ROBOTO_MEDIUM_10 = new Font(LoadFont(Resources.Roboto_Medium), 10f);
+            ROBOTO_MEDIUM_08 = new Font(LoadFont(Resources.Roboto_Medium), 8f);
+            ROBOTO_MEDIUM_06 = new Font(LoadFont(Resources.Roboto_Medium), 6f);
+
+            ROBOTO_REGULAR_12 = new Font(LoadFont(Resources.Roboto_Regular), 12f);
+            ROBOTO_REGULAR_11 = new Font(LoadFont(Resources.Roboto_Regular), 11f);
+            ROBOTO_REGULAR_10 = new Font(LoadFont(Resources.Roboto_Regular), 10f);
+            ROBOTO_REGULAR_08 = new Font(LoadFont(Resources.Roboto_Regular), 8f);
+            ROBOTO_REGULAR_06 = new Font(LoadFont(Resources.Roboto_Regular), 6f);
             Theme = Themes.LIGHT;
             ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
