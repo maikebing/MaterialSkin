@@ -16,11 +16,7 @@ namespace MaterialSkinExample.MaterialForms
         public UCtrlLoginRegion()
         {
             InitializeComponent();
-            m_btnDataCenter.Click += (sender, e) =>
-            {
-                ServiceCenterForm dialog = new ServiceCenterForm();
-                dialog.ShowDialog();
-            };
+            
             m_btnLogin.Click += (sender, e) =>
             {
                 //TODO:登录校验

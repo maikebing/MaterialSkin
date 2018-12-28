@@ -18,11 +18,16 @@ namespace MaterialSkinExample
         public LoginForm()
         {
             InitializeComponent();
-             var materialSkinManager = MaterialSkinManager.Instance;
+            var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme =
                 new ColorScheme(Primary.LightBlue300, Primary.LightBlue300, Primary.LightBlue300, Accent.LightBlue200, TextShade.WHITE);
+            this.HamburgerClick += (sender, e) =>
+            {
+                ServiceCenterForm dialog = new ServiceCenterForm();
+                dialog.ShowDialog();
+            };
         }
     }
 }

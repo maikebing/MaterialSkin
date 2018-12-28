@@ -29,8 +29,7 @@ namespace MaterialSkin.Controls
             set
             {
                 _icon = value;
-                if (AutoSize)
-                    Size = GetPreferredSize();
+                Size = GetPreferredSize();
                 Invalidate();
             }
         }
@@ -47,7 +46,6 @@ namespace MaterialSkin.Controls
             _animationManager.OnAnimationProgress += sender => Invalidate();
 
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            AutoSize = true;
         }
 
         public override string Text
@@ -57,8 +55,7 @@ namespace MaterialSkin.Controls
             {
                 base.Text = value;
                 _textSize = CreateGraphics().MeasureString(value.ToUpper(), SkinManager.ROBOTO_MEDIUM_10);
-                if (AutoSize)
-                    Size = GetPreferredSize();
+                Size = GetPreferredSize();
                 Invalidate();
             }
         }
@@ -77,7 +74,6 @@ namespace MaterialSkin.Controls
             g.TextRenderingHint = TextRenderingHint.AntiAlias;
 
             g.Clear(Parent.BackColor);
-
             using (var backgroundPath = DrawHelper.CreateRoundRect(ClientRectangle.X,
                 ClientRectangle.Y,
                 ClientRectangle.Width - 1,
@@ -140,7 +136,10 @@ namespace MaterialSkin.Controls
 
         private Size GetPreferredSize()
         {
-            return GetPreferredSize(new Size(0, 0));
+            if (AutoSize)
+                return GetPreferredSize(new Size(0, 0));
+            else
+                return Size;
         }
 
         public override Size GetPreferredSize(Size proposedSize)

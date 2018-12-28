@@ -33,11 +33,9 @@
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
-            this.m_btnDataCenter = new MaterialSkin.Controls.MaterialIconButton();
             this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.materialSingleLineTextField1 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.m_btnLogin = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,15 +46,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Controls.Add(this.materialRaisedButton2, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.materialSingleLineTextField2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.materialLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.materialLabel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.materialLabel3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.m_btnDataCenter, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.materialComboBox1, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.materialSingleLineTextField1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.m_btnLogin, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.m_btnLogin, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -132,24 +128,6 @@
             this.materialLabel3.TabIndex = 4;
             this.materialLabel3.Text = "业务年度：";
             // 
-            // m_btnDataCenter
-            // 
-            this.m_btnDataCenter.AutoSize = true;
-            this.m_btnDataCenter.Depth = 0;
-            this.m_btnDataCenter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnDataCenter.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
-            this.m_btnDataCenter.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.m_btnDataCenter.IconMargin = new System.Windows.Forms.Padding(0);
-            this.m_btnDataCenter.IconSize = new System.Drawing.Size(16, 16);
-            this.m_btnDataCenter.Location = new System.Drawing.Point(10, 136);
-            this.m_btnDataCenter.Margin = new System.Windows.Forms.Padding(10);
-            this.m_btnDataCenter.MouseState = MaterialSkin.MouseState.HOVER;
-            this.m_btnDataCenter.Name = "m_btnDataCenter";
-            this.m_btnDataCenter.Primary = true;
-            this.m_btnDataCenter.Size = new System.Drawing.Size(105, 22);
-            this.m_btnDataCenter.TabIndex = 11;
-            this.m_btnDataCenter.Text = "数据中心";
-            // 
             // materialComboBox1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.materialComboBox1, 2);
@@ -182,35 +160,20 @@
             // 
             // m_btnLogin
             // 
-            this.m_btnLogin.AutoSize = true;
             this.m_btnLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.m_btnLogin.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel1.SetColumnSpan(this.m_btnLogin, 3);
             this.m_btnLogin.Depth = 0;
             this.m_btnLogin.Icon = null;
-            this.m_btnLogin.Location = new System.Drawing.Point(128, 129);
+            this.m_btnLogin.Location = new System.Drawing.Point(40, 131);
+            this.m_btnLogin.Margin = new System.Windows.Forms.Padding(40, 5, 5, 5);
             this.m_btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnLogin.Name = "m_btnLogin";
             this.m_btnLogin.Primary = true;
-            this.m_btnLogin.Size = new System.Drawing.Size(60, 36);
+            this.m_btnLogin.Size = new System.Drawing.Size(290, 34);
             this.m_btnLogin.TabIndex = 15;
-            this.m_btnLogin.Text = "登录";
+            this.m_btnLogin.Text = "登    录";
             this.m_btnLogin.UseVisualStyleBackColor = false;
-            // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.AutoSize = true;
-            this.materialRaisedButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialRaisedButton2.BackColor = System.Drawing.Color.White;
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Icon = null;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(254, 129);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(60, 36);
-            this.materialRaisedButton2.TabIndex = 16;
-            this.materialRaisedButton2.Text = "取消";
-            this.materialRaisedButton2.UseVisualStyleBackColor = false;
             // 
             // UCtrlLoginRegion
             // 
@@ -231,11 +194,9 @@
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
-        private MaterialSkin.Controls.MaterialIconButton m_btnDataCenter;
         private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField1;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField2;
         private MaterialSkin.Controls.MaterialRaisedButton m_btnLogin;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
     }
 }
