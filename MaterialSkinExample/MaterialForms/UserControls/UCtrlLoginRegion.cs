@@ -30,10 +30,6 @@ namespace MaterialSkinExample.MaterialForms
                 //TODO:初始化首页数据
 
             };
-            m_btnCancel.Click += (sender, e) =>
-            {
-                OwenForm.Close();
-            };
         }
         #region Properties
         private MaterialForm m_OwenForm = null;

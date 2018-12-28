@@ -136,9 +136,11 @@ namespace MaterialSkin.Controls
             XOver,
             MaxOver,
             MinOver,
+            HamburgerOver,
             XDown,
             MaxDown,
             MinDown,
+            HamburgerDown,
             None
         }
 
@@ -147,6 +149,7 @@ namespace MaterialSkin.Controls
         private Rectangle _minButtonBounds;
         private Rectangle _maxButtonBounds;
         private Rectangle _xButtonBounds;
+        private Rectangle _HamburgerButtonBounds;
         private Rectangle _actionBarBounds;
         private Rectangle _statusBarBounds;
 
@@ -154,7 +157,7 @@ namespace MaterialSkin.Controls
         private Size _previousSize;
         private Point _previousLocation;
         private bool _headerMouseDown;
-
+        public bool HamburgerBox { get; set; } = true;
         public MaterialForm()
         {
             FormBorderStyle = FormBorderStyle.None;
@@ -177,7 +180,7 @@ namespace MaterialSkin.Controls
             }
             else if (m.Msg == WM_MOUSEMOVE && _maximized &&
                 (_statusBarBounds.Contains(PointToClient(Cursor.Position)) || _actionBarBounds.Contains(PointToClient(Cursor.Position))) &&
-                !(_minButtonBounds.Contains(PointToClient(Cursor.Position)) || _maxButtonBounds.Contains(PointToClient(Cursor.Position)) || _xButtonBounds.Contains(PointToClient(Cursor.Position))))
+                !(_HamburgerButtonBounds.Contains(PointToClient(Cursor.Position)) || _minButtonBounds.Contains(PointToClient(Cursor.Position)) || _maxButtonBounds.Contains(PointToClient(Cursor.Position)) || _xButtonBounds.Contains(PointToClient(Cursor.Position))))
             {
                 if (_headerMouseDown)
                 {
@@ -201,7 +204,7 @@ namespace MaterialSkin.Controls
             }
             else if (m.Msg == WM_LBUTTONDOWN &&
                 (_statusBarBounds.Contains(PointToClient(Cursor.Position)) || _actionBarBounds.Contains(PointToClient(Cursor.Position))) &&
-                !(_minButtonBounds.Contains(PointToClient(Cursor.Position)) || _maxButtonBounds.Contains(PointToClient(Cursor.Position)) || _xButtonBounds.Contains(PointToClient(Cursor.Position))))
+                !(_HamburgerButtonBounds.Contains(PointToClient(Cursor.Position)) || _minButtonBounds.Contains(PointToClient(Cursor.Position)) || _maxButtonBounds.Contains(PointToClient(Cursor.Position)) || _xButtonBounds.Contains(PointToClient(Cursor.Position))))
             {
                 if (!_maximized)
                 {
@@ -217,7 +220,7 @@ namespace MaterialSkin.Controls
             {
                 Point cursorPos = PointToClient(Cursor.Position);
 
-                if (_statusBarBounds.Contains(cursorPos) && !_minButtonBounds.Contains(cursorPos) &&
+                if (_statusBarBounds.Contains(cursorPos) && !_HamburgerButtonBounds.Contains(cursorPos) && !_minButtonBounds.Contains(cursorPos) &&
                     !_maxButtonBounds.Contains(cursorPos) && !_xButtonBounds.Contains(cursorPos))
                 {
                     // Show default system menu when right clicking titlebar
@@ -272,7 +275,7 @@ namespace MaterialSkin.Controls
             //ReleaseCapture();
             //SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
-
+        public event EventHandler HamburgerClick;
         protected override void OnMouseLeave(EventArgs e)
         {
             base.OnMouseLeave(e);
@@ -346,10 +349,22 @@ namespace MaterialSkin.Controls
             var oldState = _buttonState;
             bool showMin = MinimizeBox && ControlBox;
             bool showMax = MaximizeBox && ControlBox;
-
+            bool showHamburger = HamburgerBox && ControlBox;
             if (e.Button == MouseButtons.Left && !up)
             {
-                if (showMin && !showMax && _maxButtonBounds.Contains(e.Location))
+                if (showHamburger && showMax && showMin && _HamburgerButtonBounds.Contains(e.Location))
+                {
+                    _buttonState = ButtonState.HamburgerDown;
+                }
+                else if (showHamburger && !showMax && !showMin && _minButtonBounds.Contains(e.Location))
+                {
+                    _buttonState = ButtonState.HamburgerDown;
+                }
+                else if (showHamburger && (!showMax || !showMin) && _maxButtonBounds.Contains(e.Location))
+                {
+                    _buttonState = ButtonState.HamburgerDown;
+                }
+                else if (showMin && !showMax && _maxButtonBounds.Contains(e.Location))
                     _buttonState = ButtonState.MinDown;
                 else if (showMin && showMax && _minButtonBounds.Contains(e.Location))
                     _buttonState = ButtonState.MinDown;
@@ -362,7 +377,25 @@ namespace MaterialSkin.Controls
             }
             else
             {
-                if (showMin && !showMax && _maxButtonBounds.Contains(e.Location))
+                if (showHamburger && showMax && showMin && _HamburgerButtonBounds.Contains(e.Location))
+                {
+                    _buttonState = ButtonState.HamburgerOver;
+                    if (oldState == ButtonState.HamburgerDown && up && HamburgerClick != null)
+                        HamburgerClick(null, e);
+                }
+                else if (showHamburger && !showMax && !showMin && _minButtonBounds.Contains(e.Location))
+                {
+                    _buttonState = ButtonState.HamburgerOver;
+                    if (oldState == ButtonState.HamburgerDown && up && HamburgerClick != null)
+                        HamburgerClick(null, e);
+                }
+                else if (showHamburger && (!showMax || !showMin) && _maxButtonBounds.Contains(e.Location))
+                {
+                    _buttonState = ButtonState.HamburgerOver;
+                    if (oldState == ButtonState.HamburgerDown && up && HamburgerClick != null)
+                        HamburgerClick(null, e);
+                }
+                else if (showMin && !showMax && _maxButtonBounds.Contains(e.Location))
                 {
                     _buttonState = ButtonState.MinOver;
 
@@ -463,10 +496,11 @@ namespace MaterialSkin.Controls
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);
-
+            _HamburgerButtonBounds = new Rectangle((Width - SkinManager.FORM_PADDING / 2) - 4 * STATUS_BAR_BUTTON_WIDTH, 0, STATUS_BAR_BUTTON_WIDTH, STATUS_BAR_HEIGHT);
             _minButtonBounds = new Rectangle((Width - SkinManager.FORM_PADDING / 2) - 3 * STATUS_BAR_BUTTON_WIDTH, 0, STATUS_BAR_BUTTON_WIDTH, STATUS_BAR_HEIGHT);
             _maxButtonBounds = new Rectangle((Width - SkinManager.FORM_PADDING / 2) - 2 * STATUS_BAR_BUTTON_WIDTH, 0, STATUS_BAR_BUTTON_WIDTH, STATUS_BAR_HEIGHT);
             _xButtonBounds = new Rectangle((Width - SkinManager.FORM_PADDING / 2) - STATUS_BAR_BUTTON_WIDTH, 0, STATUS_BAR_BUTTON_WIDTH, STATUS_BAR_HEIGHT);
+
             _statusBarBounds = new Rectangle(0, 0, Width, STATUS_BAR_HEIGHT);
             _actionBarBounds = new Rectangle(0, STATUS_BAR_HEIGHT, Width, ACTION_BAR_HEIGHT);
         }
@@ -491,10 +525,29 @@ namespace MaterialSkin.Controls
             // Determine whether or not we even should be drawing the buttons.
             bool showMin = MinimizeBox && ControlBox;
             bool showMax = MaximizeBox && ControlBox;
+            bool showHamburger = HamburgerBox && ControlBox;
             var hoverBrush = SkinManager.GetFlatButtonHoverBackgroundBrush();
             var downBrush = SkinManager.GetFlatButtonPressedBackgroundBrush();
 
             // When MaximizeButton == false, the minimize button will be painted in its place
+            if (_buttonState == ButtonState.HamburgerOver && showHamburger)
+            {
+                if (showMin && showMax)
+                    g.FillRectangle(hoverBrush, _HamburgerButtonBounds);
+                else if (!showMin && !showMax)
+                    g.FillRectangle(hoverBrush, _maxButtonBounds);
+                else
+                    g.FillRectangle(hoverBrush, _minButtonBounds);
+            }
+            if (_buttonState == ButtonState.HamburgerDown && showHamburger)
+            {
+                if (showMin && showMax)
+                    g.FillRectangle(downBrush, _HamburgerButtonBounds);
+                else if (!showMin && !showMax)
+                    g.FillRectangle(downBrush, _maxButtonBounds);
+                else
+                    g.FillRectangle(downBrush, _minButtonBounds);
+            }
             if (_buttonState == ButtonState.MinOver && showMin)
                 g.FillRectangle(hoverBrush, showMax ? _minButtonBounds : _maxButtonBounds);
 
@@ -515,6 +568,45 @@ namespace MaterialSkin.Controls
 
             using (var formButtonsPen = new Pen(SkinManager.ACTION_BAR_TEXT_SECONDARY, 2))
             {
+                if (showHamburger)
+                {
+                    int x = _HamburgerButtonBounds.X, y = _HamburgerButtonBounds.Y;
+                    if (showMax && showMin)
+                    {
+
+                    }
+                    else if (!showMin && !showMax)
+                    {
+                        x = _maxButtonBounds.X;
+                        y = _maxButtonBounds.Y;
+                    }
+                    else
+                    {
+                        x = _minButtonBounds.X;
+                        y = _minButtonBounds.Y;
+                    }
+                    g.DrawLine(
+                        formButtonsPen,
+                        x + (int)(_HamburgerButtonBounds.Width * 0.33),
+                        y + (int)(_HamburgerButtonBounds.Height * 0.4),
+                        x + (int)(_HamburgerButtonBounds.Width * 0.66),
+                        y + (int)(_HamburgerButtonBounds.Height * 0.4)
+                   );
+                    g.DrawLine(
+                        formButtonsPen,
+                        x + (int)(_HamburgerButtonBounds.Width * 0.33),
+                        y + (int)(_HamburgerButtonBounds.Height * 0.5),
+                        x + (int)(_HamburgerButtonBounds.Width * 0.66),
+                        y + (int)(_HamburgerButtonBounds.Height * 0.5)
+                   );
+                    g.DrawLine(
+                        formButtonsPen,
+                        x + (int)(_HamburgerButtonBounds.Width * 0.33),
+                        y + (int)(_HamburgerButtonBounds.Height * 0.65),
+                        x + (int)(_HamburgerButtonBounds.Width * 0.66),
+                        y + (int)(_HamburgerButtonBounds.Height * 0.65)
+                   );
+                }
                 // Minimize button.
                 if (showMin)
                 {
@@ -524,9 +616,9 @@ namespace MaterialSkin.Controls
                     g.DrawLine(
                         formButtonsPen,
                         x + (int)(_minButtonBounds.Width * 0.33),
-                        y + (int)(_minButtonBounds.Height * 0.66),
+                        y + (int)(_minButtonBounds.Height * 0.5),
                         x + (int)(_minButtonBounds.Width * 0.66),
-                        y + (int)(_minButtonBounds.Height * 0.66)
+                        y + (int)(_minButtonBounds.Height * 0.5)
                    );
                 }
 
@@ -541,7 +633,6 @@ namespace MaterialSkin.Controls
                         (int)(_maxButtonBounds.Height * 0.31)
                    );
                 }
-
                 // Close button
                 if (ControlBox)
                 {
@@ -560,6 +651,7 @@ namespace MaterialSkin.Controls
                         _xButtonBounds.X + (int)(_xButtonBounds.Width * 0.33),
                         _xButtonBounds.Y + (int)(_xButtonBounds.Height * 0.66));
                 }
+
             }
 
             //Form title
