@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.uCtrlLoginRegion1 = new MaterialSkinExample.UserControls.UCtrlLoginRegion();
+            this.uCtrlLoginRegion1 = new MaterialSkinExample.MaterialForms.UCtrlLoginRegion();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +75,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private UserControls.UCtrlLoginRegion uCtrlLoginRegion1;
+        private MaterialForms.UCtrlLoginRegion uCtrlLoginRegion1;
     }
 }
