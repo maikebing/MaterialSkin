@@ -63,9 +63,10 @@
             this.Controls.Add(this.panel1);
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "用户登录";
+            this.Text = "    ";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -356,11 +356,11 @@ namespace MaterialSkin.Controls
                 {
                     _buttonState = ButtonState.HamburgerDown;
                 }
-                else if (showHamburger && !showMax && !showMin && _minButtonBounds.Contains(e.Location))
+                else if (showHamburger && !showMax && !showMin && _maxButtonBounds.Contains(e.Location))
                 {
                     _buttonState = ButtonState.HamburgerDown;
                 }
-                else if (showHamburger && (!showMax || !showMin) && _maxButtonBounds.Contains(e.Location))
+                else if (showHamburger && (!showMax || !showMin) && _minButtonBounds.Contains(e.Location))
                 {
                     _buttonState = ButtonState.HamburgerDown;
                 }
@@ -383,13 +383,13 @@ namespace MaterialSkin.Controls
                     if (oldState == ButtonState.HamburgerDown && up && HamburgerClick != null)
                         HamburgerClick(null, e);
                 }
-                else if (showHamburger && !showMax && !showMin && _minButtonBounds.Contains(e.Location))
+                else if (showHamburger && !showMax && !showMin && _maxButtonBounds.Contains(e.Location))
                 {
                     _buttonState = ButtonState.HamburgerOver;
                     if (oldState == ButtonState.HamburgerDown && up && HamburgerClick != null)
                         HamburgerClick(null, e);
                 }
-                else if (showHamburger && (!showMax || !showMin) && _maxButtonBounds.Contains(e.Location))
+                else if (showHamburger && (!showMax || !showMin) && _minButtonBounds.Contains(e.Location))
                 {
                     _buttonState = ButtonState.HamburgerOver;
                     if (oldState == ButtonState.HamburgerDown && up && HamburgerClick != null)
