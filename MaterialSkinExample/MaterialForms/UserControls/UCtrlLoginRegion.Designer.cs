@@ -1,4 +1,4 @@
-﻿namespace MaterialSkinExample.UserControls
+﻿namespace MaterialSkinExample.MaterialForms
 {
     partial class UCtrlLoginRegion
     {
