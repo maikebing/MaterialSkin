@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 170);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 190);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // materialSingleLineTextField2
@@ -70,7 +70,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.materialSingleLineTextField2, 2);
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(128, 45);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(128, 50);
             this.materialSingleLineTextField2.MaxLength = 32767;
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
@@ -104,7 +104,7 @@
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(5, 47);
+            this.materialLabel2.Location = new System.Drawing.Point(5, 52);
             this.materialLabel2.Margin = new System.Windows.Forms.Padding(5);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
@@ -119,7 +119,7 @@
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel3.Location = new System.Drawing.Point(5, 89);
+            this.materialLabel3.Location = new System.Drawing.Point(5, 99);
             this.materialLabel3.Margin = new System.Windows.Forms.Padding(5);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
@@ -134,7 +134,7 @@
             this.materialComboBox1.Depth = 0;
             this.materialComboBox1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.Location = new System.Drawing.Point(128, 87);
+            this.materialComboBox1.Location = new System.Drawing.Point(128, 97);
             this.materialComboBox1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialComboBox1.Name = "materialComboBox1";
             this.materialComboBox1.Size = new System.Drawing.Size(247, 26);
@@ -165,12 +165,12 @@
             this.tableLayoutPanel1.SetColumnSpan(this.m_btnLogin, 3);
             this.m_btnLogin.Depth = 0;
             this.m_btnLogin.Icon = null;
-            this.m_btnLogin.Location = new System.Drawing.Point(40, 131);
-            this.m_btnLogin.Margin = new System.Windows.Forms.Padding(40, 5, 5, 5);
+            this.m_btnLogin.Location = new System.Drawing.Point(40, 151);
+            this.m_btnLogin.Margin = new System.Windows.Forms.Padding(40, 10, 40, 0);
             this.m_btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnLogin.Name = "m_btnLogin";
             this.m_btnLogin.Primary = true;
-            this.m_btnLogin.Size = new System.Drawing.Size(290, 34);
+            this.m_btnLogin.Size = new System.Drawing.Size(290, 36);
             this.m_btnLogin.TabIndex = 15;
             this.m_btnLogin.Text = "登    录";
             this.m_btnLogin.UseVisualStyleBackColor = false;
@@ -181,7 +181,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UCtrlLoginRegion";
-            this.Size = new System.Drawing.Size(378, 170);
+            this.Size = new System.Drawing.Size(378, 190);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

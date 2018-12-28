@@ -47,10 +47,10 @@
             // uCtrlLoginRegion1
             // 
             this.uCtrlLoginRegion1.Depth = 0;
-            this.uCtrlLoginRegion1.Location = new System.Drawing.Point(31, 186);
+            this.uCtrlLoginRegion1.Location = new System.Drawing.Point(36, 212);
             this.uCtrlLoginRegion1.MouseState = MaterialSkin.MouseState.HOVER;
             this.uCtrlLoginRegion1.Name = "uCtrlLoginRegion1";
-            this.uCtrlLoginRegion1.Size = new System.Drawing.Size(378, 162);
+            this.uCtrlLoginRegion1.Size = new System.Drawing.Size(378, 190);
             this.uCtrlLoginRegion1.TabIndex = 0;
             // 
             // LoginForm
