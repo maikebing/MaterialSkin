@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uCtrlServiceCenterRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlServiceCenterRegion();
+            this.uCtrlServiceCenterRegion1 = new MaterialSkinExample.MaterialForms.UCtrlServiceCenterRegion();
             this.SuspendLayout();
             // 
             // uCtrlServiceCenterRegion1
@@ -56,6 +56,6 @@
 
         #endregion
 
-        private MaterialForms.UserControls.UCtrlServiceCenterRegion uCtrlServiceCenterRegion1;
+        private MaterialForms.UCtrlServiceCenterRegion uCtrlServiceCenterRegion1;
     }
 }

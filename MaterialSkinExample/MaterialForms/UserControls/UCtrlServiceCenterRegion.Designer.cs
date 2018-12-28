@@ -1,4 +1,4 @@
-﻿namespace MaterialSkinExample.MaterialForms.UserControls
+﻿namespace MaterialSkinExample.MaterialForms
 {
     partial class UCtrlServiceCenterRegion
     {
@@ -61,7 +61,7 @@
             this.materialIconButton3.AutoSize = true;
             this.materialIconButton3.Depth = 0;
             this.materialIconButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton3.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.materialIconButton3.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.materialIconButton3.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialIconButton3.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton3.IconSize = new System.Drawing.Size(20, 20);
@@ -78,7 +78,7 @@
             this.materialIconButton2.AutoSize = true;
             this.materialIconButton2.Depth = 0;
             this.materialIconButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton2.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.materialIconButton2.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.materialIconButton2.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialIconButton2.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton2.IconSize = new System.Drawing.Size(20, 20);
@@ -95,7 +95,7 @@
             this.materialIconButton1.AutoSize = true;
             this.materialIconButton1.Depth = 0;
             this.materialIconButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton1.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.materialIconButton1.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.materialIconButton1.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialIconButton1.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton1.IconSize = new System.Drawing.Size(20, 20);
@@ -163,7 +163,7 @@
             this.materialIconButton4.AutoSize = true;
             this.materialIconButton4.Depth = 0;
             this.materialIconButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton4.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.materialIconButton4.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.materialIconButton4.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialIconButton4.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton4.IconSize = new System.Drawing.Size(20, 20);
@@ -180,7 +180,7 @@
             this.materialIconButton5.AutoSize = true;
             this.materialIconButton5.Depth = 0;
             this.materialIconButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton5.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.materialIconButton5.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.materialIconButton5.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialIconButton5.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton5.IconSize = new System.Drawing.Size(20, 20);
@@ -197,7 +197,7 @@
             this.materialIconButton6.AutoSize = true;
             this.materialIconButton6.Depth = 0;
             this.materialIconButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.materialIconButton6.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.materialIconButton6.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.materialIconButton6.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialIconButton6.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton6.IconSize = new System.Drawing.Size(20, 20);

@@ -1,4 +1,4 @@
-﻿namespace MaterialSkinExample.MaterialForms.UserControls
+﻿namespace MaterialSkinExample.MaterialForms
 {
     partial class UCtrlTasksRegion
     {
@@ -42,7 +42,7 @@
             this.materialGroupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.materialGroupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
-            this.materialGroupBox2.Icon = global::MaterialSkinExample.Properties.Resources.woderenwu_14;
+            this.materialGroupBox2.Icon = global::MaterialSkinExample.Properties.Resources.woderenwu_1_32x32_lightBlue;
             this.materialGroupBox2.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialGroupBox2.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialGroupBox2.IconSize = new System.Drawing.Size(20, 20);
@@ -61,7 +61,7 @@
             this.materialIconButton12.AutoSize = true;
             this.materialIconButton12.Depth = 0;
             this.materialIconButton12.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton12.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin4;
+            this.materialIconButton12.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin_32x32_lightBlue;
             this.materialIconButton12.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.materialIconButton12.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton12.IconSize = new System.Drawing.Size(20, 20);

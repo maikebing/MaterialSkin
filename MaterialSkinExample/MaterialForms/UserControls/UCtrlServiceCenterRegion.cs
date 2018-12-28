@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Controls;
 
-namespace MaterialSkinExample.MaterialForms.UserControls
+namespace MaterialSkinExample.MaterialForms
 {
     public partial class UCtrlServiceCenterRegion : MaterialUserControl
     {

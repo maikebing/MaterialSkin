@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePage));
             this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
@@ -42,9 +43,14 @@
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.uCtrlNoticeRegion1 = new MaterialSkinExample.MaterialForms.UCtrlNoticeRegion();
+            this.uCtrlTasksRegion1 = new MaterialSkinExample.MaterialForms.UCtrlTasksRegion();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uCtrlBusinessRegion1 = new MaterialSkinExample.MaterialForms.UCtrlBusinessRegion();
+            this.uCtrlBasicInfoRegion1 = new MaterialSkinExample.MaterialForms.UCtrlBasicInfoRegion();
+            this.uCtrlBusinessTrackingRegion1 = new MaterialSkinExample.MaterialForms.UCtrlBusinessTrackingRegion();
             this.m_panelLeft = new System.Windows.Forms.Panel();
             this.m_flowPanelLeftMenu = new System.Windows.Forms.FlowLayoutPanel();
             this.materialIconButton1 = new MaterialSkin.Controls.MaterialIconButton();
@@ -82,11 +88,6 @@
             this.materialIconButton35 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton36 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton37 = new MaterialSkin.Controls.MaterialIconButton();
-            this.uCtrlNoticeRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlNoticeRegion();
-            this.uCtrlTasksRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlTasksRegion();
-            this.uCtrlBasicInfoRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlBasicInfoRegion();
-            this.uCtrlBusinessTrackingRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlBusinessTrackingRegion();
-            this.uCtrlBusinessRegion1 = new MaterialSkinExample.MaterialForms.UserControls.UCtrlBusinessRegion();
             this.m_panelForm.SuspendLayout();
             this.m_panelContent.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -218,7 +219,7 @@
             // 
             // m_panelForm
             // 
-            this.m_panelForm.BackgroundImage = global::MaterialSkinExample.Properties.Resources.background;
+            this.m_panelForm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("m_panelForm.BackgroundImage")));
             this.m_panelForm.Controls.Add(this.m_panelContent);
             this.m_panelForm.Controls.Add(this.m_panelLeft);
             this.m_panelForm.Controls.Add(this.m_panelTop);
@@ -299,6 +300,28 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(521, 748);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
+            // uCtrlNoticeRegion1
+            // 
+            this.uCtrlNoticeRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlNoticeRegion1.Depth = 0;
+            this.uCtrlNoticeRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlNoticeRegion1.Location = new System.Drawing.Point(3, 3);
+            this.uCtrlNoticeRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlNoticeRegion1.Name = "uCtrlNoticeRegion1";
+            this.uCtrlNoticeRegion1.Size = new System.Drawing.Size(515, 368);
+            this.uCtrlNoticeRegion1.TabIndex = 2;
+            // 
+            // uCtrlTasksRegion1
+            // 
+            this.uCtrlTasksRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlTasksRegion1.Depth = 0;
+            this.uCtrlTasksRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlTasksRegion1.Location = new System.Drawing.Point(3, 377);
+            this.uCtrlTasksRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlTasksRegion1.Name = "uCtrlTasksRegion1";
+            this.uCtrlTasksRegion1.Size = new System.Drawing.Size(515, 368);
+            this.uCtrlTasksRegion1.TabIndex = 3;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(228)))));
@@ -335,6 +358,39 @@
             this.panel2.Size = new System.Drawing.Size(779, 368);
             this.panel2.TabIndex = 4;
             // 
+            // uCtrlBusinessRegion1
+            // 
+            this.uCtrlBusinessRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlBusinessRegion1.Depth = 0;
+            this.uCtrlBusinessRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlBusinessRegion1.Location = new System.Drawing.Point(0, 115);
+            this.uCtrlBusinessRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlBusinessRegion1.Name = "uCtrlBusinessRegion1";
+            this.uCtrlBusinessRegion1.Size = new System.Drawing.Size(779, 253);
+            this.uCtrlBusinessRegion1.TabIndex = 1;
+            // 
+            // uCtrlBasicInfoRegion1
+            // 
+            this.uCtrlBasicInfoRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlBasicInfoRegion1.Depth = 0;
+            this.uCtrlBasicInfoRegion1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uCtrlBasicInfoRegion1.Location = new System.Drawing.Point(0, 0);
+            this.uCtrlBasicInfoRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlBasicInfoRegion1.Name = "uCtrlBasicInfoRegion1";
+            this.uCtrlBasicInfoRegion1.Size = new System.Drawing.Size(779, 115);
+            this.uCtrlBasicInfoRegion1.TabIndex = 0;
+            // 
+            // uCtrlBusinessTrackingRegion1
+            // 
+            this.uCtrlBusinessTrackingRegion1.BackColor = System.Drawing.Color.Transparent;
+            this.uCtrlBusinessTrackingRegion1.Depth = 0;
+            this.uCtrlBusinessTrackingRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uCtrlBusinessTrackingRegion1.Location = new System.Drawing.Point(3, 377);
+            this.uCtrlBusinessTrackingRegion1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.uCtrlBusinessTrackingRegion1.Name = "uCtrlBusinessTrackingRegion1";
+            this.uCtrlBusinessTrackingRegion1.Size = new System.Drawing.Size(779, 368);
+            this.uCtrlBusinessTrackingRegion1.TabIndex = 5;
+            // 
             // m_panelLeft
             // 
             this.m_panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
@@ -366,7 +422,7 @@
             this.materialIconButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialIconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialIconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialIconButton1.Icon = global::MaterialSkinExample.Properties.Resources.home_fill;
+            this.materialIconButton1.Icon = global::MaterialSkinExample.Properties.Resources.home_fill_16x16__053771;
             this.materialIconButton1.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton1.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton1.IconSize = new System.Drawing.Size(16, 16);
@@ -387,7 +443,7 @@
             this.materialIconButton7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialIconButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialIconButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialIconButton7.Icon = global::MaterialSkinExample.Properties.Resources.peoples;
+            this.materialIconButton7.Icon = global::MaterialSkinExample.Properties.Resources.peoples_16x16__053771;
             this.materialIconButton7.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton7.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton7.IconSize = new System.Drawing.Size(16, 16);
@@ -408,7 +464,7 @@
             this.materialIconButton8.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialIconButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialIconButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialIconButton8.Icon = global::MaterialSkinExample.Properties.Resources.chaxun;
+            this.materialIconButton8.Icon = global::MaterialSkinExample.Properties.Resources.chaxun_16x16__053771;
             this.materialIconButton8.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton8.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton8.IconSize = new System.Drawing.Size(16, 16);
@@ -429,7 +485,7 @@
             this.materialIconButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialIconButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialIconButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialIconButton9.Icon = global::MaterialSkinExample.Properties.Resources.setting;
+            this.materialIconButton9.Icon = global::MaterialSkinExample.Properties.Resources.setting_16x16__053771;
             this.materialIconButton9.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton9.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton9.IconSize = new System.Drawing.Size(16, 16);
@@ -450,7 +506,7 @@
             this.materialIconButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialIconButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.materialIconButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialIconButton10.Icon = global::MaterialSkinExample.Properties.Resources.guanji;
+            this.materialIconButton10.Icon = global::MaterialSkinExample.Properties.Resources.guanji_16x16__053771;
             this.materialIconButton10.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton10.IconMargin = new System.Windows.Forms.Padding(5);
             this.materialIconButton10.IconSize = new System.Drawing.Size(16, 16);
@@ -501,7 +557,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::MaterialSkinExample.Properties.Resources.icon;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 57);
@@ -547,7 +603,7 @@
             this.materialIconButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton2.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F);
             this.materialIconButton2.ForeColor = System.Drawing.Color.White;
-            this.materialIconButton2.Icon = global::MaterialSkinExample.Properties.Resources.Idea1;
+            this.materialIconButton2.Icon = global::MaterialSkinExample.Properties.Resources.Idea_32x32_White;
             this.materialIconButton2.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton2.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton2.IconSize = new System.Drawing.Size(32, 32);
@@ -568,7 +624,7 @@
             this.materialIconButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton3.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F);
             this.materialIconButton3.ForeColor = System.Drawing.Color.White;
-            this.materialIconButton3.Icon = global::MaterialSkinExample.Properties.Resources.renzhenghuizhang1;
+            this.materialIconButton3.Icon = global::MaterialSkinExample.Properties.Resources.renzhenghuizhang_32x32_White;
             this.materialIconButton3.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton3.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton3.IconSize = new System.Drawing.Size(32, 32);
@@ -589,7 +645,7 @@
             this.materialIconButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F);
             this.materialIconButton4.ForeColor = System.Drawing.Color.White;
-            this.materialIconButton4.Icon = global::MaterialSkinExample.Properties.Resources.zixun1;
+            this.materialIconButton4.Icon = global::MaterialSkinExample.Properties.Resources.zixun_32x32_White;
             this.materialIconButton4.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton4.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton4.IconSize = new System.Drawing.Size(32, 32);
@@ -610,7 +666,7 @@
             this.materialIconButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton5.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F);
             this.materialIconButton5.ForeColor = System.Drawing.Color.White;
-            this.materialIconButton5.Icon = global::MaterialSkinExample.Properties.Resources.people_fill1;
+            this.materialIconButton5.Icon = global::MaterialSkinExample.Properties.Resources.people_fill_32x32_White;
             this.materialIconButton5.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton5.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton5.IconSize = new System.Drawing.Size(32, 32);
@@ -631,7 +687,7 @@
             this.materialIconButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton6.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialIconButton6.ForeColor = System.Drawing.Color.White;
-            this.materialIconButton6.Icon = global::MaterialSkinExample.Properties.Resources.home_fill1;
+            this.materialIconButton6.Icon = global::MaterialSkinExample.Properties.Resources.home_fill_32x32_White;
             this.materialIconButton6.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton6.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton6.IconSize = new System.Drawing.Size(32, 32);
@@ -652,7 +708,7 @@
             this.materialIconButton19.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton19.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialIconButton19.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton19.Icon = global::MaterialSkinExample.Properties.Resources.bianji5;
+            this.materialIconButton19.Icon = global::MaterialSkinExample.Properties.Resources.bianji_32x32_lightBlue;
             this.materialIconButton19.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton19.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton19.IconSize = new System.Drawing.Size(32, 32);
@@ -667,364 +723,273 @@
             // 
             // materialIconButton20
             // 
-            this.materialIconButton20.AutoSize = true;
             this.materialIconButton20.Depth = 0;
-            this.materialIconButton20.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton20.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin4;
-            this.materialIconButton20.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton20.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton20.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton20.Location = new System.Drawing.Point(375, 0);
+            this.materialIconButton20.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton20.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton20.Icon")));
+            this.materialIconButton20.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton20.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton20.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton20.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton20.Name = "materialIconButton20";
             this.materialIconButton20.Primary = true;
-            this.materialIconButton20.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton20.TabIndex = 3;
-            this.materialIconButton20.Text = "materialIconButton20";
+            this.materialIconButton20.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton20.TabIndex = 0;
             // 
             // materialIconButton21
             // 
-            this.materialIconButton21.AutoSize = true;
             this.materialIconButton21.Depth = 0;
-            this.materialIconButton21.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton21.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton21.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton21.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton21.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton21.Location = new System.Drawing.Point(375, 0);
+            this.materialIconButton21.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton21.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton21.Icon")));
+            this.materialIconButton21.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton21.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton21.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton21.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton21.Name = "materialIconButton21";
             this.materialIconButton21.Primary = true;
-            this.materialIconButton21.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton21.TabIndex = 2;
-            this.materialIconButton21.Text = "materialIconButton21";
+            this.materialIconButton21.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton21.TabIndex = 0;
             // 
             // materialIconButton22
             // 
-            this.materialIconButton22.AutoSize = true;
             this.materialIconButton22.Depth = 0;
-            this.materialIconButton22.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton22.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton22.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton22.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton22.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton22.Location = new System.Drawing.Point(375, 0);
+            this.materialIconButton22.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton22.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton22.Icon")));
+            this.materialIconButton22.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton22.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton22.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton22.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton22.Name = "materialIconButton22";
             this.materialIconButton22.Primary = true;
-            this.materialIconButton22.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton22.TabIndex = 2;
-            this.materialIconButton22.Text = "materialIconButton22";
+            this.materialIconButton22.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton22.TabIndex = 0;
             // 
             // materialIconButton23
             // 
-            this.materialIconButton23.AutoSize = true;
             this.materialIconButton23.Depth = 0;
-            this.materialIconButton23.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton23.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton23.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton23.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton23.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton23.Location = new System.Drawing.Point(375, 0);
+            this.materialIconButton23.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton23.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton23.Icon")));
+            this.materialIconButton23.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton23.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton23.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton23.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton23.Name = "materialIconButton23";
             this.materialIconButton23.Primary = true;
-            this.materialIconButton23.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton23.TabIndex = 2;
-            this.materialIconButton23.Text = "materialIconButton23";
+            this.materialIconButton23.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton23.TabIndex = 0;
             // 
             // materialIconButton24
             // 
-            this.materialIconButton24.AutoSize = true;
             this.materialIconButton24.Depth = 0;
-            this.materialIconButton24.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton24.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton24.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton24.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton24.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton24.Location = new System.Drawing.Point(269, 0);
+            this.materialIconButton24.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton24.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton24.Icon")));
+            this.materialIconButton24.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton24.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton24.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton24.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton24.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton24.Name = "materialIconButton24";
             this.materialIconButton24.Primary = true;
-            this.materialIconButton24.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton24.TabIndex = 2;
-            this.materialIconButton24.Text = "materialIconButton24";
+            this.materialIconButton24.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton24.TabIndex = 0;
             // 
             // materialIconButton25
             // 
-            this.materialIconButton25.AutoSize = true;
             this.materialIconButton25.Depth = 0;
-            this.materialIconButton25.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton25.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton25.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton25.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton25.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton25.Location = new System.Drawing.Point(375, 0);
+            this.materialIconButton25.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton25.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton25.Icon")));
+            this.materialIconButton25.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton25.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton25.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton25.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton25.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton25.Name = "materialIconButton25";
             this.materialIconButton25.Primary = true;
-            this.materialIconButton25.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton25.TabIndex = 2;
-            this.materialIconButton25.Text = "materialIconButton25";
+            this.materialIconButton25.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton25.TabIndex = 0;
             // 
             // materialIconButton26
             // 
-            this.materialIconButton26.AutoSize = true;
             this.materialIconButton26.Depth = 0;
-            this.materialIconButton26.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton26.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton26.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton26.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton26.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton26.Location = new System.Drawing.Point(375, 0);
+            this.materialIconButton26.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton26.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton26.Icon")));
+            this.materialIconButton26.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton26.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton26.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton26.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton26.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton26.Name = "materialIconButton26";
             this.materialIconButton26.Primary = true;
-            this.materialIconButton26.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton26.TabIndex = 2;
-            this.materialIconButton26.Text = "materialIconButton26";
+            this.materialIconButton26.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton26.TabIndex = 0;
             // 
             // materialIconButton27
             // 
-            this.materialIconButton27.AutoSize = true;
             this.materialIconButton27.Depth = 0;
-            this.materialIconButton27.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton27.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton27.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton27.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton27.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton27.Location = new System.Drawing.Point(349, 0);
+            this.materialIconButton27.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton27.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton27.Icon")));
+            this.materialIconButton27.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton27.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton27.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton27.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton27.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton27.Name = "materialIconButton27";
             this.materialIconButton27.Primary = true;
-            this.materialIconButton27.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton27.TabIndex = 3;
-            this.materialIconButton27.Text = "materialIconButton27";
+            this.materialIconButton27.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton27.TabIndex = 0;
             // 
             // materialIconButton28
             // 
-            this.materialIconButton28.AutoSize = true;
             this.materialIconButton28.Depth = 0;
-            this.materialIconButton28.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton28.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton28.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton28.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton28.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton28.Location = new System.Drawing.Point(323, 0);
+            this.materialIconButton28.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton28.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton28.Icon")));
+            this.materialIconButton28.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton28.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton28.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton28.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton28.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton28.Name = "materialIconButton28";
             this.materialIconButton28.Primary = true;
-            this.materialIconButton28.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton28.TabIndex = 4;
-            this.materialIconButton28.Text = "materialIconButton28";
+            this.materialIconButton28.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton28.TabIndex = 0;
             // 
             // materialIconButton29
             // 
-            this.materialIconButton29.AutoSize = true;
             this.materialIconButton29.Depth = 0;
-            this.materialIconButton29.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton29.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton29.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton29.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton29.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton29.Location = new System.Drawing.Point(297, 0);
+            this.materialIconButton29.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton29.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton29.Icon")));
+            this.materialIconButton29.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton29.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton29.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton29.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton29.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton29.Name = "materialIconButton29";
             this.materialIconButton29.Primary = true;
-            this.materialIconButton29.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton29.TabIndex = 5;
-            this.materialIconButton29.Text = "materialIconButton29";
+            this.materialIconButton29.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton29.TabIndex = 0;
             // 
             // materialIconButton30
             // 
-            this.materialIconButton30.AutoSize = true;
             this.materialIconButton30.Depth = 0;
-            this.materialIconButton30.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton30.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton30.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton30.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton30.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton30.Location = new System.Drawing.Point(271, 0);
+            this.materialIconButton30.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton30.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton30.Icon")));
+            this.materialIconButton30.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton30.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton30.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton30.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton30.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton30.Name = "materialIconButton30";
             this.materialIconButton30.Primary = true;
-            this.materialIconButton30.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton30.TabIndex = 6;
-            this.materialIconButton30.Text = "materialIconButton30";
+            this.materialIconButton30.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton30.TabIndex = 0;
             // 
             // materialIconButton31
             // 
-            this.materialIconButton31.AutoSize = true;
             this.materialIconButton31.Depth = 0;
-            this.materialIconButton31.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton31.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton31.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton31.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton31.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton31.Location = new System.Drawing.Point(177, 0);
+            this.materialIconButton31.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton31.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton31.Icon")));
+            this.materialIconButton31.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton31.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton31.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton31.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton31.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton31.Name = "materialIconButton31";
             this.materialIconButton31.Primary = true;
-            this.materialIconButton31.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton31.TabIndex = 2;
-            this.materialIconButton31.Text = "materialIconButton31";
+            this.materialIconButton31.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton31.TabIndex = 0;
             // 
             // materialIconButton32
             // 
-            this.materialIconButton32.AutoSize = true;
             this.materialIconButton32.Depth = 0;
-            this.materialIconButton32.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton32.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton32.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton32.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton32.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton32.Location = new System.Drawing.Point(177, 0);
+            this.materialIconButton32.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton32.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton32.Icon")));
+            this.materialIconButton32.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton32.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton32.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton32.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton32.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton32.Name = "materialIconButton32";
             this.materialIconButton32.Primary = true;
-            this.materialIconButton32.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton32.TabIndex = 2;
-            this.materialIconButton32.Text = "materialIconButton32";
+            this.materialIconButton32.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton32.TabIndex = 0;
             // 
             // materialIconButton33
             // 
-            this.materialIconButton33.AutoSize = true;
             this.materialIconButton33.Depth = 0;
-            this.materialIconButton33.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton33.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton33.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton33.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton33.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton33.Location = new System.Drawing.Point(151, 0);
+            this.materialIconButton33.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton33.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton33.Icon")));
+            this.materialIconButton33.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton33.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton33.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton33.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton33.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton33.Name = "materialIconButton33";
             this.materialIconButton33.Primary = true;
-            this.materialIconButton33.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton33.TabIndex = 3;
-            this.materialIconButton33.Text = "materialIconButton33";
+            this.materialIconButton33.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton33.TabIndex = 0;
             // 
             // materialIconButton34
             // 
-            this.materialIconButton34.AutoSize = true;
             this.materialIconButton34.Depth = 0;
-            this.materialIconButton34.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton34.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton34.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton34.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton34.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton34.Location = new System.Drawing.Point(125, 0);
+            this.materialIconButton34.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton34.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton34.Icon")));
+            this.materialIconButton34.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton34.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton34.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton34.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton34.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton34.Name = "materialIconButton34";
             this.materialIconButton34.Primary = true;
-            this.materialIconButton34.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton34.TabIndex = 4;
-            this.materialIconButton34.Text = "materialIconButton34";
+            this.materialIconButton34.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton34.TabIndex = 0;
             // 
             // materialIconButton35
             // 
-            this.materialIconButton35.AutoSize = true;
             this.materialIconButton35.Depth = 0;
-            this.materialIconButton35.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton35.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton35.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton35.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton35.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton35.Location = new System.Drawing.Point(99, 0);
+            this.materialIconButton35.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton35.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton35.Icon")));
+            this.materialIconButton35.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton35.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton35.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton35.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton35.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton35.Name = "materialIconButton35";
             this.materialIconButton35.Primary = true;
-            this.materialIconButton35.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton35.TabIndex = 5;
-            this.materialIconButton35.Text = "materialIconButton35";
+            this.materialIconButton35.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton35.TabIndex = 0;
             // 
             // materialIconButton36
             // 
-            this.materialIconButton36.AutoSize = true;
             this.materialIconButton36.Depth = 0;
-            this.materialIconButton36.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton36.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton36.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton36.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton36.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton36.Location = new System.Drawing.Point(73, 0);
+            this.materialIconButton36.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton36.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton36.Icon")));
+            this.materialIconButton36.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton36.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton36.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton36.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton36.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton36.Name = "materialIconButton36";
             this.materialIconButton36.Primary = true;
-            this.materialIconButton36.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton36.TabIndex = 6;
-            this.materialIconButton36.Text = "materialIconButton36";
+            this.materialIconButton36.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton36.TabIndex = 0;
             // 
             // materialIconButton37
             // 
-            this.materialIconButton37.AutoSize = true;
             this.materialIconButton37.Depth = 0;
-            this.materialIconButton37.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton37.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin6;
-            this.materialIconButton37.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.materialIconButton37.IconMargin = new System.Windows.Forms.Padding(0);
-            this.materialIconButton37.IconSize = new System.Drawing.Size(20, 20);
-            this.materialIconButton37.Location = new System.Drawing.Point(47, 0);
+            this.materialIconButton37.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
+            this.materialIconButton37.Icon = ((System.Drawing.Image)(resources.GetObject("materialIconButton37.Icon")));
+            this.materialIconButton37.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.materialIconButton37.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.materialIconButton37.IconSize = new System.Drawing.Size(16, 16);
+            this.materialIconButton37.Location = new System.Drawing.Point(0, 0);
             this.materialIconButton37.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialIconButton37.Name = "materialIconButton37";
             this.materialIconButton37.Primary = true;
-            this.materialIconButton37.Size = new System.Drawing.Size(20, 20);
-            this.materialIconButton37.TabIndex = 7;
-            this.materialIconButton37.Text = "materialIconButton37";
-            // 
-            // uCtrlNoticeRegion1
-            // 
-            this.uCtrlNoticeRegion1.BackColor = System.Drawing.Color.Transparent;
-            this.uCtrlNoticeRegion1.Depth = 0;
-            this.uCtrlNoticeRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uCtrlNoticeRegion1.Location = new System.Drawing.Point(3, 3);
-            this.uCtrlNoticeRegion1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.uCtrlNoticeRegion1.Name = "uCtrlNoticeRegion1";
-            this.uCtrlNoticeRegion1.Size = new System.Drawing.Size(515, 368);
-            this.uCtrlNoticeRegion1.TabIndex = 2;
-            // 
-            // uCtrlTasksRegion1
-            // 
-            this.uCtrlTasksRegion1.BackColor = System.Drawing.Color.Transparent;
-            this.uCtrlTasksRegion1.Depth = 0;
-            this.uCtrlTasksRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uCtrlTasksRegion1.Location = new System.Drawing.Point(3, 377);
-            this.uCtrlTasksRegion1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.uCtrlTasksRegion1.Name = "uCtrlTasksRegion1";
-            this.uCtrlTasksRegion1.Size = new System.Drawing.Size(515, 368);
-            this.uCtrlTasksRegion1.TabIndex = 3;
-            // 
-            // uCtrlBasicInfoRegion1
-            // 
-            this.uCtrlBasicInfoRegion1.BackColor = System.Drawing.Color.Transparent;
-            this.uCtrlBasicInfoRegion1.Depth = 0;
-            this.uCtrlBasicInfoRegion1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uCtrlBasicInfoRegion1.Location = new System.Drawing.Point(0, 0);
-            this.uCtrlBasicInfoRegion1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.uCtrlBasicInfoRegion1.Name = "uCtrlBasicInfoRegion1";
-            this.uCtrlBasicInfoRegion1.Size = new System.Drawing.Size(779, 115);
-            this.uCtrlBasicInfoRegion1.TabIndex = 0;
-            // 
-            // uCtrlBusinessTrackingRegion1
-            // 
-            this.uCtrlBusinessTrackingRegion1.BackColor = System.Drawing.Color.Transparent;
-            this.uCtrlBusinessTrackingRegion1.Depth = 0;
-            this.uCtrlBusinessTrackingRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uCtrlBusinessTrackingRegion1.Location = new System.Drawing.Point(3, 377);
-            this.uCtrlBusinessTrackingRegion1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.uCtrlBusinessTrackingRegion1.Name = "uCtrlBusinessTrackingRegion1";
-            this.uCtrlBusinessTrackingRegion1.Size = new System.Drawing.Size(779, 368);
-            this.uCtrlBusinessTrackingRegion1.TabIndex = 5;
-            // 
-            // uCtrlBusinessRegion1
-            // 
-            this.uCtrlBusinessRegion1.BackColor = System.Drawing.Color.Transparent;
-            this.uCtrlBusinessRegion1.Depth = 0;
-            this.uCtrlBusinessRegion1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uCtrlBusinessRegion1.Location = new System.Drawing.Point(0, 115);
-            this.uCtrlBusinessRegion1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.uCtrlBusinessRegion1.Name = "uCtrlBusinessRegion1";
-            this.uCtrlBusinessRegion1.Size = new System.Drawing.Size(779, 253);
-            this.uCtrlBusinessRegion1.TabIndex = 1;
+            this.materialIconButton37.Size = new System.Drawing.Size(100, 23);
+            this.materialIconButton37.TabIndex = 0;
             // 
             // HomePage
             // 
@@ -1117,11 +1082,11 @@
         private MaterialSkin.Controls.MaterialIconButton materialIconButton35;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton36;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton37;
-        private MaterialForms.UserControls.UCtrlNoticeRegion uCtrlNoticeRegion1;
-        private MaterialForms.UserControls.UCtrlTasksRegion uCtrlTasksRegion1;
-        private MaterialForms.UserControls.UCtrlBasicInfoRegion uCtrlBasicInfoRegion1;
-        private MaterialForms.UserControls.UCtrlBusinessTrackingRegion uCtrlBusinessTrackingRegion1;
-        private MaterialForms.UserControls.UCtrlBusinessRegion uCtrlBusinessRegion1;
+        private MaterialForms.UCtrlNoticeRegion uCtrlNoticeRegion1;
+        private MaterialForms.UCtrlTasksRegion uCtrlTasksRegion1;
+        private MaterialForms.UCtrlBasicInfoRegion uCtrlBasicInfoRegion1;
+        private MaterialForms.UCtrlBusinessTrackingRegion uCtrlBusinessTrackingRegion1;
+        private MaterialForms.UCtrlBusinessRegion uCtrlBusinessRegion1;
     }
 }
 

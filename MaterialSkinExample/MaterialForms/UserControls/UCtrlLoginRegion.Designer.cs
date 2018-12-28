@@ -167,7 +167,7 @@
             this.m_btnLogin.AutoSize = true;
             this.m_btnLogin.Depth = 0;
             this.m_btnLogin.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnLogin.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.m_btnLogin.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.m_btnLogin.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnLogin.IconMargin = new System.Windows.Forms.Padding(0);
             this.m_btnLogin.IconSize = new System.Drawing.Size(16, 16);
@@ -185,7 +185,7 @@
             this.m_btnCancel.AutoSize = true;
             this.m_btnCancel.Depth = 0;
             this.m_btnCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnCancel.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.m_btnCancel.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.m_btnCancel.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnCancel.IconMargin = new System.Windows.Forms.Padding(0);
             this.m_btnCancel.IconSize = new System.Drawing.Size(16, 16);
@@ -203,7 +203,7 @@
             this.m_btnDataCenter.AutoSize = true;
             this.m_btnDataCenter.Depth = 0;
             this.m_btnDataCenter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnDataCenter.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel4;
+            this.m_btnDataCenter.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
             this.m_btnDataCenter.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnDataCenter.IconMargin = new System.Windows.Forms.Padding(0);
             this.m_btnDataCenter.IconSize = new System.Drawing.Size(16, 16);

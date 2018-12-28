@@ -1,4 +1,4 @@
-﻿namespace MaterialSkinExample.MaterialForms.UserControls
+﻿namespace MaterialSkinExample.MaterialForms
 {
     partial class UCtrlBusinessRegion
     {
@@ -55,7 +55,7 @@
             this.materialGroupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialGroupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.materialGroupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
-            this.materialGroupBox5.Icon = global::MaterialSkinExample.Properties.Resources.IE4;
+            this.materialGroupBox5.Icon = global::MaterialSkinExample.Properties.Resources.IE_32x32_lightBlue;
             this.materialGroupBox5.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialGroupBox5.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialGroupBox5.IconSize = new System.Drawing.Size(20, 20);
@@ -121,7 +121,7 @@
             this.materialIconButton16.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton16.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialIconButton16.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton16.Icon = global::MaterialSkinExample.Properties.Resources.bianji5;
+            this.materialIconButton16.Icon = global::MaterialSkinExample.Properties.Resources.bianji_32x32_lightBlue;
             this.materialIconButton16.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton16.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton16.IconSize = new System.Drawing.Size(32, 32);
@@ -142,7 +142,7 @@
             this.materialIconButton17.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton17.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialIconButton17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton17.Icon = global::MaterialSkinExample.Properties.Resources.bianji3;
+            this.materialIconButton17.Icon = global::MaterialSkinExample.Properties.Resources.bianji_32x32_lightGreen;
             this.materialIconButton17.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton17.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton17.IconSize = new System.Drawing.Size(32, 32);
@@ -163,7 +163,7 @@
             this.materialIconButton18.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.materialIconButton18.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialIconButton18.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.materialIconButton18.Icon = global::MaterialSkinExample.Properties.Resources.bianji4;
+            this.materialIconButton18.Icon = global::MaterialSkinExample.Properties.Resources.bianji_32x32_lightOrange;
             this.materialIconButton18.IconAlign = System.Drawing.ContentAlignment.TopCenter;
             this.materialIconButton18.IconMargin = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.materialIconButton18.IconSize = new System.Drawing.Size(32, 32);
@@ -210,7 +210,7 @@
             this.materialIconButton15.AutoSize = true;
             this.materialIconButton15.Depth = 0;
             this.materialIconButton15.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.materialIconButton15.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin4;
+            this.materialIconButton15.Icon = global::MaterialSkinExample.Properties.Resources.icon_AR_jingtoushuaxin_32x32_lightBlue;
             this.materialIconButton15.IconAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.materialIconButton15.IconMargin = new System.Windows.Forms.Padding(0);
             this.materialIconButton15.IconSize = new System.Drawing.Size(20, 20);
