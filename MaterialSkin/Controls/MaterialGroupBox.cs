@@ -32,22 +32,21 @@ namespace MaterialSkin.Controls
             Icon = global::MaterialSkin.Properties.Resources.Icon1;
             IconAlign = ContentAlignment.MiddleLeft;
             DisplayStyle = ToolStripItemDisplayStyle.Image;
+            HeadStyle = DockStyle.Top;
             //分割线
             this.SplitLineWeight = 2;
             this.SuspendLayout();
             //设置RightPanel
-            RightPanel = new FlowLayoutPanel
+            TitlePanel = new FlowLayoutPanel
             {
                 AutoSizeMode = AutoSizeMode.GrowAndShrink,
                 FlowDirection = FlowDirection.RightToLeft,
             };
-            RightPanel.SizeChanged += (sender, e) =>
+            TitlePanel.SizeChanged += (sender, e) =>
                {
                    RefreshLayout();
                };
-            RightPanel.ControlAdded += RightPanel_ControlAdded;
-            RightPanel.ControlRemoved += RightPanel_ControlRemoved;
-            this.Controls.Add(RightPanel);
+            this.Controls.Add(TitlePanel);
             RefreshLayout();
             this.ResumeLayout(false);
             //
@@ -57,19 +56,73 @@ namespace MaterialSkin.Controls
               };
         }
 
-        private void RightPanel_ControlRemoved(object sender, ControlEventArgs e)
+        #region Properties;
+        #region 布局属性
+        private DockStyle m_HeadStyle;
+
+        public DockStyle HeadStyle
         {
-            throw new NotImplementedException();
+            get { return m_HeadStyle; }
+            set
+            {
+                m_HeadStyle = value;
+                Invalidate();
+            }
         }
 
-        private void RightPanel_ControlAdded(object sender, ControlEventArgs e)
+        /// <summary>
+        /// 标题栏默认区域
+        /// </summary>
+        private Rectangle m_HeadRectangle = new Rectangle();
+        protected virtual Rectangle HeadRectangle
         {
-            RightPanel.Controls.Add(e.Control);
+            get { return m_HeadRectangle; }
+            set { m_HeadRectangle = value; }
         }
-        #region Properties;
+        [Browsable(false)]
+        public ContentAlignment IconAlign { get; set; }
+        [Browsable(false)]
+        public ToolStripItemDisplayStyle DisplayStyle { get; set; }
+        [Browsable(false)]
+        public Padding IconMargin { get; set; }
+        private Rectangle m_IconRectangle = new Rectangle();
+        protected virtual Rectangle IconRectangle
+        {
+            get { return m_IconRectangle; }
+            set { m_IconRectangle = value; }
+        }
+        private Rectangle m_TextRectangle = new Rectangle();
+        [Browsable(false)]
+        public Rectangle TextRectangle
+        {
+            get { return m_TextRectangle; }
+            set { m_TextRectangle = value; }
+        }
+        private Size TextSize
+        {
+            get
+            {
+                return new Size(TextRectangle.Width, TextRectangle.Height);
+            }
+        }
         [Browsable(false), DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-        public FlowLayoutPanel RightPanel = new FlowLayoutPanel();
+        public FlowLayoutPanel TitlePanel = new FlowLayoutPanel();
         public int SplitLineWeight { get; set; }
+        /// <summary>
+        /// Panel的默认区域
+        /// </summary>
+        private Rectangle m_DisplayRectangle = new Rectangle();
+        public override Rectangle DisplayRectangle
+        {
+            get
+            {
+                return m_DisplayRectangle;
+
+            }
+        }
+        #endregion
+        #region 内容属性
+
         public override string Text
         {
             get => base.Text;
@@ -77,33 +130,6 @@ namespace MaterialSkin.Controls
             {
                 base.Text = value;
                 Invalidate();
-            }
-        }
-        #endregion
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            RefreshLayout();
-            //绘制图标
-            this.DrawIcon(e.Graphics, new Rectangle(0, 0, IconSize.Width, IconSize.Height));
-            //绘制文本
-            this.DrawText(e.Graphics);
-            //绘制分割线（根据theme）
-            DrawSplitLine(e.Graphics);
-        }
-        protected override void OnCreateControl()
-        {
-            base.OnCreateControl();
-        }
-        /// <summary>
-        /// Panel的默认区域
-        /// </summary>
-        public override Rectangle DisplayRectangle
-        {
-            get
-            {
-                var headHeight = this.TextSize.Height + SplitLineWeight + 1;
-                return new Rectangle(0, headHeight, this.Width, this.Height - headHeight);
             }
         }
         private Image m_Icon;
@@ -120,10 +146,8 @@ namespace MaterialSkin.Controls
                 }
             }
         }
-        [Browsable(false)]
-        public ContentAlignment IconAlign { get; set; }
-        private Size m_IconSize;
 
+        private Size m_IconSize;
         public Size IconSize
         {
             get { return m_IconSize; }
@@ -133,23 +157,23 @@ namespace MaterialSkin.Controls
                 Invalidate();
             }
         }
-        [Browsable(false)]
-        public ToolStripItemDisplayStyle DisplayStyle { get; set; }
-        [Browsable(false)]
-        public Padding IconMargin { get; set; }
-        private Size TextSize
+
+        #endregion
+
+        #endregion
+        protected override void OnPaint(PaintEventArgs e)
         {
-            get
-            {
-                return new Size(TextRectangle.Width, TextRectangle.Height);
-            }
+            RefreshLayout();
+            //绘制图标
+            this.DrawIcon(e.Graphics, m_IconRectangle);
+            //绘制文本
+            this.DrawText(e.Graphics);
+            //绘制分割线（根据theme）
+            DrawSplitLine(e.Graphics);
         }
-        private Rectangle m_TextRectangle = new Rectangle();
-        [Browsable(false)]
-        public Rectangle TextRectangle
+        protected override void OnCreateControl()
         {
-            get { return m_TextRectangle; }
-            set { m_TextRectangle = value; }
+            base.OnCreateControl();
         }
 
         /// <summary>
@@ -158,29 +182,192 @@ namespace MaterialSkin.Controls
         /// <param name="g"></param>
         private void DrawSplitLine(Graphics g)
         {
+            if (SplitLineWeight <= 0)
+                return;
             Pen vPen = new Pen(ForeColor, SplitLineWeight);
-            g.DrawLine(vPen, 0, TextSize.Height, g.VisibleClipBounds.Width, TextSize.Height);
+            PointF start = new PointF(0, HeadRectangle.Height);
+            PointF end = new PointF(HeadRectangle.Width, HeadRectangle.Height);
+            switch (HeadStyle)
+            {
+                default:
+                case DockStyle.Top:
+                    break;
+                case DockStyle.Bottom:
+                    end.Y = start.Y = g.VisibleClipBounds.Height - HeadRectangle.Height;
+                    break;
+                case DockStyle.Left:
+                    start.X = end.X = HeadRectangle.Width;
+                    start.Y = 0;
+                    end.Y = HeadRectangle.Height;
+                    break;
+                case DockStyle.Right:
+                    start.X = end.X = g.VisibleClipBounds.Width - HeadRectangle.Width;
+                    start.Y = 0;
+                    end.Y = HeadRectangle.Height;
+                    break;
+                case DockStyle.Fill:
+                case DockStyle.None:
+                    return;
+            }
+            g.DrawLine(vPen, start, end);
         }
         private void RefreshLayout()
         {
+            switch (HeadStyle)
+            {
+                default:
+                case DockStyle.Top:
+                    RefreshLayoutWhenTop();
+                    break;
+                case DockStyle.Bottom:
+                    RefreshLayoutWhenBottom();
+                    break;
+                case DockStyle.Left:
+                    RefreshLayoutWhenLeft();
+                    break;
+                case DockStyle.Right:
+                    RefreshLayoutWhenRight();
+                    break;
+                case DockStyle.None:
+                case DockStyle.Fill:
+                    throw new NotImplementedException();
+                    break;
+            }
 
+        }
+        private void RefreshLayoutWhenTop()
+        {
             //Text
             var textSize = this.GetTextSize(CreateGraphics());
-            m_TextRectangle.X = IconSize.Width;
-            m_TextRectangle.Y = 0;
             m_TextRectangle.Width = textSize.Width;
             m_TextRectangle.Height = Math.Max(textSize.Height, IconSize.Height);
+            m_TextRectangle.X = IconSize.Width;
+            m_TextRectangle.Y = 0;
             //Icon
             var IconRemove = (int)(m_TextRectangle.Height - IconSize.Height) / 2;
             IconMargin = new Padding(2, IconRemove, 2, IconRemove);
+            m_IconRectangle.Width = IconSize.Width;
+            m_IconRectangle.Height = IconSize.Height;
+            m_IconRectangle.X = m_IconRectangle.Y = 0;
+            //HeadRectangle
+            m_HeadRectangle.Width = this.Width;
+            m_HeadRectangle.Height = m_TextRectangle.Height;
+            m_HeadRectangle.X = m_HeadRectangle.Y = 0;
             //刷新标题栏布局
-            RightPanel.SuspendLayout();
-            RightPanel.Location = new Point(TextSize.Width + IconSize.Width, 0);
+            TitlePanel.SuspendLayout();
+            TitlePanel.Location = new Point(TextSize.Width + IconSize.Width, 0);
             //RightPanel.Height = TextSize.Height - 1;
             //RightPanel.Width = this.Width - TextSize.Width - IconSize.Width;
-            RightPanel.Height = 0;
-            RightPanel.Width = 0;
-            RightPanel.ResumeLayout(false);
+            TitlePanel.Height = 0;
+            TitlePanel.Width = 0;
+            TitlePanel.ResumeLayout(false);
+            //Panel
+            var headHeight = this.TextSize.Height + SplitLineWeight + 1;
+            m_DisplayRectangle.Width = this.Width;
+            m_DisplayRectangle.Height = this.Height - headHeight;
+            m_DisplayRectangle.Y = this.Height - m_DisplayRectangle.Height;
+            m_DisplayRectangle.X = 0;
+        }
+        private void RefreshLayoutWhenBottom()
+        {
+            //Text
+            var textSize = this.GetTextSize(CreateGraphics());
+            m_TextRectangle.Width = textSize.Width;
+            m_TextRectangle.Height = Math.Max(textSize.Height, IconSize.Height);
+            m_TextRectangle.X = IconSize.Width;
+            m_TextRectangle.Y = this.Height - m_TextRectangle.Height;
+            //Icon
+            var IconRemove = (int)(m_TextRectangle.Height - IconSize.Height) / 2;
+            IconMargin = new Padding(2, IconRemove, 2, IconRemove);
+            m_IconRectangle.Width = IconSize.Width;
+            m_IconRectangle.Height = IconSize.Height;
+            m_IconRectangle.Y = this.Height - m_TextRectangle.Height;
+            m_IconRectangle.X = 0;
+            //HeadRectangle
+            m_HeadRectangle.Width = this.Width;
+            m_HeadRectangle.Height = m_TextRectangle.Height;
+            m_HeadRectangle.Y = this.Height - m_HeadRectangle.Height;
+            m_HeadRectangle.X = 0;
+            //刷新标题栏布局
+            TitlePanel.SuspendLayout();
+            TitlePanel.Location = new Point(TextSize.Width + IconSize.Width, 0);
+            //RightPanel.Height = TextSize.Height - 1;
+            //RightPanel.Width = this.Width - TextSize.Width - IconSize.Width;
+            TitlePanel.Height = 0;
+            TitlePanel.Width = 0;
+            TitlePanel.ResumeLayout(false);
+            //Panel
+            var headHeight = this.TextSize.Height + SplitLineWeight + 1;
+            m_DisplayRectangle.Width = this.Width;
+            m_DisplayRectangle.Height = this.Height - headHeight;
+            m_DisplayRectangle.X = m_DisplayRectangle.Y = 0;
+        }
+        private void RefreshLayoutWhenLeft()
+        {
+            //Text
+            var textSize = this.GetTextSize(CreateGraphics());
+            m_TextRectangle.Height = textSize.Height;
+            m_TextRectangle.Width = Math.Max(textSize.Width, IconSize.Width);
+            m_TextRectangle.Y = IconSize.Height;
+            m_TextRectangle.X = 0;
+            //Icon
+            var IconRemove = (int)(TextSize.Height - IconSize.Height) / 2;
+            IconMargin = new Padding(2, IconRemove, 2, IconRemove);
+            m_IconRectangle.Width = IconSize.Width;
+            m_IconRectangle.Height = IconSize.Height;
+            m_IconRectangle.X = m_IconRectangle.Y = 0;
+            //HeadRectangle
+            m_HeadRectangle.Height = this.Height;
+            m_HeadRectangle.Width = TextSize.Width;
+            m_HeadRectangle.X = m_HeadRectangle.Y = 0;
+            //刷新标题栏布局
+            TitlePanel.SuspendLayout();
+            TitlePanel.Location = new Point(TextSize.Width + IconSize.Width, 0);
+            //RightPanel.Height = TextSize.Height - 1;
+            //RightPanel.Width = this.Width - TextSize.Width - IconSize.Width;
+            TitlePanel.Height = 0;
+            TitlePanel.Width = 0;
+            TitlePanel.ResumeLayout(false);
+            //Panel
+            var UsedWidth = this.TextSize.Width + SplitLineWeight + 40 + +1;
+            m_DisplayRectangle.Height = this.Height;
+            m_DisplayRectangle.Width = this.Width - UsedWidth;
+            m_DisplayRectangle.X = this.Width - m_DisplayRectangle.Width;
+            m_DisplayRectangle.Y = 0;
+        }
+        private void RefreshLayoutWhenRight()
+        {
+            //Text
+            var textSize = this.GetTextSize(CreateGraphics());
+            m_TextRectangle.Height = textSize.Height;
+            m_TextRectangle.Width = Math.Max(textSize.Width, IconSize.Width);
+            m_TextRectangle.Y = IconSize.Height;
+            m_TextRectangle.X = this.Width - m_TextRectangle.Width;
+            //Icon
+            var IconRemove = (int)(TextSize.Height - IconSize.Height) / 2;
+            IconMargin = new Padding(2, IconRemove, 2, IconRemove);
+            m_IconRectangle.Width = IconSize.Width;
+            m_IconRectangle.Height = IconSize.Height;
+            m_IconRectangle.X = this.Width - TextSize.Width;
+            m_IconRectangle.Y = 0;
+            //HeadRectangle
+            m_HeadRectangle.Height = this.Height;
+            m_HeadRectangle.Width = TextSize.Width;
+            m_HeadRectangle.X = this.Width - TextSize.Width;
+            m_HeadRectangle.Y = 0;
+            //刷新标题栏布局
+            TitlePanel.SuspendLayout();
+            TitlePanel.Location = new Point(TextSize.Width + IconSize.Width, 0);
+            //RightPanel.Height = TextSize.Height - 1;
+            //RightPanel.Width = this.Width - TextSize.Width - IconSize.Width;
+            TitlePanel.Height = 0;
+            TitlePanel.Width = 0;
+            TitlePanel.ResumeLayout(false);
+            //Panel
+            var UsedWidth = this.TextSize.Width + SplitLineWeight + 1;
+            m_DisplayRectangle.Height = this.Height;
+            m_DisplayRectangle.Width = this.Width - UsedWidth;
+            m_DisplayRectangle.X = m_DisplayRectangle.Y = 0;
         }
     }
 }

@@ -35,6 +35,7 @@
             this.materialIconButton16 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton17 = new MaterialSkin.Controls.MaterialIconButton();
             this.materialIconButton18 = new MaterialSkin.Controls.MaterialIconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.materialGroupBox7 = new MaterialSkin.Controls.MaterialGroupBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.materialIconButton15 = new MaterialSkin.Controls.MaterialIconButton();
@@ -55,6 +56,7 @@
             this.materialGroupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialGroupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.materialGroupBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
+            this.materialGroupBox5.HeadStyle = System.Windows.Forms.DockStyle.Top;
             this.materialGroupBox5.Icon = global::MaterialSkinExample.Properties.Resources.IE_32x32_lightBlue;
             this.materialGroupBox5.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialGroupBox5.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -62,7 +64,7 @@
             this.materialGroupBox5.Location = new System.Drawing.Point(0, 0);
             this.materialGroupBox5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialGroupBox5.Name = "materialGroupBox5";
-            this.materialGroupBox5.Size = new System.Drawing.Size(778, 256);
+            this.materialGroupBox5.Size = new System.Drawing.Size(783, 256);
             this.materialGroupBox5.SplitLineWeight = 2;
             this.materialGroupBox5.TabIndex = 4;
             this.materialGroupBox5.TabStop = false;
@@ -72,12 +74,13 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.materialGroupBox6);
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.materialGroupBox7);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 23);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(778, 233);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(783, 233);
             this.flowLayoutPanel1.TabIndex = 6;
             // 
             // materialGroupBox6
@@ -87,19 +90,20 @@
             this.materialGroupBox6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialGroupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.materialGroupBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
+            this.materialGroupBox6.HeadStyle = System.Windows.Forms.DockStyle.Left;
             this.materialGroupBox6.Icon = null;
             this.materialGroupBox6.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox6.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialGroupBox6.IconMargin = new System.Windows.Forms.Padding(2, -2, 2, -2);
             this.materialGroupBox6.IconSize = new System.Drawing.Size(24, 24);
             this.materialGroupBox6.Location = new System.Drawing.Point(3, 3);
             this.materialGroupBox6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialGroupBox6.Name = "materialGroupBox6";
-            this.materialGroupBox6.Size = new System.Drawing.Size(757, 115);
-            this.materialGroupBox6.SplitLineWeight = 2;
+            this.materialGroupBox6.Size = new System.Drawing.Size(772, 100);
+            this.materialGroupBox6.SplitLineWeight = 0;
             this.materialGroupBox6.TabIndex = 0;
             this.materialGroupBox6.TabStop = false;
             this.materialGroupBox6.Text = "预算";
-            this.materialGroupBox6.TextRectangle = new System.Drawing.Rectangle(24, 0, 59, 24);
+            this.materialGroupBox6.TextRectangle = new System.Drawing.Rectangle(0, 24, 59, 20);
             // 
             // flowLayoutPanel2
             // 
@@ -108,9 +112,9 @@
             this.flowLayoutPanel2.Controls.Add(this.materialIconButton17);
             this.flowLayoutPanel2.Controls.Add(this.materialIconButton18);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 27);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(102, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(757, 88);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(670, 100);
             this.flowLayoutPanel2.TabIndex = 0;
             // 
             // materialIconButton16
@@ -176,6 +180,14 @@
             this.materialIconButton18.TabIndex = 9;
             this.materialIconButton18.Text = "预算编审录入";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.panel1.Location = new System.Drawing.Point(3, 109);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(772, 2);
+            this.panel1.TabIndex = 2;
+            // 
             // materialGroupBox7
             // 
             this.materialGroupBox7.Controls.Add(this.flowLayoutPanel3);
@@ -183,26 +195,27 @@
             this.materialGroupBox7.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.materialGroupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.materialGroupBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(136)))), ((int)(((byte)(194)))));
+            this.materialGroupBox7.HeadStyle = System.Windows.Forms.DockStyle.Left;
             this.materialGroupBox7.Icon = null;
             this.materialGroupBox7.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.materialGroupBox7.IconMargin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialGroupBox7.IconMargin = new System.Windows.Forms.Padding(2, -2, 2, -2);
             this.materialGroupBox7.IconSize = new System.Drawing.Size(24, 24);
-            this.materialGroupBox7.Location = new System.Drawing.Point(3, 124);
+            this.materialGroupBox7.Location = new System.Drawing.Point(3, 117);
             this.materialGroupBox7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialGroupBox7.Name = "materialGroupBox7";
-            this.materialGroupBox7.Size = new System.Drawing.Size(757, 100);
-            this.materialGroupBox7.SplitLineWeight = 2;
+            this.materialGroupBox7.Size = new System.Drawing.Size(760, 100);
+            this.materialGroupBox7.SplitLineWeight = 0;
             this.materialGroupBox7.TabIndex = 1;
             this.materialGroupBox7.TabStop = false;
             this.materialGroupBox7.Text = "支出";
-            this.materialGroupBox7.TextRectangle = new System.Drawing.Rectangle(24, 0, 59, 24);
+            this.materialGroupBox7.TextRectangle = new System.Drawing.Rectangle(0, 24, 59, 20);
             // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 27);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(100, 0);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(757, 73);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(660, 100);
             this.flowLayoutPanel3.TabIndex = 0;
             // 
             // materialIconButton15
@@ -229,7 +242,7 @@
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.materialGroupBox5);
             this.Name = "UCtrlBusinessRegion";
-            this.Size = new System.Drawing.Size(778, 256);
+            this.Size = new System.Drawing.Size(783, 256);
             this.materialGroupBox5.ResumeLayout(false);
             this.materialGroupBox5.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -253,5 +266,6 @@
         private MaterialSkin.Controls.MaterialGroupBox materialGroupBox7;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private MaterialSkin.Controls.MaterialIconButton materialIconButton15;
+        private System.Windows.Forms.Panel panel1;
     }
 }

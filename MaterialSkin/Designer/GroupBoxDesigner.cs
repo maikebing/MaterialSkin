@@ -17,7 +17,7 @@ namespace MaterialSkin.Designer
         {
             base.Initialize(component);
             _control = (MaterialGroupBox)component;
-            var titlePanel1Enable = this.EnableDesignMode(_control.RightPanel, "rightPanel");
+            var titlePanel1Enable = this.EnableDesignMode(_control.TitlePanel, "rightPanel");
             if (!(titlePanel1Enable))
                 throw new Exception("加载控件失败");
         }
