@@ -41,18 +41,17 @@
             this.uCtrlServiceCenterRegion1.Location = new System.Drawing.Point(0, 10);
             this.uCtrlServiceCenterRegion1.MouseState = MaterialSkin.MouseState.HOVER;
             this.uCtrlServiceCenterRegion1.Name = "uCtrlServiceCenterRegion1";
-            this.uCtrlServiceCenterRegion1.Size = new System.Drawing.Size(500, 357);
+            this.uCtrlServiceCenterRegion1.Size = new System.Drawing.Size(500, 348);
             this.uCtrlServiceCenterRegion1.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.uCtrlServiceCenterRegion1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 63);
+            this.panel1.Location = new System.Drawing.Point(0, 72);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.panel1.Size = new System.Drawing.Size(500, 377);
+            this.panel1.Size = new System.Drawing.Size(500, 368);
             this.panel1.TabIndex = 1;
             // 
             // ServiceCenterForm

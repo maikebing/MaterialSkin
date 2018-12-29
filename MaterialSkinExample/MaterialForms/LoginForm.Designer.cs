@@ -38,15 +38,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.uCtrlLoginRegion1);
-            this.panel1.Location = new System.Drawing.Point(0, 112);
+            this.panel1.Location = new System.Drawing.Point(0, 72);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(499, 329);
+            this.panel1.Size = new System.Drawing.Size(499, 369);
             this.panel1.TabIndex = 0;
             // 
             // uCtrlLoginRegion1
             // 
             this.uCtrlLoginRegion1.Depth = 0;
-            this.uCtrlLoginRegion1.Location = new System.Drawing.Point(60, 106);
+            this.uCtrlLoginRegion1.Location = new System.Drawing.Point(66, 143);
             this.uCtrlLoginRegion1.MouseState = MaterialSkin.MouseState.HOVER;
             this.uCtrlLoginRegion1.Name = "uCtrlLoginRegion1";
             this.uCtrlLoginRegion1.Size = new System.Drawing.Size(378, 190);
