@@ -50,7 +50,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(3);
             this.flowLayoutPanel1.Size = new System.Drawing.Size(503, 30);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
@@ -59,15 +59,16 @@
             this.m_btnAdd.AutoSize = true;
             this.m_btnAdd.Depth = 0;
             this.m_btnAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnAdd.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
+            this.m_btnAdd.Icon = global::MaterialSkinExample.Properties.Resources.add_32x32__4FC3F7;
             this.m_btnAdd.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnAdd.IconMargin = new System.Windows.Forms.Padding(0);
-            this.m_btnAdd.IconSize = new System.Drawing.Size(20, 20);
-            this.m_btnAdd.Location = new System.Drawing.Point(8, 5);
+            this.m_btnAdd.IconSize = new System.Drawing.Size(24, 24);
+            this.m_btnAdd.Location = new System.Drawing.Point(8, 3);
+            this.m_btnAdd.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.m_btnAdd.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnAdd.Name = "m_btnAdd";
             this.m_btnAdd.Primary = true;
-            this.m_btnAdd.Size = new System.Drawing.Size(79, 22);
+            this.m_btnAdd.Size = new System.Drawing.Size(83, 24);
             this.m_btnAdd.TabIndex = 2;
             this.m_btnAdd.Text = "添加";
             // 
@@ -76,15 +77,16 @@
             this.m_btnRemove.AutoSize = true;
             this.m_btnRemove.Depth = 0;
             this.m_btnRemove.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnRemove.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
+            this.m_btnRemove.Icon = global::MaterialSkinExample.Properties.Resources.remove_32x32__4FC3F7;
             this.m_btnRemove.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnRemove.IconMargin = new System.Windows.Forms.Padding(0);
-            this.m_btnRemove.IconSize = new System.Drawing.Size(20, 20);
-            this.m_btnRemove.Location = new System.Drawing.Point(93, 5);
+            this.m_btnRemove.IconSize = new System.Drawing.Size(24, 24);
+            this.m_btnRemove.Location = new System.Drawing.Point(91, 3);
+            this.m_btnRemove.Margin = new System.Windows.Forms.Padding(0);
             this.m_btnRemove.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnRemove.Name = "m_btnRemove";
             this.m_btnRemove.Primary = true;
-            this.m_btnRemove.Size = new System.Drawing.Size(79, 22);
+            this.m_btnRemove.Size = new System.Drawing.Size(83, 24);
             this.m_btnRemove.TabIndex = 3;
             this.m_btnRemove.Text = "删除";
             // 
@@ -93,15 +95,16 @@
             this.m_btnSave.AutoSize = true;
             this.m_btnSave.Depth = 0;
             this.m_btnSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnSave.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
+            this.m_btnSave.Icon = global::MaterialSkinExample.Properties.Resources.save_32x32__4FC3F7;
             this.m_btnSave.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnSave.IconMargin = new System.Windows.Forms.Padding(0);
-            this.m_btnSave.IconSize = new System.Drawing.Size(20, 20);
-            this.m_btnSave.Location = new System.Drawing.Point(178, 5);
+            this.m_btnSave.IconSize = new System.Drawing.Size(24, 24);
+            this.m_btnSave.Location = new System.Drawing.Point(174, 3);
+            this.m_btnSave.Margin = new System.Windows.Forms.Padding(0);
             this.m_btnSave.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnSave.Name = "m_btnSave";
             this.m_btnSave.Primary = true;
-            this.m_btnSave.Size = new System.Drawing.Size(79, 22);
+            this.m_btnSave.Size = new System.Drawing.Size(83, 24);
             this.m_btnSave.TabIndex = 4;
             this.m_btnSave.Text = "保存";
             // 
@@ -115,7 +118,7 @@
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 424);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(5);
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(3);
             this.flowLayoutPanel2.Size = new System.Drawing.Size(503, 30);
             this.flowLayoutPanel2.TabIndex = 3;
             // 
@@ -124,11 +127,12 @@
             this.m_btnCancel.AutoSize = true;
             this.m_btnCancel.Depth = 0;
             this.m_btnCancel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnCancel.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
+            this.m_btnCancel.Icon = global::MaterialSkinExample.Properties.Resources.tuichu_32x32__4FC3F7;
             this.m_btnCancel.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnCancel.IconMargin = new System.Windows.Forms.Padding(0);
             this.m_btnCancel.IconSize = new System.Drawing.Size(20, 20);
-            this.m_btnCancel.Location = new System.Drawing.Point(411, 5);
+            this.m_btnCancel.Location = new System.Drawing.Point(413, 3);
+            this.m_btnCancel.Margin = new System.Windows.Forms.Padding(0, 0, 5, 0);
             this.m_btnCancel.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnCancel.Name = "m_btnCancel";
             this.m_btnCancel.Primary = true;
@@ -141,15 +145,16 @@
             this.m_btnSelectService.AutoSize = true;
             this.m_btnSelectService.Depth = 0;
             this.m_btnSelectService.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnSelectService.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
+            this.m_btnSelectService.Icon = global::MaterialSkinExample.Properties.Resources.xuanze_32x32__4FC3F7;
             this.m_btnSelectService.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnSelectService.IconMargin = new System.Windows.Forms.Padding(0);
-            this.m_btnSelectService.IconSize = new System.Drawing.Size(20, 20);
-            this.m_btnSelectService.Location = new System.Drawing.Point(326, 5);
+            this.m_btnSelectService.IconSize = new System.Drawing.Size(24, 24);
+            this.m_btnSelectService.Location = new System.Drawing.Point(330, 3);
+            this.m_btnSelectService.Margin = new System.Windows.Forms.Padding(0);
             this.m_btnSelectService.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnSelectService.Name = "m_btnSelectService";
             this.m_btnSelectService.Primary = true;
-            this.m_btnSelectService.Size = new System.Drawing.Size(79, 22);
+            this.m_btnSelectService.Size = new System.Drawing.Size(83, 24);
             this.m_btnSelectService.TabIndex = 3;
             this.m_btnSelectService.Text = "选择";
             // 
@@ -158,15 +163,16 @@
             this.m_btnLinkTest.AutoSize = true;
             this.m_btnLinkTest.Depth = 0;
             this.m_btnLinkTest.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
-            this.m_btnLinkTest.Icon = global::MaterialSkinExample.Properties.Resources.shigongdanweisel_32x32_lightBlue;
+            this.m_btnLinkTest.Icon = global::MaterialSkinExample.Properties.Resources.link_32x32__4FC3F7;
             this.m_btnLinkTest.IconAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.m_btnLinkTest.IconMargin = new System.Windows.Forms.Padding(0);
-            this.m_btnLinkTest.IconSize = new System.Drawing.Size(20, 20);
-            this.m_btnLinkTest.Location = new System.Drawing.Point(203, 5);
+            this.m_btnLinkTest.IconSize = new System.Drawing.Size(24, 24);
+            this.m_btnLinkTest.Location = new System.Drawing.Point(209, 3);
+            this.m_btnLinkTest.Margin = new System.Windows.Forms.Padding(0);
             this.m_btnLinkTest.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnLinkTest.Name = "m_btnLinkTest";
             this.m_btnLinkTest.Primary = true;
-            this.m_btnLinkTest.Size = new System.Drawing.Size(117, 22);
+            this.m_btnLinkTest.Size = new System.Drawing.Size(121, 24);
             this.m_btnLinkTest.TabIndex = 4;
             this.m_btnLinkTest.Text = "测试连接";
             // 

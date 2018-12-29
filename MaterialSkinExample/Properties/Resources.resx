@@ -493,4 +493,58 @@
   <data name="zuoyedanwei_32x32_White" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icons\zuoyedanwei_32x32_White.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="add_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\add_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dayin_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\dayin_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\delete_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="down_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\down_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\left_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="link_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\link_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mima_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\mima_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\remove_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\right_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rili_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\rili_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\save_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tuichu_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\tuichu_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="up_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\up_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xiangmuyusuan_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\xiangmuyusuan_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xuanze_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\xuanze_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yidongduanicon__32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\yidongduanicon-_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yonghuming_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\yonghuming_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zhichuqingkuang_32x32__4FC3F7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icons\zhichuqingkuang_32x32_#4FC3F7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

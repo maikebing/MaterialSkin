@@ -63,6 +63,16 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap add_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("add_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap admin_16x16__053771 {
             get {
                 object obj = ResourceManager.GetObject("admin_16x16__053771", resourceCulture);
@@ -186,6 +196,36 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap chaxun_32x32_White {
             get {
                 object obj = ResourceManager.GetObject("chaxun_32x32_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap dayin_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("dayin_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("delete_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap down_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("down_32x32__4FC3F7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -513,6 +553,36 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap left_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("left_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap link_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("link_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap mima_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("mima_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap minus {
             get {
                 object obj = ResourceManager.GetObject("minus", resourceCulture);
@@ -573,6 +643,16 @@ namespace MaterialSkinExample.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap remove_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("remove_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap renzhenghuizhang_16x16__053771 {
             get {
                 object obj = ResourceManager.GetObject("renzhenghuizhang_16x16__053771", resourceCulture);
@@ -586,6 +666,36 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap renzhenghuizhang_32x32_White {
             get {
                 object obj = ResourceManager.GetObject("renzhenghuizhang_32x32_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap right_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("right_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap rili_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("rili_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap save_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("save_32x32__4FC3F7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -706,6 +816,26 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap shigongdanweisel_32x32_White {
             get {
                 object obj = ResourceManager.GetObject("shigongdanweisel_32x32_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap tuichu_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("tuichu_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap up_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("up_32x32__4FC3F7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1026,6 +1156,56 @@ namespace MaterialSkinExample.Properties {
         internal static System.Drawing.Bitmap woderenwu_32x32_White {
             get {
                 object obj = ResourceManager.GetObject("woderenwu_32x32_White", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap xiangmuyusuan_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("xiangmuyusuan_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap xuanze_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("xuanze_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap yidongduanicon__32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("yidongduanicon__32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap yonghuming_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("yonghuming_32x32__4FC3F7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap zhichuqingkuang_32x32__4FC3F7 {
+            get {
+                object obj = ResourceManager.GetObject("zhichuqingkuang_32x32__4FC3F7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
