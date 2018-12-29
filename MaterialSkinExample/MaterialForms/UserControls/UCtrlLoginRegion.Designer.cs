@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(378, 190);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(362, 190);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // materialSingleLineTextField2
@@ -70,7 +70,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.materialSingleLineTextField2, 2);
             this.materialSingleLineTextField2.Depth = 0;
             this.materialSingleLineTextField2.Hint = "";
-            this.materialSingleLineTextField2.Location = new System.Drawing.Point(128, 50);
+            this.materialSingleLineTextField2.Location = new System.Drawing.Point(123, 50);
             this.materialSingleLineTextField2.MaxLength = 32767;
             this.materialSingleLineTextField2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField2.Name = "materialSingleLineTextField2";
@@ -78,7 +78,7 @@
             this.materialSingleLineTextField2.SelectedText = "";
             this.materialSingleLineTextField2.SelectionLength = 0;
             this.materialSingleLineTextField2.SelectionStart = 0;
-            this.materialSingleLineTextField2.Size = new System.Drawing.Size(247, 28);
+            this.materialSingleLineTextField2.Size = new System.Drawing.Size(236, 28);
             this.materialSingleLineTextField2.TabIndex = 14;
             this.materialSingleLineTextField2.TabStop = false;
             this.materialSingleLineTextField2.UseSystemPasswordChar = false;
@@ -134,10 +134,10 @@
             this.materialComboBox1.Depth = 0;
             this.materialComboBox1.Font = new System.Drawing.Font("宋体", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.materialComboBox1.FormattingEnabled = true;
-            this.materialComboBox1.Location = new System.Drawing.Point(128, 97);
+            this.materialComboBox1.Location = new System.Drawing.Point(123, 97);
             this.materialComboBox1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialComboBox1.Name = "materialComboBox1";
-            this.materialComboBox1.Size = new System.Drawing.Size(247, 26);
+            this.materialComboBox1.Size = new System.Drawing.Size(236, 26);
             this.materialComboBox1.TabIndex = 12;
             // 
             // materialSingleLineTextField1
@@ -145,7 +145,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.materialSingleLineTextField1, 2);
             this.materialSingleLineTextField1.Depth = 0;
             this.materialSingleLineTextField1.Hint = "";
-            this.materialSingleLineTextField1.Location = new System.Drawing.Point(128, 3);
+            this.materialSingleLineTextField1.Location = new System.Drawing.Point(123, 3);
             this.materialSingleLineTextField1.MaxLength = 32767;
             this.materialSingleLineTextField1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField1.Name = "materialSingleLineTextField1";
@@ -153,7 +153,7 @@
             this.materialSingleLineTextField1.SelectedText = "";
             this.materialSingleLineTextField1.SelectionLength = 0;
             this.materialSingleLineTextField1.SelectionStart = 0;
-            this.materialSingleLineTextField1.Size = new System.Drawing.Size(247, 28);
+            this.materialSingleLineTextField1.Size = new System.Drawing.Size(236, 28);
             this.materialSingleLineTextField1.TabIndex = 13;
             this.materialSingleLineTextField1.TabStop = false;
             this.materialSingleLineTextField1.UseSystemPasswordChar = false;
@@ -165,14 +165,14 @@
             this.tableLayoutPanel1.SetColumnSpan(this.m_btnLogin, 3);
             this.m_btnLogin.Depth = 0;
             this.m_btnLogin.Icon = null;
-            this.m_btnLogin.Location = new System.Drawing.Point(40, 151);
-            this.m_btnLogin.Margin = new System.Windows.Forms.Padding(40, 10, 40, 0);
+            this.m_btnLogin.Location = new System.Drawing.Point(0, 151);
+            this.m_btnLogin.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.m_btnLogin.MouseState = MaterialSkin.MouseState.HOVER;
             this.m_btnLogin.Name = "m_btnLogin";
             this.m_btnLogin.Primary = true;
-            this.m_btnLogin.Size = new System.Drawing.Size(290, 36);
+            this.m_btnLogin.Size = new System.Drawing.Size(359, 36);
             this.m_btnLogin.TabIndex = 15;
-            this.m_btnLogin.Text = "登    录";
+            this.m_btnLogin.Text = "登            录";
             this.m_btnLogin.UseVisualStyleBackColor = false;
             // 
             // UCtrlLoginRegion
@@ -181,7 +181,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UCtrlLoginRegion";
-            this.Size = new System.Drawing.Size(378, 190);
+            this.Size = new System.Drawing.Size(362, 190);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

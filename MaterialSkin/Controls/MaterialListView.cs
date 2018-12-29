@@ -62,7 +62,7 @@ namespace MaterialSkin.Controls
         {
             e.Graphics.FillRectangle(new SolidBrush(SkinManager.GetApplicationBackgroundColor()), new Rectangle(e.Bounds.X, e.Bounds.Y, Width, e.Bounds.Height));
             e.Graphics.DrawString(e.Header.Text,
-                SkinManager.ROBOTO_MEDIUM_10,
+                SkinManager.ROBOTO_REGULAR_10,
                 SkinManager.GetSecondaryTextBrush(),
                 new Rectangle(e.Bounds.X + ITEM_PADDING, e.Bounds.Y + ITEM_PADDING, e.Bounds.Width - ITEM_PADDING * 2, e.Bounds.Height - ITEM_PADDING * 2),
                 getStringFormat());

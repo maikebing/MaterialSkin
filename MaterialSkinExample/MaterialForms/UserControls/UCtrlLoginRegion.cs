@@ -16,7 +16,9 @@ namespace MaterialSkinExample.MaterialForms
         public UCtrlLoginRegion()
         {
             InitializeComponent();
-            
+            this.materialComboBox1.Items.Add("2017");
+            this.materialComboBox1.Items.Add("2018");
+            this.materialComboBox1.Items.Add("2019");
             m_btnLogin.Click += (sender, e) =>
             {
                 //TODO:登录校验
@@ -26,32 +28,6 @@ namespace MaterialSkinExample.MaterialForms
                 //TODO:初始化首页数据
 
             };
-        }
-        #region Properties
-        private MaterialForm m_OwenForm = null;
-        public MaterialForm OwenForm
-        {
-            get
-            {
-                if (m_OwenForm == null)
-                    m_OwenForm = GetOwenForm(this);
-                return m_OwenForm;
-            }
-        }
-        #endregion
-        private static MaterialForm GetOwenForm(Control ctrl)
-        {
-            if (ctrl.Parent != null)
-            {
-                if (!(ctrl.Parent is MaterialForm form))
-                    return GetOwenForm(ctrl.Parent);
-                else
-                    return form;
-            }
-            else
-            {
-                return null;
-            }
         }
     }
 }

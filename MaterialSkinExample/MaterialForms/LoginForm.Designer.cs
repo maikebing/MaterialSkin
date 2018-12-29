@@ -38,16 +38,15 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.uCtrlLoginRegion1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 112);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(581, 426);
+            this.panel1.Size = new System.Drawing.Size(499, 329);
             this.panel1.TabIndex = 0;
             // 
             // uCtrlLoginRegion1
             // 
             this.uCtrlLoginRegion1.Depth = 0;
-            this.uCtrlLoginRegion1.Location = new System.Drawing.Point(36, 212);
+            this.uCtrlLoginRegion1.Location = new System.Drawing.Point(60, 106);
             this.uCtrlLoginRegion1.MouseState = MaterialSkin.MouseState.HOVER;
             this.uCtrlLoginRegion1.Name = "uCtrlLoginRegion1";
             this.uCtrlLoginRegion1.Size = new System.Drawing.Size(378, 190);
@@ -59,14 +58,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::MaterialSkinExample.Properties.Resources.background;
-            this.ClientSize = new System.Drawing.Size(581, 450);
+            this.ClientSize = new System.Drawing.Size(500, 440);
             this.Controls.Add(this.panel1);
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "LoginForm";
+            this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "    ";
+            this.Text = "江苏省财政厅";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

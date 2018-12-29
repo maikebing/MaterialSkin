@@ -137,7 +137,7 @@ namespace MaterialSkin
 
         public Brush GetSecondaryTextBrush()
         {
-            return Theme == Themes.LIGHT ? SECONDARY_TEXT_BLACK_BRUSH : SECONDARY_TEXT_WHITE_BRUSH;
+            return Theme == Themes.LIGHT ? PRIMARY_TEXT_BLACK_BRUSH : SECONDARY_TEXT_WHITE_BRUSH;
         }
 
         public Color GetDisabledOrHintColor()
