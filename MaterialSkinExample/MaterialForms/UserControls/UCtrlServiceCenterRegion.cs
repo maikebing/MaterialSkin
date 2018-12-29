@@ -42,6 +42,18 @@ namespace MaterialSkinExample.MaterialForms
             materialListView1.Columns.Add("名称", width, HorizontalAlignment.Left);
             materialListView1.Columns.Add("服务地址", width, HorizontalAlignment.Left);
             materialListView1.Columns.Add("服务端口", width, HorizontalAlignment.Left);
+            var data = new[]
+            {
+                new []{"测试环境", "127.0.0.1", "8080", },
+                new []{"开发环境", "127.0.0.1", "8080", },
+                new []{"本地环境", "127.0.0.1", "8080",},
+            };
+            //Add
+            foreach (string[] version in data)
+            {
+                var item = new ListViewItem(version);
+                materialListView1.Items.Add(item);
+            }
         }
         private void Add()
         {
