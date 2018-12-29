@@ -1,4 +1,4 @@
-﻿namespace MaterialSkinExample
+﻿namespace MaterialSkinExample.MaterialForms
 {
     partial class ServiceCenterForm
     {
