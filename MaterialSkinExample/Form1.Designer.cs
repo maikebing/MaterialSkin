@@ -28,130 +28,170 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.materialHeadGroup1 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup2 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup3 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup4 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup5 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup6 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup7 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialHeadGroup8 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // metroGrid1
+            // flowLayoutPanel1
             // 
-            this.metroGrid1.AllowUserToResizeRows = false;
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.metroGrid1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.metroGrid1.EnableHeadersVisualStyles = false;
-            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(0, 71);
-            this.metroGrid1.Name = "metroGrid1";
-            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid1.RowTemplate.Height = 27;
-            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(798, 590);
-            this.metroGrid1.TabIndex = 0;
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup1);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup2);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup3);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup4);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup5);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup6);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup7);
+            this.flowLayoutPanel1.Controls.Add(this.materialHeadGroup8);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 213);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(798, 448);
+            this.flowLayoutPanel1.TabIndex = 0;
             // 
-            // Column1
+            // materialHeadGroup1
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
+            this.materialHeadGroup1.Depth = 0;
+            this.materialHeadGroup1.LeftTag = null;
+            this.materialHeadGroup1.LeftText = "materialHeadGroup1";
+            this.materialHeadGroup1.Location = new System.Drawing.Point(3, 3);
+            this.materialHeadGroup1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup1.Name = "materialHeadGroup1";
+            this.materialHeadGroup1.RightTag = null;
+            this.materialHeadGroup1.RightText = "详情";
+            this.materialHeadGroup1.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup1.TabIndex = 0;
+            this.materialHeadGroup1.Text = "materialHeadGroup1";
             // 
-            // Column2
+            // materialHeadGroup2
             // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
+            this.materialHeadGroup2.Depth = 0;
+            this.materialHeadGroup2.LeftTag = null;
+            this.materialHeadGroup2.LeftText = "materialHeadGroup2";
+            this.materialHeadGroup2.Location = new System.Drawing.Point(3, 32);
+            this.materialHeadGroup2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup2.Name = "materialHeadGroup2";
+            this.materialHeadGroup2.RightTag = null;
+            this.materialHeadGroup2.RightText = "详情";
+            this.materialHeadGroup2.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup2.TabIndex = 1;
+            this.materialHeadGroup2.Text = "materialHeadGroup2";
             // 
-            // Column3
+            // materialHeadGroup3
             // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.Name = "Column3";
+            this.materialHeadGroup3.Depth = 0;
+            this.materialHeadGroup3.LeftTag = null;
+            this.materialHeadGroup3.LeftText = "materialHeadGroup3";
+            this.materialHeadGroup3.Location = new System.Drawing.Point(3, 61);
+            this.materialHeadGroup3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup3.Name = "materialHeadGroup3";
+            this.materialHeadGroup3.RightTag = null;
+            this.materialHeadGroup3.RightText = "详情";
+            this.materialHeadGroup3.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup3.TabIndex = 2;
+            this.materialHeadGroup3.Text = "materialHeadGroup3";
             // 
-            // Column4
+            // materialHeadGroup4
             // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.Name = "Column4";
+            this.materialHeadGroup4.Depth = 0;
+            this.materialHeadGroup4.LeftTag = null;
+            this.materialHeadGroup4.LeftText = "materialHeadGroup4";
+            this.materialHeadGroup4.Location = new System.Drawing.Point(3, 90);
+            this.materialHeadGroup4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup4.Name = "materialHeadGroup4";
+            this.materialHeadGroup4.RightTag = null;
+            this.materialHeadGroup4.RightText = "详情";
+            this.materialHeadGroup4.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup4.TabIndex = 3;
+            this.materialHeadGroup4.Text = "materialHeadGroup4";
             // 
-            // Column5
+            // materialHeadGroup5
             // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.Name = "Column5";
+            this.materialHeadGroup5.Depth = 0;
+            this.materialHeadGroup5.LeftTag = null;
+            this.materialHeadGroup5.LeftText = "materialHeadGroup5";
+            this.materialHeadGroup5.Location = new System.Drawing.Point(3, 119);
+            this.materialHeadGroup5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup5.Name = "materialHeadGroup5";
+            this.materialHeadGroup5.RightTag = null;
+            this.materialHeadGroup5.RightText = "详情";
+            this.materialHeadGroup5.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup5.TabIndex = 4;
+            this.materialHeadGroup5.Text = "materialHeadGroup5";
             // 
-            // Column6
+            // materialHeadGroup6
             // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.Name = "Column6";
+            this.materialHeadGroup6.Depth = 0;
+            this.materialHeadGroup6.LeftTag = null;
+            this.materialHeadGroup6.LeftText = "materialHeadGroup6";
+            this.materialHeadGroup6.Location = new System.Drawing.Point(3, 148);
+            this.materialHeadGroup6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup6.Name = "materialHeadGroup6";
+            this.materialHeadGroup6.RightTag = null;
+            this.materialHeadGroup6.RightText = "详情";
+            this.materialHeadGroup6.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup6.TabIndex = 5;
+            this.materialHeadGroup6.Text = "materialHeadGroup6";
             // 
-            // Column7
+            // materialHeadGroup7
             // 
-            this.Column7.HeaderText = "Column7";
-            this.Column7.Name = "Column7";
+            this.materialHeadGroup7.Depth = 0;
+            this.materialHeadGroup7.LeftTag = null;
+            this.materialHeadGroup7.LeftText = "materialHeadGroup7";
+            this.materialHeadGroup7.Location = new System.Drawing.Point(3, 177);
+            this.materialHeadGroup7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup7.Name = "materialHeadGroup7";
+            this.materialHeadGroup7.RightTag = null;
+            this.materialHeadGroup7.RightText = "详情";
+            this.materialHeadGroup7.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup7.TabIndex = 6;
+            this.materialHeadGroup7.Text = "materialHeadGroup7";
+            // 
+            // materialHeadGroup8
+            // 
+            this.materialHeadGroup8.Depth = 0;
+            this.materialHeadGroup8.LeftTag = null;
+            this.materialHeadGroup8.LeftText = "materialHeadGroup8";
+            this.materialHeadGroup8.Location = new System.Drawing.Point(3, 206);
+            this.materialHeadGroup8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialHeadGroup8.Name = "materialHeadGroup8";
+            this.materialHeadGroup8.RightTag = null;
+            this.materialHeadGroup8.RightText = "详情";
+            this.materialHeadGroup8.Size = new System.Drawing.Size(798, 23);
+            this.materialHeadGroup8.TabIndex = 7;
+            this.materialHeadGroup8.Text = "materialHeadGroup8";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(798, 661);
-            this.Controls.Add(this.metroGrid1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MetroFramework.Controls.MetroGrid metroGrid1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup1;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup2;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup3;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup4;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup5;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup6;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup7;
+        private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup8;
     }
 }
