@@ -34,13 +34,27 @@ namespace MaterialSkin.Controls
         public override string Text
         {
             get { return base.Text; }
-            set { base.Text = value; Invalidate(); }
+            set
+            {
+                base.Text = value;
+                Invalidate();
+            }
+        }
+        public override Size GetPreferredSize(Size proposedSize)
+        {
+            return this.GetTextSize(this.CreateGraphics());
+        }
+        protected override void OnCreateControl()
+        {
+            this.BackColor = Parent != null ? Parent.BackColor : this.BackColor;
+            this.ForeColor = SkinManager.GetPrimaryTextColor();
+            this.Font = SkinManager.ROBOTO_MEDIUM_10;
+            base.OnCreateControl();
         }
         protected override void OnPaint(PaintEventArgs e)
         {
-            this.BackColor = Parent != null ? Parent.BackColor : this.BackColor;
-            this.Font = SkinManager.ROBOTO_MEDIUM_10;
             e.Graphics.Clear(this.BackColor);
+            this.TextRectangle = new Rectangle(new Point(), this.GetTextSize(e.Graphics));
             this.DrawText(e.Graphics);
         }
         protected override void OnMouseHover(EventArgs e)
@@ -49,7 +63,7 @@ namespace MaterialSkin.Controls
         }
         protected override void OnMouseLeave(EventArgs e)
         {
-            this.ForeColor = SkinManager.ColorScheme.PrimaryColor;
+            this.ForeColor = SkinManager.GetPrimaryTextColor();
         }
     }
 }

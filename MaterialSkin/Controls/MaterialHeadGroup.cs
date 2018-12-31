@@ -15,6 +15,7 @@ namespace MaterialSkin.Controls
     {
         public MaterialHeadGroup()
         {
+            this.Size = DefaultSize;
             this.SizeChanged += (sender, e) =>
             {
                 if (RightLabel != null)
@@ -28,7 +29,6 @@ namespace MaterialSkin.Controls
         public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
         [Browsable(false)]
         public MouseState MouseState { get; set; }
-        private string m_LeftText;
         [Browsable(false)]
         public string LeftText
         {
@@ -40,12 +40,11 @@ namespace MaterialSkin.Controls
             }
         }
 
-        private object m_LeftTag;
         [Browsable(false)]
         public object LeftTag
         {
-            get { return m_LeftTag; }
-            set { m_LeftTag = value; }
+            get { return Tag; }
+            set { Tag = value; }
         }
         private string m_RightText;
         public string RightText
@@ -82,6 +81,7 @@ namespace MaterialSkin.Controls
                 Text = LeftText,
                 Tag = LeftTag,
                 AutoSize = true,
+                Font = SkinManager.ROBOTO_MEDIUM_10,
             };
             this.Controls.Add(LeftLabel);
             //添加右侧LinkLabel
@@ -90,8 +90,12 @@ namespace MaterialSkin.Controls
                 Text = RightText,
                 Tag = RightTag,
                 AutoSize = true,
+                Font = SkinManager.ROBOTO_MEDIUM_10,
             };
             RightLabel.Location = new Point(this.Width - RightLabel.Width - RightLabel.Margin.Left - RightLabel.Margin.Right, 0);
+            if (Parent != null)
+                this.Width = Parent.Width;
+            this.Height = Math.Max(LeftLabel.Height, RightLabel.Height);
             this.Controls.Add(RightLabel);
         }
         #endregion
