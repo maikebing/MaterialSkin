@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin.Designer;
+using System.IO;
 
 namespace MaterialSkin.Controls
 {
@@ -57,7 +58,8 @@ namespace MaterialSkin.Controls
             }
         }
         [Browsable(false)]
-        public MaterialLinkLabel LeftLabel = null;
+        private MaterialLinkLabel LeftLabel = null;
+        public event LinkLabelLinkClickedEventHandler LeftLinkClicked;
         private object m_RightTag;
         [Browsable(false)]
         public object RightTag
@@ -66,7 +68,8 @@ namespace MaterialSkin.Controls
             set { m_RightTag = value; }
         }
         [Browsable(false)]
-        public MaterialLinkLabel RightLabel = null;
+        private MaterialLinkLabel RightLabel = null;
+        public event LinkLabelLinkClickedEventHandler RightLinkClicked;
         protected override void OnPaint(PaintEventArgs e)
         {
             if (Parent != null)
@@ -85,6 +88,10 @@ namespace MaterialSkin.Controls
                 AutoSize = true,
                 Font = SkinManager.ROBOTO_MEDIUM_10,
             };
+            LeftLabel.LinkClicked += (sender, e) =>
+            {
+                LeftLinkClicked?.Invoke(sender, e);
+            };
             this.Controls.Add(LeftLabel);
             //添加右侧LinkLabel
             RightLabel = new MaterialLinkLabel
@@ -94,6 +101,10 @@ namespace MaterialSkin.Controls
                 AutoSize = true,
                 Font = SkinManager.ROBOTO_MEDIUM_10,
             };
+            RightLabel.LinkClicked += (sender, e) =>
+              {
+                  RightLinkClicked?.Invoke(sender, e);
+              };
             RightLabel.Location = new Point(this.Width - RightLabel.Width - RightLabel.Margin.Left - RightLabel.Margin.Right, 0);
             if (Parent != null)
                 this.Width = Parent.Width;
