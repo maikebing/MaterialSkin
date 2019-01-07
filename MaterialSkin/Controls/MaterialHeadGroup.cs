@@ -56,7 +56,8 @@ namespace MaterialSkin.Controls
                 Invalidate();
             }
         }
-        private MaterialLinkLabel LeftLabel = null;
+        [Browsable(false)]
+        public MaterialLinkLabel LeftLabel = null;
         private object m_RightTag;
         [Browsable(false)]
         public object RightTag
@@ -64,7 +65,8 @@ namespace MaterialSkin.Controls
             get { return m_RightTag; }
             set { m_RightTag = value; }
         }
-        private MaterialLinkLabel RightLabel = null;
+        [Browsable(false)]
+        public MaterialLinkLabel RightLabel = null;
         protected override void OnPaint(PaintEventArgs e)
         {
             if (Parent != null)

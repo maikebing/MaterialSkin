@@ -128,6 +128,11 @@
     <Compile Include="MaterialForms\UserControls\UCtrlTasksRegion.Designer.cs">
       <DependentUpon>UCtrlTasksRegion.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaterialResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaterialResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -144,6 +149,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MaterialForms\ServiceCenterForm.resx">
       <DependentUpon>ServiceCenterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>MaterialResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="MaterialForms\UserControls\UCtrlBasicInfoRegion.resx">
       <DependentUpon>UCtrlBasicInfoRegion.cs</DependentUpon>
