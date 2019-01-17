@@ -9,27 +9,21 @@ using System.Windows.Forms;
 
 namespace MaterialSkin.Controls
 {
-    public class MaterialComboBox : ComboBox, IMaterialControl
+    /// <summary>
+    ///TODO: 封装MaterialComBoBox控件。
+    /// </summary>
+    public class MaterialComboBox : ComboBox, IMessageFilter, IMaterialControl
     {
+        public MaterialComboBox()
+        {
+            DrawMode = DrawMode.OwnerDrawFixed;//设置绘画模式为手动
+        }
         [Browsable(false)]
         public int Depth { get; set; }
         [Browsable(false)]
         public MaterialSkinManager SkinManager => MaterialSkinManager.Instance;
         [Browsable(false)]
         public MouseState MouseState { get; set; }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-
-            base.OnPaint(e);
-            //Rectangle rect = new Rectangle(ClientRectangle.Width - 20, 0, 20, 20);
-            //ComboBoxRenderer.DrawDropDownButton(e.Graphics, rect, System.Windows.Forms.VisualStyles.ComboBoxState.Normal);
-        }
-
-    }
-
-    public partial class ComboBoxControl : System.Windows.Forms.ComboBox, IMessageFilter//继承自ComboBox
-    {
 
         #region API函数
         [System.Runtime.InteropServices.DllImport("user32.dll ")]
@@ -96,9 +90,12 @@ namespace MaterialSkin.Controls
         }
         #endregion
 
-        public ComboBoxControl()
+        public bool PreFilterMessage(ref Message m)
         {
-            DrawMode = DrawMode.OwnerDrawFixed;//设置绘画模式为手动
+            //拦截0x020A鼠标滚轮消息
+            if (m.Msg == 0x020A && _disableWheel)
+                return true;
+            return false;
         }
 
         protected override void WndProc(ref Message m)
@@ -115,7 +112,7 @@ namespace MaterialSkin.Controls
                 Graphics g = Graphics.FromHdc(hDC);
                 Pen p = new Pen(_bdColor, _bdSize);
                 //画边框
-                g.DrawRectangle(p, 0, 0, Width, Height);
+                //g.DrawRectangle(p, 0, 0, Width, Height);
                 ReleaseDC(m.HWnd, hDC);
             }
         }
@@ -170,23 +167,7 @@ namespace MaterialSkin.Controls
             base.OnDrawItem(ea);
         }
 
-        #region IMessageFilter 成员
-        /// <summary>
-        /// 消息筛选器
-        /// </summary>
-        /// <param name="m"></param>
-        /// <returns></returns>
-        public bool PreFilterMessage(ref Message m)
-        {
-            //拦截0x020A鼠标滚轮消息
-            if (m.Msg == 0x020A && _disableWheel)
-                return true;
-            return false;
-        }
-        #endregion
-
     }
-
 
     public class ImageComboBoxItem
     {

@@ -30,6 +30,7 @@
         {
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.materialHeadGroup1 = new MaterialSkin.Controls.MaterialHeadGroup();
+            this.materialComboBox1 = new MaterialSkin.Controls.MaterialComboBox();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,12 +57,28 @@
             this.materialHeadGroup1.TabIndex = 0;
             this.materialHeadGroup1.Text = "这是一条测试消息!";
             // 
+            // materialComboBox1
+            // 
+            this.materialComboBox1.BdColor = System.Drawing.Color.Empty;
+            this.materialComboBox1.BdSize = 1;
+            this.materialComboBox1.Depth = 0;
+            this.materialComboBox1.DisableWheel = false;
+            this.materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.materialComboBox1.FormattingEnabled = true;
+            this.materialComboBox1.ImageList = null;
+            this.materialComboBox1.Location = new System.Drawing.Point(145, 150);
+            this.materialComboBox1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialComboBox1.Name = "materialComboBox1";
+            this.materialComboBox1.Size = new System.Drawing.Size(121, 26);
+            this.materialComboBox1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(798, 661);
+            this.Controls.Add(this.materialComboBox1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -74,5 +91,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private MaterialSkin.Controls.MaterialHeadGroup materialHeadGroup1;
+        private MaterialSkin.Controls.MaterialComboBox materialComboBox1;
     }
 }

@@ -28,14 +28,20 @@ namespace MaterialSkinExample
                   {
                       //创建HeadGroup
                       MaterialHeadGroup headGroup = new MaterialHeadGroup();
+                      headGroup.LeftIcon = global::MaterialSkinExample.MaterialResource.bianji_32x32_lightBlue;
                       headGroup.Text = "这是一条测试消息!";
                       headGroup.LeftTag = 1;
                       headGroup.RightText = "详情";
+                      headGroup.RightIcon = global::MaterialSkinExample.MaterialResource.bianji_32x32_lightBlue;
                       headGroup.RightTag = 1;
 
                       this.flowLayoutPanel1.Controls.Add(headGroup);
                   }
               };
+            for (int i = 0; i < 3; i++)
+            {
+                this.materialComboBox1.Items.Add(i.ToString());
+            }
         }
     }
 }

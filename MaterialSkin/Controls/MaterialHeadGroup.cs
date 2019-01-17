@@ -47,16 +47,17 @@ namespace MaterialSkin.Controls
             get { return Tag; }
             set { Tag = value; }
         }
-        private string m_RightText;
-        public string RightText
+        private Image m_LeftIcon;
+        public Image LeftIcon
         {
-            get { return m_RightText; }
+            get { return m_LeftIcon; }
             set
             {
-                m_RightText = value;
+                m_LeftIcon = value;
                 Invalidate();
             }
         }
+
         [Browsable(false)]
         private MaterialLinkLabel LeftLabel = null;
         public event LinkLabelLinkClickedEventHandler LeftLinkClicked;
@@ -67,6 +68,27 @@ namespace MaterialSkin.Controls
             get { return m_RightTag; }
             set { m_RightTag = value; }
         }
+        private string m_RightText;
+        public string RightText
+        {
+            get { return m_RightText; }
+            set
+            {
+                m_RightText = value;
+                Invalidate();
+            }
+        }
+        private Image m_RightIcon;
+        public Image RightIcon
+        {
+            get { return m_RightIcon; }
+            set
+            {
+                m_RightIcon = value;
+                Invalidate();
+            }
+        }
+
         [Browsable(false)]
         private MaterialLinkLabel RightLabel = null;
         public event LinkLabelLinkClickedEventHandler RightLinkClicked;
@@ -87,6 +109,7 @@ namespace MaterialSkin.Controls
                 Tag = LeftTag,
                 AutoSize = true,
                 Font = SkinManager.ROBOTO_MEDIUM_10,
+                Image = LeftIcon,
             };
             LeftLabel.LinkClicked += (sender, e) =>
             {
@@ -100,6 +123,7 @@ namespace MaterialSkin.Controls
                 Tag = RightTag,
                 AutoSize = true,
                 Font = SkinManager.ROBOTO_MEDIUM_10,
+                Image = RightIcon,
             };
             RightLabel.LinkClicked += (sender, e) =>
               {
