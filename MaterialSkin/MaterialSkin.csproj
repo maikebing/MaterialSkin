@@ -48,8 +48,15 @@
     <Compile Include="Animations\AnimationDirection.cs" />
     <Compile Include="Animations\AnimationManager.cs" />
     <Compile Include="Animations\Animations.cs" />
+    <Compile Include="ColorHelper.cs" />
     <Compile Include="ColorScheme.cs" />
+    <Compile Include="Controls\FlexibleMaterialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Controls\MaterialCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialCheckedListBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MaterialComboBox.cs">
@@ -65,6 +72,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MaterialFlatButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialFloatingActionButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MaterialForm.cs">
@@ -86,6 +96,13 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MaterialListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MaterialMessageBox.cs" />
+    <Compile Include="Controls\MaterialMultiLineTextField.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\MaterialRadioButton.cs">
@@ -112,6 +129,7 @@
     <Compile Include="Designer\GroupBoxDesigner.cs" />
     <Compile Include="Designer\HeadGroupDesigner.cs" />
     <Compile Include="DrawHelper.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="IIconControl.cs" />
     <Compile Include="IMaterialControl.cs" />
     <Compile Include="Controls\MaterialRaisedButton.cs">
@@ -127,6 +145,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\FlexibleMaterialDialog.resx">
+      <DependentUpon>FlexibleMaterialDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\MaterialHeadGroup.resx">
       <DependentUpon>MaterialHeadGroup.cs</DependentUpon>
     </EmbeddedResource>
