@@ -1,12 +1,12 @@
-﻿using System;
-using System.ComponentModel;
-using System.Drawing;
-using System.Runtime.InteropServices;
-using System.Windows.Forms;
-using MaterialSkin.Animations;
-
-namespace MaterialSkin.Controls
+﻿namespace MaterialSkin.Controls
 {
+    using MaterialSkin.Animations;
+    using System;
+    using System.ComponentModel;
+    using System.Drawing;
+    using System.Runtime.InteropServices;
+    using System.Windows.Forms;
+
     public class MaterialSingleLineTextField : Control, IMaterialControl
     {
         //Properties for managing the material design properties
@@ -36,11 +36,10 @@ namespace MaterialSkin.Controls
 
         public void SelectAll() { _baseTextBox.SelectAll(); }
         public void Clear() { _baseTextBox.Clear(); }
-        public void Focus() { _baseTextBox.Focus(); }
+        public new void Focus() { _baseTextBox.Focus(); }
 
 
-        # region Forwarding events to baseTextBox
-        public event EventHandler AcceptsTabChanged
+                public event EventHandler AcceptsTabChanged
         {
             add
             {
@@ -939,8 +938,7 @@ namespace MaterialSkin.Controls
                 _baseTextBox.VisibleChanged -= value;
             }
         }
-        #endregion
-
+        
 
         public MaterialSingleLineTextField()
         {
@@ -1153,7 +1151,7 @@ namespace MaterialSkin.Controls
             }
         }
 
-        private class TextBoxContextMenuStrip : MaterialContextMenuStrip
+        public class TextBoxContextMenuStrip : MaterialContextMenuStrip
         {
             public readonly ToolStripItem Undo = new MaterialToolStripMenuItem { Text = "Undo" };
             public readonly ToolStripItem Seperator1 = new ToolStripSeparator();

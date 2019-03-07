@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -20,6 +21,14 @@ namespace MaterialSkinExample
 
 			// Add dummy data to the listview
 	        seedListView();
+            //materialCheckedListBox1.Items.Add("Item1", false);
+            //materialCheckedListBox1.Items.Add("Item2", true);
+            //materialCheckedListBox1.Items.Add("Item3", true);
+            //materialCheckedListBox1.Items.Add("Item4", false);
+            //materialCheckedListBox1.Items.Add("Item5", true);
+            //materialCheckedListBox1.Items.Add("Item6", false);
+            //materialCheckedListBox1.Items.Add("Item7", false);
+
         }
 
 	    private void seedListView()
@@ -76,6 +85,57 @@ namespace MaterialSkinExample
         private void materialFlatButton4_Click(object sender, EventArgs e)
         {
             materialProgressBar1.Value = Math.Max(materialProgressBar1.Value - 10, 0);
+        }
+
+        private void materialTabSelector1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialRadioButton5_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialFlatButton5_Click(object sender, EventArgs e)
+        {
+            var builder = new StringBuilder("Batch operation report:\n\n");
+            var random = new Random();
+            var result = 0;
+
+            for (int i = 0; i < 200; i++)
+            {
+                result = random.Next(1000);
+
+                if (result < 950)
+                {
+                    builder.AppendFormat(" - Task {0}: Operation completed sucessfully.\n", i);
+                }
+                else
+                {
+                    builder.AppendFormat(" - Task {0}: Operation failed! A very very very very very very very very very very very very serious error has occured during this sub-operation. The errorcode is: {1}).\n", i, result);
+                }
+            }
+
+            var batchOperationResults = builder.ToString();
+            var mresult = MaterialMessageBox.Show(batchOperationResults, "Batch Operation");
+            //materialComboBox1.Items.Add("this is a very long string");
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void materialMultiLineTextField1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

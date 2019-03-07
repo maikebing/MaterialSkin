@@ -8,11 +8,32 @@ Theming .NET WinForms, C# or VB.Net, to Google's Material Design Principles.
 *High quality images can be found at the bottom of this page.*
 
 ---
+#### Updates
+* [2018-12-24] New controls added 
+* [2018-12-26] Added support to theme / color non Material controls on a Material form
+* [2018-12-27] Added Messagebox control
+
+
+#### BugFixes
+* New controls now use this to define the background color they should use
+* Fixed rendering bug when Theme is changed
+* Updated MaterialMultiLineTextBox to use richtext for rendering
+* Updated the MaterialMessageBox control to now use MaterialMultiLineTextBox
+* Updated the MaterialMessageBox control to properly calculate the spacing for controls on the form .
+
+### New Controls
+* Combobox
+* Checkedlistbox 
+* Floating Action Button
+* Flexible Messagebox
+
 
 #### Current state of the MaterialSkin components
 Component | Supported | Dark & light version | Disabled mode | Animated
 --- | --- | --- | --- | ---
 Checkbox | Yes | Yes | Yes | Yes 
+CheckedListbox | Yes | Yes | Yes | Yes 
+Combobox | Yes | Yes | Yes | Yes 
 Divider | Yes | Yes | N/A | N/A 
 Flat Button | Yes | Yes | Yes | Yes 
 Label | Yes | Yes | N/A | N/A
@@ -23,10 +44,11 @@ TabControl | Yes | N/A | N/A | Yes
 ContextMenuStrip | Yes | Yes | Yes | Yes
 ListView | Yes | Yes | No | No
 ProgressBar | Yes | Yes | No | No 
-FloatingActionButton | No | No | No | No
+FloatingActionButton | Yes | Yes | No | No
 Dialogs | No | No | No | No
 Switch | No | No | No | No
-More... | No | No | No | No
+FlexibleMessageBox  | Yes   | Yes   | Yes   | No
+More... | Yes | Yes | No | No
 
 ---
 
@@ -34,7 +56,9 @@ More... | No | No | No | No
 
 **1. Add the library to your project**
 
-  You can do this on multiple ways. The easiest way would be adding the [NuGet Package](https://www.nuget.org/packages/MaterialSkin/). Right click on your project and click 'Manage NuGet Packages...'. Search for 'MaterialSkin' and click on install. Once installed the library will be included in your project references. (Or install it through the package manager console: PM> Install-Package MaterialSkin)
+**working on this part**
+
+  ~~You can do this on multiple ways. The easiest way would be adding the [NuGet Package](https://www.nuget.org/packages/MaterialSkin/). Right click on your project and click 'Manage NuGet Packages...'. Search for 'MaterialSkin' and click on install. Once installed the library will be included in your project references. (Or install it through the package manager console: PM> Install-Package MaterialSkin)~~
 
 Another way of doing this step would be cloning the project from GitHub, compiling the library yourself and adding it as a reference.
   
@@ -100,16 +124,14 @@ If you love .NET and Material Design, you should definitely check out [Material 
 
 #### State of the project
 
-This project is no longer under active development. Though, contributions are still welcome and the community will likely still help if you open an issue.
+This project is **ACTIVE**
 
 ---
 
 #### Contact
 
-If you wish to contact me for anything you can get in touch at:
-
-- Twitter: https://twitter.com/Ignace_Maes
-- Personal Website: http://ignacemaes.com
+>###### This project was originally forked from https://github.com/IgnaceMaes/MaterialSkin
+> If you have any issues please open an issue or pull request. 
 
 ---
 
@@ -134,3 +156,7 @@ If you wish to contact me for anything you can get in touch at:
 ![alt tag](http://i.imgur.com/07MrJZQ.png)
 
 *MaterialSkin using a custom color scheme.*
+
+
+![alt tag](https://i.imgur.com/i35Lfgn.png)
+*FlexibleMaterialMessagebox*
